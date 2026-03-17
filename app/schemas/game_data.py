@@ -97,3 +97,30 @@ class ConsumableRead(BaseModel):
     effects: list | dict | None = None
 
     model_config = {"from_attributes": True}
+
+
+class CraftingRecipeRead(BaseModel):
+    id: int
+    category: str
+    sub_category: str
+    input_1: str
+    input_2: str
+    result: str
+    tier_change: int
+    has_swap: bool
+
+    model_config = {"from_attributes": True}
+
+
+class MaterialRecipeRead(BaseModel):
+    id: int
+    category: str
+    sub_category: str
+    input_1: str
+    input_2: str
+    material_1: str
+    material_2: str
+    result_material: str
+    tier_change: int
+
+    model_config = {"from_attributes": True}

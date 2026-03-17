@@ -13,6 +13,7 @@ from app.logging import setup_logging
 from app.routers import (
     armor_router,
     consumables_router,
+    crafting_router,
     gems_router,
     grips_router,
     materials_router,
@@ -82,6 +83,7 @@ app.include_router(armor_router)
 app.include_router(gems_router)
 app.include_router(materials_router)
 app.include_router(consumables_router)
+app.include_router(crafting_router)
 
 
 @app.get("/")

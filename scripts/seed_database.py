@@ -10,6 +10,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from app.config import settings
 from app.models.armor import Armor
 from app.models.consumable import Consumable
+from app.models.crafting_recipe import CraftingRecipe, MaterialRecipe
 from app.models.gem import Gem
 from app.models.grip import Grip
 from app.models.material import Material
@@ -78,6 +79,8 @@ async def main():
         await seed_model(session, Gem, "gems.json", id_map)
         await seed_model(session, Material, "materials.json")
         await seed_model(session, Consumable, "consumables.json", id_map)
+        await seed_model(session, CraftingRecipe, "crafting_recipes.json")
+        await seed_model(session, MaterialRecipe, "material_recipes.json")
 
     await engine.dispose()
     print("Done!")
