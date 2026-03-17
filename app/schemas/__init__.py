@@ -1,4 +1,10 @@
-from app.schemas.note import NoteCreate, NoteRead, NoteUpdate
-from app.schemas.user import UserCreate, UserRead, UserUpdate
+from app.schemas.game_data import (
+    ArmorRead,
+    ConsumableRead,
+    GemRead,
+    GripRead,
+    MaterialRead,
+    WeaponRead,
+)
 
-__all__ = ["NoteCreate", "NoteRead", "NoteUpdate", "UserCreate", "UserRead", "UserUpdate"]
+__all__ = ["ArmorRead", "ConsumableRead", "GemRead", "GripRead", "MaterialRead", "WeaponRead"]

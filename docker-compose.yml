@@ -2,25 +2,24 @@ services:
   api:
     build: .
     ports:
-      - "8000:8000"
+      - "8002:8000"
     environment:
-      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/api_template
-      - SECRET_KEY=dev-secret-key-change-in-production
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/vagrant_story
       - ENVIRONMENT=development
     depends_on:
       db:
         condition: service_healthy
     volumes:
-      - ./app:/app/app  # Hot reload in development
+      - ./app:/app/app
 
   db:
     image: postgres:16-alpine
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=api_template
+      - POSTGRES_DB=vagrant_story
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -28,14 +27,6 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-
-  adminer:
-    image: adminer
-    ports:
-      - "8080:8080"
-    depends_on:
-      db:
-        condition: service_healthy
 
 volumes:
   postgres_data:

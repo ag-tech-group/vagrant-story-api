@@ -1,7 +1,7 @@
 [project]
-name = "api-template"
+name = "vagrant-story-api"
 version = "0.1.0"
-description = "FastAPI template with async PostgreSQL and JWT auth"
+description = "Public game data API for Vagrant Story"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -12,15 +12,9 @@ dependencies = [
     "pydantic>=2.12.0",
     "pydantic-settings>=2.13.0",
     "alembic>=1.18.0",
-    "fastapi-users[sqlalchemy]>=15.0.0",
-    "python-multipart>=0.0.22",
     "slowapi>=0.1.9",
     "limits>=5.8.0",
     "structlog>=25.0.0",
-    "opentelemetry-api>=1.40.0",
-    "opentelemetry-sdk>=1.40.0",
-    "opentelemetry-exporter-otlp-proto-grpc>=1.40.0",
-    "opentelemetry-instrumentation-fastapi>=0.61b0",
 ]
 
 [dependency-groups]

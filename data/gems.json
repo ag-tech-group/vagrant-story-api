@@ -1,0 +1,370 @@
+[
+  {
+    "field_name": "Talos_Feldspear",
+    "id": 1,
+    "name": "Talos",
+    "description_fr": "Pierre envoûtée par les pouvoirs de Talos. Augmente légèrement la puissance des attaques.",
+    "magnitude": "MAJOR",
+    "affinity_type": "PHYSICAL"
+  },
+  {
+    "field_name": "Titan_Malachite",
+    "id": 2,
+    "name": "Malachite",
+    "description_fr": "Une âme de titan a été scellée dans cette Malachite. Augmente la puissance des attaques.",
+    "magnitude": "MINOR",
+    "affinity_type": "PHYSICAL"
+  },
+  {
+    "field_name": "Sylphid_Topaz",
+    "id": 3,
+    "name": "Topaze",
+    "description_fr": "Topaze imprégnée du pouvoir des Sylphides. Augmente la liaison Air.",
+    "magnitude": "MINOR",
+    "affinity_type": "AIR"
+  },
+  {
+    "field_name": "Djinn_Amber",
+    "id": 4,
+    "name": "Ambre",
+    "description_fr": "Ambre possédant la puissance du Jinni. Augmente la liaison Air.",
+    "magnitude": "MAJOR",
+    "affinity_type": "AIR"
+  },
+  {
+    "field_name": "Salamander_Ruby",
+    "id": 5,
+    "name": "Salamander",
+    "description_fr": "Rubis ceint du pouvoir des Salamandres. Augmente la liaison Feu.",
+    "magnitude": "MINOR",
+    "affinity_type": "FIRE"
+  },
+  {
+    "field_name": "Ifrit_Carnelian",
+    "id": 6,
+    "name": "Anthracite",
+    "description_fr": "Anthracite nimbé de la force des Ifrits. Augmente la liaison Feu.",
+    "magnitude": "MAJOR",
+    "affinity_type": "FIRE"
+  },
+  {
+    "field_name": "Gnome_Emerald",
+    "id": 7,
+    "name": "Emeraude",
+    "description_fr": "Emeraude imprégnée du pouvoir des Gnomes. Augmente la liaison Terre.",
+    "magnitude": "MINOR",
+    "affinity_type": "EARTH"
+  },
+  {
+    "field_name": "Dao_Moonstone",
+    "id": 8,
+    "name": "Moonstone",
+    "description_fr": "Pierre de Lune auréolée de la force de Daos. Augmente la liaison Terre.",
+    "magnitude": "MAJOR",
+    "affinity_type": "EARTH"
+  },
+  {
+    "field_name": "Undine_Jasper",
+    "id": 9,
+    "name": "Jaspe",
+    "description_fr": "Jaspe imbibé du pouvoir des Ondines. Augmente la liaison Eau.",
+    "magnitude": "MINOR",
+    "affinity_type": "WATER"
+  },
+  {
+    "field_name": "Marid_Aquamarine",
+    "id": 10,
+    "name": "Aigue-Marine",
+    "description_fr": "Aigue-Marine contenant la force des Marians. Augmente la liaison Eau.",
+    "magnitude": "MAJOR",
+    "affinity_type": "WATER"
+  },
+  {
+    "field_name": "Angel_Pearl",
+    "id": 11,
+    "name": "Perle",
+    "description_fr": "Perle sertie d'une aura angélique. Augmente la liaison Lumière.",
+    "magnitude": "MINOR",
+    "affinity_type": "LIGHT"
+  },
+  {
+    "field_name": "Seraphim_Diamond",
+    "id": 12,
+    "name": "Diamant",
+    "description_fr": "Diamant renfermant l'âme d'un Archange. Augmente la liaison Lumière.",
+    "magnitude": "MAJOR",
+    "affinity_type": "LIGHT"
+  },
+  {
+    "field_name": "Morlock_Jet",
+    "id": 13,
+    "name": "Morlock",
+    "description_fr": "Pierre contenant le pouvoir de Morlock. Augmente la liaison Ténèbres.",
+    "magnitude": "MINOR",
+    "affinity_type": "DARK"
+  },
+  {
+    "field_name": "Berial_Black_Pearl",
+    "id": 14,
+    "name": "Perle Noire",
+    "description_fr": "Perle Noire emprisonnant l'âme d'un damné. Augmente la liaison Ténèbres.",
+    "magnitude": "MAJOR",
+    "affinity_type": "DARK"
+  },
+  {
+    "field_name": "Haeralis",
+    "id": 15,
+    "name": "Saphir",
+    "description_fr": "Saphir imprégné du pouvoir d'Haéralis le brave. Augmente la résistance aux mutants.",
+    "magnitude": "MINOR",
+    "affinity_type": "HUMAN"
+  },
+  {
+    "field_name": "Orlandu",
+    "id": 16,
+    "name": "Skeleton",
+    "description_fr": "Aktinolite contenant un fragment d'os sacré. Augmente la résistance aux mutants.",
+    "magnitude": "MAJOR",
+    "affinity_type": "HUMAN"
+  },
+  {
+    "field_name": "Orion",
+    "id": 17,
+    "name": "Orion",
+    "description_fr": "Corail sombre renfermant un cheveu d'Orion. Augmente l'endurance face aux bêtes.",
+    "magnitude": "MINOR",
+    "affinity_type": "BEAST"
+  },
+  {
+    "field_name": "Ogmius",
+    "id": 18,
+    "name": "Améthyste",
+    "description_fr": "Améthyste contenant l'âme d'Ogmius le Cerbère. Augmente la résistance aux bêtes.",
+    "magnitude": "MAJOR",
+    "affinity_type": "BEAST"
+  },
+  {
+    "field_name": "Iocus",
+    "id": 19,
+    "name": "Lapis-lazuli",
+    "description_fr": "Lapis-lazuli sacré de Iokus. Augmente la résistance aux revenants.",
+    "magnitude": "MINOR",
+    "affinity_type": "UNDEAD"
+  },
+  {
+    "field_name": "Balvus",
+    "id": 20,
+    "name": "Schiste",
+    "description_fr": "Schiste contenant les cendres de Balyus. Augmente la résistance aux revenants.",
+    "magnitude": "MAJOR",
+    "affinity_type": "UNDEAD"
+  },
+  {
+    "field_name": "Trinity",
+    "id": 21,
+    "name": "Trinity",
+    "description_fr": "Jade renfermant l'âme d'anciens Vikings. Augmente la résistance aux esprits.",
+    "magnitude": "MINOR",
+    "affinity_type": "PHANTOM"
+  },
+  {
+    "field_name": "Beowulf",
+    "id": 22,
+    "name": "Beowulf",
+    "description_fr": "Armandine contenant un cheveu de Beowulf. Augmente la résistance aux esprits.",
+    "magnitude": "MAJOR",
+    "affinity_type": "PHANTOM"
+  },
+  {
+    "field_name": "Dragonite",
+    "id": 23,
+    "name": "Dragonite",
+    "description_fr": "Serpentine renfermant la force d'un griffon. Augmente la résistance aux dragons.",
+    "magnitude": "MINOR",
+    "affinity_type": "DRAGON"
+  },
+  {
+    "field_name": "Sigguld",
+    "id": 24,
+    "name": "Grenat",
+    "description_fr": "Agathe de feu imprégnée de l'âme de Siggurd. Augmente la résistance aux dragons.",
+    "magnitude": "MAJOR",
+    "affinity_type": "DRAGON"
+  },
+  {
+    "field_name": "Demonia",
+    "id": 25,
+    "name": "Demonia",
+    "description_fr": "Opale bleue imprégnée de sang diabolique. Augmente la résistance aux spectres.",
+    "magnitude": "MINOR",
+    "affinity_type": "EVIL"
+  },
+  {
+    "field_name": "Altema",
+    "id": 26,
+    "name": "Blood Ruby",
+    "description_fr": "Rubis sanguin contenant l'âme d'Altèma. Augmente la résistance aux spectres.",
+    "magnitude": "MAJOR",
+    "affinity_type": "EVIL"
+  },
+  {
+    "field_name": "Polaris",
+    "id": 27,
+    "name": "Polaris",
+    "description_fr": "Malachite artificielle fabriquée par les sorciers Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "POLARIS"
+  },
+  {
+    "field_name": "Basivalin",
+    "id": 28,
+    "name": "Serpentine",
+    "description_fr": "Serpentine artificielle fabriquée par les mages Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "BASIVALEN"
+  },
+  {
+    "field_name": "Galerian",
+    "id": 29,
+    "name": "Jade",
+    "description_fr": "Pierre artificielle fabriquée par les sages Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "GALERIAN"
+  },
+  {
+    "field_name": "Vedivier",
+    "id": 30,
+    "name": "Quartz",
+    "description_fr": "Améthyste artificielle fabriquée par les sorciers Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "VEDIVIER"
+  },
+  {
+    "field_name": "Berion",
+    "id": 31,
+    "name": "Cristal",
+    "description_fr": "Pierre de lune artificielle fabriquée par les alchimistes Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "BERION"
+  },
+  {
+    "field_name": "Gervin",
+    "id": 32,
+    "name": "Tourmaline",
+    "description_fr": "Topaze artificielle fabriquée par les magiciens Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "GERVIN"
+  },
+  {
+    "field_name": "Tertia",
+    "id": 33,
+    "name": "Obsidienne",
+    "description_fr": "Emeraude artificielle fabriquée par les enchanteurs Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "TERTIA"
+  },
+  {
+    "field_name": "Lancer",
+    "id": 34,
+    "name": "Almandin",
+    "description_fr": "Rubis artificiel fabriqué par les alchimistes Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "LANCER"
+  },
+  {
+    "field_name": "Arturos",
+    "id": 35,
+    "name": "Cornaline",
+    "description_fr": "Diamant artificiel fabriqué par les sorciers Kildéans.",
+    "magnitude": "EXCEP",
+    "affinity_type": "ARTUROS"
+  },
+  {
+    "field_name": "Braveheart",
+    "id": 36,
+    "name": "Braveheart",
+    "description_fr": "Accroît le taux de réussite des attaques non magiques de 20%. A placer sur une arme.",
+    "magnitude": "ATTACK",
+    "affinity_type": "HIT"
+  },
+  {
+    "field_name": "Hellraiser",
+    "id": 37,
+    "name": "Hellraiser",
+    "description_fr": "Accroît le taux de réussite des attaques magiques de 20%. A placer sur une arme.",
+    "magnitude": "ATTACK",
+    "affinity_type": "SPELL"
+  },
+  {
+    "field_name": "Nightkiller",
+    "id": 38,
+    "name": "Nightkiller",
+    "description_fr": "Accroît les chances d'esquiver les attaques physiques de 20%. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "EVADE"
+  },
+  {
+    "field_name": "Manabreaker",
+    "id": 39,
+    "name": "Manabreaker",
+    "description_fr": "Accroît les chances d'éviter les attaques magiques de 20%. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "SPELLEVADE"
+  },
+  {
+    "field_name": "Powerfist",
+    "id": 40,
+    "name": "Powerfist",
+    "description_fr": "Accroît les chances d'éviter 'FRC moins'de 20%. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "EVADESTR"
+  },
+  {
+    "field_name": "Brainshield",
+    "id": 41,
+    "name": "Brainshield",
+    "description_fr": "Accroît les chances d'éviter 'INT moins'de 20%. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "EVADEINT"
+  },
+  {
+    "field_name": "Speedster",
+    "id": 42,
+    "name": "Speedster",
+    "description_fr": "Accroît les chances d'éviter 'AGL moins'de 20%. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "EVADEAGI"
+  },
+  {
+    "field_name": "Silent_Queen",
+    "id": 43,
+    "name": "Silent Queen",
+    "description_fr": "Accroît de 20% les chances d'éviter 'Silence'. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "EVADESILENT"
+  },
+  {
+    "field_name": "Dark_Queen",
+    "id": 44,
+    "name": "Frost Queen",
+    "description_fr": "Accroît de 20% les chances d'éviter 'Paralysie'. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "EVADEPARA"
+  },
+  {
+    "field_name": "Death_Queen",
+    "id": 45,
+    "name": "Snake King",
+    "description_fr": "Accroît de 20% les chances d'éviter 'Poison'. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "EVADEPOISON"
+  },
+  {
+    "field_name": "White_Queen",
+    "id": 46,
+    "name": "Shock King",
+    "description_fr": "Accroît de 20% les chances d'éviter 'Torpeur'. A placer sur un bouclier.",
+    "magnitude": "PROTECTION",
+    "affinity_type": "EVADENUMB"
+  }
+]

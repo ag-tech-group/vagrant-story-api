@@ -1,5 +1,8 @@
-from app.models.note import Note
-from app.models.refresh_token import RefreshToken
-from app.models.user import User
+from app.models.armor import Armor
+from app.models.consumable import Consumable
+from app.models.gem import Gem
+from app.models.grip import Grip
+from app.models.material import Material
+from app.models.weapon import Weapon
 
-__all__ = ["Note", "RefreshToken", "User"]
+__all__ = ["Armor", "Consumable", "Gem", "Grip", "Material", "Weapon"]

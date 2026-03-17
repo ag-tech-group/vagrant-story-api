@@ -1,0 +1,411 @@
+[
+  {
+    "field_name": "Racine_HP",
+    "id": 1,
+    "name": "Racine HP",
+    "description_fr": "Racine d'une herbe revigorante. Rétablit 50 HP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "HP",
+        "value": 50
+      }
+    ]
+  },
+  {
+    "field_name": "Bulbe_HP",
+    "id": 2,
+    "name": "Bulbe HP",
+    "description_fr": "Bulbe d'une plante vivifiante. Restaure 100 HP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "HP",
+        "value": 100
+      }
+    ]
+  },
+  {
+    "field_name": "Algue_HP",
+    "id": 3,
+    "name": "Algue HP",
+    "description_fr": "Extrait d'une plante rajeunissante. Rétablit 150 HP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "HP",
+        "value": 150
+      }
+    ]
+  },
+  {
+    "field_name": "Potion_HP",
+    "id": 4,
+    "name": "Potion HP",
+    "description_fr": "Potion végétale reconstituante. Restaure tous les HP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "HP",
+        "value": 32767
+      }
+    ]
+  },
+  {
+    "field_name": "Racine_MP",
+    "id": 5,
+    "name": "Racine MP",
+    "description_fr": "Racine d'une herbe stimulant l'intelligence. Rétablit 25 MP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "MP",
+        "value": 25
+      }
+    ]
+  },
+  {
+    "field_name": "Bulbe_MP",
+    "id": 6,
+    "name": "Bulbe MP",
+    "description_fr": "Bulbe d'une plante stimulant l'intelligence. Recharge 50 MP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "MP",
+        "value": 50
+      }
+    ]
+  },
+  {
+    "field_name": "Algue_MP",
+    "id": 7,
+    "name": "Algue MP",
+    "description_fr": "Extrait de plante vivifiant l'intelligence. Rétablit 100 MP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "MP",
+        "value": 100
+      }
+    ]
+  },
+  {
+    "field_name": "Potion_MP",
+    "id": 8,
+    "name": "Potion MP",
+    "description_fr": "Potion végétale stimulant l'intelligence. Recharge tous les MP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "MP",
+        "value": 32767
+      }
+    ]
+  },
+  {
+    "field_name": "Racine_Risk",
+    "id": 9,
+    "name": "Racine Risk",
+    "description_fr": "Racine stimulant le système nerveux. Réduit les Risks de 25 points.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "RISK",
+        "value": -25
+      }
+    ]
+  },
+  {
+    "field_name": "Bulbe_Risk",
+    "id": 10,
+    "name": "Bulbe Risk",
+    "description_fr": "Bulbe qui stimule le système nerveux. Réduit les Risks de 50 points.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "RISK",
+        "value": -50
+      }
+    ]
+  },
+  {
+    "field_name": "Algue_Risk",
+    "id": 11,
+    "name": "Algue Risk",
+    "description_fr": "Extrait végétal stimulant le système nerveux. Réduit les Risks de 75 points.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "RISK",
+        "value": -75
+      }
+    ]
+  },
+  {
+    "field_name": "Potion_Risk",
+    "id": 12,
+    "name": "Potion Risk",
+    "description_fr": "Potion végétale vivifiant le système nerveux. Réduit les Risks à 0.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "RISK",
+        "value": 32767
+      }
+    ]
+  },
+  {
+    "field_name": "Liqueur",
+    "id": 13,
+    "name": "Liqueur",
+    "description_fr": "Antidote des seigneurs de LéaMundis. Restaure 100 HP et MP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "HP",
+        "value": 100
+      },
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "MP",
+        "value": 100
+      }
+    ]
+  },
+  {
+    "field_name": "Fine_dalcool",
+    "id": 14,
+    "name": "Fine d'alcool",
+    "description_fr": "Antidote céleste. Rétablit tous les HP et MP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "HP",
+        "value": 32767
+      },
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "MP",
+        "value": 32767
+      }
+    ]
+  },
+  {
+    "field_name": "Eau_de_vie",
+    "id": 15,
+    "name": "Eau-de-vie",
+    "description_fr": "Potion expérimentale des alchimistes royaux. Restaure 25 HP, réduit les Risks de 25 points.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "HP",
+        "value": 25
+      },
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "RISK",
+        "value": -25
+      }
+    ]
+  },
+  {
+    "field_name": "Digestif",
+    "id": 16,
+    "name": "Digestif",
+    "description_fr": "Réactif d'anciens sorciers bafoués. Restaure 50 HP, réduit les Risks de 50 points.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "HP",
+        "value": 50
+      },
+      {
+        "target": "SELF",
+        "type": "MODIFIER",
+        "modifier": "RISK",
+        "value": -50
+      }
+    ]
+  },
+  {
+    "field_name": "Esuna",
+    "id": 17,
+    "name": "Esuna",
+    "description_fr": "Mixture d'ailes de lucioles séchées. Annule tous les sortilèges.",
+    "effects": []
+  },
+  {
+    "field_name": "Speed",
+    "id": 18,
+    "name": "Speed",
+    "description_fr": "Poudre des fées accélérant les mouvements et rallongeant temporairement les sauts.",
+    "effects": []
+  },
+  {
+    "field_name": "Nectar_Frc",
+    "id": 19,
+    "name": "Nectar Force",
+    "description_fr": "Elixir utilisé à l'époque de l'Inquisition. Augmente niveau total: FRC (Force).",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "STR",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Nectar_Int",
+    "id": 20,
+    "name": "Nectar Inteligence",
+    "description_fr": "Elixir des Inquisiteurs Royaux. Augmente niveau total: INT (Intelligence).",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "INT",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Nectar_Agl",
+    "id": 21,
+    "name": "Nectar Agilité",
+    "description_fr": "Elixir des adorateurs de Saint Iokus. Augmente niveau total: AGL (Agilité).",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "AGI",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Nectar_HP",
+    "id": 22,
+    "name": " Nectar HP",
+    "description_fr": "Elixir des vierges de LéaMundis. Augmente le niveau total de vos HP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "HP",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Nectar_MP",
+    "id": 23,
+    "name": "Nectar MP",
+    "description_fr": "Elixir jadis utilisé par les mages. Augmente le niveau total de vos MP.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "MP",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Cru_Vaillance",
+    "id": 24,
+    "name": "Cru Vaillance",
+    "description_fr": "Vin rouge de LéaMundis, délicat mais fort en bouche.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "STR",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Cru_Prudence",
+    "id": 25,
+    "name": "Cru Prudence",
+    "description_fr": "Le plus noble des vins rouges, de l'arôme et du bouquet.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "INT",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Manoir_Vif",
+    "id": 26,
+    "name": "Manoir Vif",
+    "description_fr": "Vin blanc des vignes de LéaMundis, réputé pour son odeur de miel.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "AGI",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Château_Audace",
+    "id": 27,
+    "name": "Château Audace",
+    "description_fr": "Vin doux de grande qualité.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "HP",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Saint_Virtux",
+    "id": 28,
+    "name": " Saint Virtux",
+    "description_fr": "Vin pétillant, tiré d'un mélange de trois célèbres cépages.",
+    "effects": [
+      {
+        "target": "SELF",
+        "type": "PERMA_MOD",
+        "modifier": "MP",
+        "value": "ItemEffect.Roll(4"
+      }
+    ]
+  },
+  {
+    "field_name": "Oeil_dArgon",
+    "id": 29,
+    "name": "Oeil d'Argon",
+    "description_fr": "Révèle tous les pièges d'une pièce, pendant un bref instant.",
+    "effects": []
+  }
+]
