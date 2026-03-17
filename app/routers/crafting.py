@@ -12,7 +12,7 @@ router = APIRouter(prefix="/crafting-recipes", tags=["crafting"])
 @router.get("", response_model=list[CraftingRecipeRead])
 async def list_crafting_recipes(
     offset: int = Query(0, ge=0),
-    limit: int = Query(50, ge=1, le=200),
+    limit: int = Query(50, ge=1, le=10000),
     category: str | None = None,
     item: str | None = Query(None, description="Search by input or result item name"),
     session: AsyncSession = Depends(get_async_session),
@@ -64,7 +64,7 @@ async def search_recipes_by_result(
 @router.get("/materials", response_model=list[MaterialRecipeRead])
 async def list_material_recipes(
     offset: int = Query(0, ge=0),
-    limit: int = Query(50, ge=1, le=200),
+    limit: int = Query(50, ge=1, le=10000),
     material: str | None = Query(None, description="Filter by result material"),
     session: AsyncSession = Depends(get_async_session),
 ):
