@@ -315,7 +315,7 @@
     "damage": 2
   },
   {
-    "field_name": "Khophish",
+    "field_name": "Khopesh",
     "name": "Khopesh",
     "description_fr": "Sabre à simple tranchant et lame incurvée.",
     "id": 22,
@@ -495,7 +495,7 @@
     "damage": 4
   },
   {
-    "field_name": "Holy_Wind",
+    "field_name": "Holy_Win",
     "name": "Vent Mortel",
     "description_fr": "Sabre forgé d'après le crucifix de Iokus.",
     "id": 34,
@@ -795,7 +795,7 @@
     "damage": 3
   },
   {
-    "field_name": "Balbriggin",
+    "field_name": "Balbriggan",
     "name": "Terror",
     "description_fr": "Francisque à lame amovible.",
     "id": 54,
@@ -1290,7 +1290,7 @@
     "damage": 9
   },
   {
-    "field_name": "Cranquein",
+    "field_name": "Cranequin",
     "name": "Crennequin",
     "description_fr": "Arbalète surpuissante.",
     "id": 87,
