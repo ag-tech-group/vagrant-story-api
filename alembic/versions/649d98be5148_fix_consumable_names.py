@@ -5,15 +5,14 @@ Revises: d0c8d71a3452
 Create Date: 2026-03-18 00:56:43.182058
 """
 
-from typing import Sequence, Union
+from collections.abc import Sequence
 
 from alembic import op
 
-
 revision: str = "649d98be5148"
-down_revision: Union[str, Sequence[str], None] = "d0c8d71a3452"
-branch_labels: Union[str, Sequence[str], None] = None
-depends_on: Union[str, Sequence[str], None] = None
+down_revision: str | Sequence[str] | None = "d0c8d71a3452"
+branch_labels: str | Sequence[str] | None = None
+depends_on: str | Sequence[str] | None = None
 
 # French field_name → (English field_name, English display name)
 NAME_FIXES = {
@@ -62,7 +61,7 @@ def upgrade() -> None:
 
 
 def downgrade() -> None:
-    for old_fn, (new_fn, new_name) in NAME_FIXES.items():
+    for old_fn, (new_fn, _new_name) in NAME_FIXES.items():
         op.execute(
             f"UPDATE consumables SET field_name = '{_esc(old_fn)}' "
             f"WHERE field_name = '{_esc(new_fn)}'"
