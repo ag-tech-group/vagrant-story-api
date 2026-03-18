@@ -1,8 +1,8 @@
 [
   {
-    "field_name": "Racine_HP",
+    "field_name": "Cure_Root",
     "id": 1,
-    "name": "Racine HP",
+    "name": "Cure Root",
     "description_fr": "Racine d'une herbe revigorante. Rétablit 50 HP.",
     "effects": [
       {
@@ -14,9 +14,9 @@
     ]
   },
   {
-    "field_name": "Bulbe_HP",
+    "field_name": "Cure_Bulb",
     "id": 2,
-    "name": "Bulbe HP",
+    "name": "Cure Bulb",
     "description_fr": "Bulbe d'une plante vivifiante. Restaure 100 HP.",
     "effects": [
       {
@@ -28,9 +28,9 @@
     ]
   },
   {
-    "field_name": "Algue_HP",
+    "field_name": "Cure_Toadstool",
     "id": 3,
-    "name": "Algue HP",
+    "name": "Cure Toadstool",
     "description_fr": "Extrait d'une plante rajeunissante. Rétablit 150 HP.",
     "effects": [
       {
@@ -42,9 +42,9 @@
     ]
   },
   {
-    "field_name": "Potion_HP",
+    "field_name": "Elixir_of_Queens",
     "id": 4,
-    "name": "Potion HP",
+    "name": "Elixir of Queens",
     "description_fr": "Potion végétale reconstituante. Restaure tous les HP.",
     "effects": [
       {
@@ -56,9 +56,9 @@
     ]
   },
   {
-    "field_name": "Racine_MP",
+    "field_name": "Mana_Root",
     "id": 5,
-    "name": "Racine MP",
+    "name": "Mana Root",
     "description_fr": "Racine d'une herbe stimulant l'intelligence. Rétablit 25 MP.",
     "effects": [
       {
@@ -70,9 +70,9 @@
     ]
   },
   {
-    "field_name": "Bulbe_MP",
+    "field_name": "Mana_Bulb",
     "id": 6,
-    "name": "Bulbe MP",
+    "name": "Mana Bulb",
     "description_fr": "Bulbe d'une plante stimulant l'intelligence. Recharge 50 MP.",
     "effects": [
       {
@@ -84,9 +84,9 @@
     ]
   },
   {
-    "field_name": "Algue_MP",
+    "field_name": "Mana_Toadstool",
     "id": 7,
-    "name": "Algue MP",
+    "name": "Mana Toadstool",
     "description_fr": "Extrait de plante vivifiant l'intelligence. Rétablit 100 MP.",
     "effects": [
       {
@@ -98,9 +98,9 @@
     ]
   },
   {
-    "field_name": "Potion_MP",
+    "field_name": "Elixir_of_Kings",
     "id": 8,
-    "name": "Potion MP",
+    "name": "Elixir of Kings",
     "description_fr": "Potion végétale stimulant l'intelligence. Recharge tous les MP.",
     "effects": [
       {
@@ -112,9 +112,9 @@
     ]
   },
   {
-    "field_name": "Racine_Risk",
+    "field_name": "Vera_Root",
     "id": 9,
-    "name": "Racine Risk",
+    "name": "Vera Root",
     "description_fr": "Racine stimulant le système nerveux. Réduit les Risks de 25 points.",
     "effects": [
       {
@@ -126,9 +126,9 @@
     ]
   },
   {
-    "field_name": "Bulbe_Risk",
+    "field_name": "Vera_Bulb",
     "id": 10,
-    "name": "Bulbe Risk",
+    "name": "Vera Bulb",
     "description_fr": "Bulbe qui stimule le système nerveux. Réduit les Risks de 50 points.",
     "effects": [
       {
@@ -140,9 +140,9 @@
     ]
   },
   {
-    "field_name": "Algue_Risk",
+    "field_name": "Vera_Toadstool",
     "id": 11,
-    "name": "Algue Risk",
+    "name": "Vera Toadstool",
     "description_fr": "Extrait végétal stimulant le système nerveux. Réduit les Risks de 75 points.",
     "effects": [
       {
@@ -154,9 +154,9 @@
     ]
   },
   {
-    "field_name": "Potion_Risk",
+    "field_name": "Elixir_of_Sages",
     "id": 12,
-    "name": "Potion Risk",
+    "name": "Elixir of Sages",
     "description_fr": "Potion végétale vivifiant le système nerveux. Réduit les Risks à 0.",
     "effects": [
       {
@@ -168,9 +168,9 @@
     ]
   },
   {
-    "field_name": "Liqueur",
+    "field_name": "Faerie_Wing",
     "id": 13,
-    "name": "Liqueur",
+    "name": "Faerie Wing",
     "description_fr": "Antidote des seigneurs de LéaMundis. Restaure 100 HP et MP.",
     "effects": [
       {
@@ -188,9 +188,9 @@
     ]
   },
   {
-    "field_name": "Fine_dalcool",
+    "field_name": "Angelic_Paean",
     "id": 14,
-    "name": "Fine d'alcool",
+    "name": "Angelic Paean",
     "description_fr": "Antidote céleste. Rétablit tous les HP et MP.",
     "effects": [
       {
@@ -208,9 +208,9 @@
     ]
   },
   {
-    "field_name": "Eau_de_vie",
+    "field_name": "Amanita",
     "id": 15,
-    "name": "Eau-de-vie",
+    "name": "Amanita",
     "description_fr": "Potion expérimentale des alchimistes royaux. Restaure 25 HP, réduit les Risks de 25 points.",
     "effects": [
       {
@@ -228,9 +228,9 @@
     ]
   },
   {
-    "field_name": "Digestif",
+    "field_name": "Snowfly_Draught",
     "id": 16,
-    "name": "Digestif",
+    "name": "Snowfly Draught",
     "description_fr": "Réactif d'anciens sorciers bafoués. Restaure 50 HP, réduit les Risks de 50 points.",
     "effects": [
       {
@@ -248,23 +248,23 @@
     ]
   },
   {
-    "field_name": "Esuna",
+    "field_name": "Alchemists_Reagent",
     "id": 17,
-    "name": "Esuna",
+    "name": "Alchemist's Reagent",
     "description_fr": "Mixture d'ailes de lucioles séchées. Annule tous les sortilèges.",
     "effects": []
   },
   {
-    "field_name": "Speed",
+    "field_name": "Yggdrasils_Tears",
     "id": 18,
-    "name": "Speed",
+    "name": "Yggdrasil's Tears",
     "description_fr": "Poudre des fées accélérant les mouvements et rallongeant temporairement les sauts.",
     "effects": []
   },
   {
-    "field_name": "Nectar_Frc",
+    "field_name": "Nectar_of_the_Gods",
     "id": 19,
-    "name": "Nectar Force",
+    "name": "Nectar of the Gods",
     "description_fr": "Elixir utilisé à l'époque de l'Inquisition. Augmente niveau total: FRC (Force).",
     "effects": [
       {
@@ -276,9 +276,9 @@
     ]
   },
   {
-    "field_name": "Nectar_Int",
+    "field_name": "Panacea",
     "id": 20,
-    "name": "Nectar Inteligence",
+    "name": "Panacea",
     "description_fr": "Elixir des Inquisiteurs Royaux. Augmente niveau total: INT (Intelligence).",
     "effects": [
       {
@@ -290,9 +290,9 @@
     ]
   },
   {
-    "field_name": "Nectar_Agl",
+    "field_name": "Quicksilver",
     "id": 21,
-    "name": "Nectar Agilité",
+    "name": "Quicksilver",
     "description_fr": "Elixir des adorateurs de Saint Iokus. Augmente niveau total: AGL (Agilité).",
     "effects": [
       {
@@ -304,9 +304,9 @@
     ]
   },
   {
-    "field_name": "Nectar_HP",
+    "field_name": "Soul_Kiss",
     "id": 22,
-    "name": " Nectar HP",
+    "name": "Soul Kiss",
     "description_fr": "Elixir des vierges de LéaMundis. Augmente le niveau total de vos HP.",
     "effects": [
       {
@@ -318,9 +318,9 @@
     ]
   },
   {
-    "field_name": "Nectar_MP",
+    "field_name": "Sorcerers_Reagent",
     "id": 23,
-    "name": "Nectar MP",
+    "name": "Sorcerer's Reagent",
     "description_fr": "Elixir jadis utilisé par les mages. Augmente le niveau total de vos MP.",
     "effects": [
       {
@@ -332,9 +332,9 @@
     ]
   },
   {
-    "field_name": "Cru_Vaillance",
+    "field_name": "Eye_of_Argon",
     "id": 24,
-    "name": "Cru Vaillance",
+    "name": "Eye of Argon",
     "description_fr": "Vin rouge de LéaMundis, délicat mais fort en bouche.",
     "effects": [
       {
@@ -346,9 +346,9 @@
     ]
   },
   {
-    "field_name": "Cru_Prudence",
+    "field_name": "Morion_Gem",
     "id": 25,
-    "name": "Cru Prudence",
+    "name": "Morion Gem",
     "description_fr": "Le plus noble des vins rouges, de l'arôme et du bouquet.",
     "effects": [
       {
@@ -360,9 +360,9 @@
     ]
   },
   {
-    "field_name": "Manoir_Vif",
+    "field_name": "Gold_Key",
     "id": 26,
-    "name": "Manoir Vif",
+    "name": "Gold Key",
     "description_fr": "Vin blanc des vignes de LéaMundis, réputé pour son odeur de miel.",
     "effects": [
       {
@@ -374,9 +374,9 @@
     ]
   },
   {
-    "field_name": "Château_Audace",
+    "field_name": "Silver_Key",
     "id": 27,
-    "name": "Château Audace",
+    "name": "Silver Key",
     "description_fr": "Vin doux de grande qualité.",
     "effects": [
       {
@@ -388,9 +388,9 @@
     ]
   },
   {
-    "field_name": "Saint_Virtux",
+    "field_name": "Bronze_Key",
     "id": 28,
-    "name": " Saint Virtux",
+    "name": "Bronze Key",
     "description_fr": "Vin pétillant, tiré d'un mélange de trois célèbres cépages.",
     "effects": [
       {
@@ -402,9 +402,9 @@
     ]
   },
   {
-    "field_name": "Oeil_dArgon",
+    "field_name": "Iron_Key",
     "id": 29,
-    "name": "Oeil d'Argon",
+    "name": "Iron Key",
     "description_fr": "Révèle tous les pièges d'une pièce, pendant un bref instant.",
     "effects": []
   }
