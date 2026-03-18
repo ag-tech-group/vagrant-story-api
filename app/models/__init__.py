@@ -6,4 +6,13 @@ from app.models.grip import Grip
 from app.models.material import Material
 from app.models.weapon import Weapon
 
-__all__ = ["Armor", "Consumable", "CraftingRecipe", "Gem", "Grip", "Material", "MaterialRecipe", "Weapon"]
+__all__ = [
+    "Armor",
+    "Consumable",
+    "CraftingRecipe",
+    "Gem",
+    "Grip",
+    "Material",
+    "MaterialRecipe",
+    "Weapon",
+]

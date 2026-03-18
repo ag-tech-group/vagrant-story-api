@@ -4,11 +4,26 @@ import csv
 import json
 from pathlib import Path
 
-CSV_DIR = Path.home() / "apps" / "criticalbit" / "data-extraction" / "vagrant-story-combinations-data" / "csv"
+CSV_DIR = (
+    Path.home()
+    / "apps"
+    / "criticalbit"
+    / "data-extraction"
+    / "vagrant-story-combinations-data"
+    / "csv"
+)
 OUT_DIR = Path(__file__).parent.parent / "data"
 OUT_DIR.mkdir(exist_ok=True)
 
-MATERIAL_ABBREVS = {"B": "Bronze", "I": "Iron", "H": "Hagane", "S": "Silver", "D": "Damascus", "L": "Leather", "W": "Wood"}
+MATERIAL_ABBREVS = {
+    "B": "Bronze",
+    "I": "Iron",
+    "H": "Hagane",
+    "S": "Silver",
+    "D": "Damascus",
+    "L": "Leather",
+    "W": "Wood",
+}
 
 
 def extract_blade_combinations():
@@ -24,15 +39,17 @@ def extract_blade_combinations():
         with open(csv_file) as f:
             reader = csv.DictReader(f)
             for row in reader:
-                recipes.append({
-                    "category": "blade",
-                    "sub_category": category,
-                    "input_1": row["slot1"],
-                    "input_2": row["slot2"],
-                    "result": row["result"],
-                    "tier_change": int(row["tier_change"]),
-                    "has_swap": row["has_swap"] == "True",
-                })
+                recipes.append(
+                    {
+                        "category": "blade",
+                        "sub_category": category,
+                        "input_1": row["slot1"],
+                        "input_2": row["slot2"],
+                        "result": row["result"],
+                        "tier_change": int(row["tier_change"]),
+                        "has_swap": row["has_swap"] == "True",
+                    }
+                )
     return recipes
 
 
@@ -45,15 +62,17 @@ def extract_armor_combinations():
         with open(csv_file) as f:
             reader = csv.DictReader(f)
             for row in reader:
-                recipes.append({
-                    "category": "armor",
-                    "sub_category": category,
-                    "input_1": row["slot1"],
-                    "input_2": row["slot2"],
-                    "result": row["result"],
-                    "tier_change": int(row["tier_change"]),
-                    "has_swap": row["has_swap"] == "True",
-                })
+                recipes.append(
+                    {
+                        "category": "armor",
+                        "sub_category": category,
+                        "input_1": row["slot1"],
+                        "input_2": row["slot2"],
+                        "result": row["result"],
+                        "tier_change": int(row["tier_change"]),
+                        "has_swap": row["has_swap"] == "True",
+                    }
+                )
     return recipes
 
 
@@ -66,15 +85,17 @@ def extract_shield_combinations():
     with open(csv_file) as f:
         reader = csv.DictReader(f)
         for row in reader:
-            recipes.append({
-                "category": "shield",
-                "sub_category": "Shield_Shield",
-                "input_1": row["slot1"],
-                "input_2": row["slot2"],
-                "result": row["result"],
-                "tier_change": int(row["tier_change"]),
-                "has_swap": row["has_swap"] == "True",
-            })
+            recipes.append(
+                {
+                    "category": "shield",
+                    "sub_category": "Shield_Shield",
+                    "input_1": row["slot1"],
+                    "input_2": row["slot2"],
+                    "result": row["result"],
+                    "tier_change": int(row["tier_change"]),
+                    "has_swap": row["has_swap"] == "True",
+                }
+            )
     return recipes
 
 
@@ -87,16 +108,20 @@ def extract_material_combinations():
         with open(csv_file) as f:
             reader = csv.DictReader(f)
             for row in reader:
-                recipes.append({
-                    "category": "material",
-                    "sub_category": category,
-                    "input_1": row["slot1"],
-                    "input_2": row["slot2"],
-                    "material_1": MATERIAL_ABBREVS.get(row["material1"], row["material1"]),
-                    "material_2": MATERIAL_ABBREVS.get(row["material2"], row["material2"]),
-                    "result_material": MATERIAL_ABBREVS.get(row["result_material"], row["result_material"]),
-                    "tier_change": int(row["tier_change"]),
-                })
+                recipes.append(
+                    {
+                        "category": "material",
+                        "sub_category": category,
+                        "input_1": row["slot1"],
+                        "input_2": row["slot2"],
+                        "material_1": MATERIAL_ABBREVS.get(row["material1"], row["material1"]),
+                        "material_2": MATERIAL_ABBREVS.get(row["material2"], row["material2"]),
+                        "result_material": MATERIAL_ABBREVS.get(
+                            row["result_material"], row["result_material"]
+                        ),
+                        "tier_change": int(row["tier_change"]),
+                    }
+                )
     return recipes
 
 
@@ -109,7 +134,9 @@ def main():
     material_recipes = extract_material_combinations()
 
     all_item_recipes = blade_recipes + armor_recipes + shield_recipes
-    print(f"  Item combinations: {len(all_item_recipes)} (blade: {len(blade_recipes)}, armor: {len(armor_recipes)}, shield: {len(shield_recipes)})")
+    print(
+        f"  Item combinations: {len(all_item_recipes)} (blade: {len(blade_recipes)}, armor: {len(armor_recipes)}, shield: {len(shield_recipes)})"
+    )
     print(f"  Material combinations: {len(material_recipes)}")
 
     out_path = OUT_DIR / "crafting_recipes.json"
