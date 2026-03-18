@@ -1,6 +1,6 @@
 [
   {
-    "field_name": "Buckler_Shield",
+    "field_name": "Buckler",
     "name": "Buckler",
     "description_fr": "",
     "id": 1,
@@ -12,7 +12,7 @@
     "gem_slots": 0
   },
   {
-    "field_name": "Pelta_Shield",
+    "field_name": "Pelta",
     "name": "Pelta",
     "description_fr": "",
     "id": 2,
@@ -24,7 +24,7 @@
     "gem_slots": 1
   },
   {
-    "field_name": "Targe_Shield",
+    "field_name": "Targe",
     "name": "Targe",
     "description_fr": "",
     "id": 3,
@@ -36,7 +36,7 @@
     "gem_slots": 1
   },
   {
-    "field_name": "Quad_Shield",
+    "field_name": "Quad",
     "name": "Quad",
     "description_fr": "",
     "id": 4,
@@ -48,7 +48,7 @@
     "gem_slots": 1
   },
   {
-    "field_name": "Circle_Shield",
+    "field_name": "Circle",
     "name": "Circle",
     "description_fr": "",
     "id": 5,
@@ -60,7 +60,7 @@
     "gem_slots": 1
   },
   {
-    "field_name": "Tower_Shield",
+    "field_name": "Tower",
     "name": "Tower",
     "description_fr": "",
     "id": 6,
@@ -72,7 +72,7 @@
     "gem_slots": 1
   },
   {
-    "field_name": "Spiked_Shield",
+    "field_name": "Spiked",
     "name": "Spike",
     "description_fr": "",
     "id": 7,
@@ -84,7 +84,7 @@
     "gem_slots": 1
   },
   {
-    "field_name": "Round_Shield",
+    "field_name": "Round",
     "name": "Round",
     "description_fr": "",
     "id": 8,
@@ -96,7 +96,7 @@
     "gem_slots": 2
   },
   {
-    "field_name": "Kite_Shield",
+    "field_name": "Kite",
     "name": "Kite",
     "description_fr": "",
     "id": 9,
@@ -108,7 +108,7 @@
     "gem_slots": 2
   },
   {
-    "field_name": "Casserole_Shield",
+    "field_name": "Casserole",
     "name": "Citadelle",
     "description_fr": "",
     "id": 10,
@@ -120,7 +120,7 @@
     "gem_slots": 2
   },
   {
-    "field_name": "Heater_Shield",
+    "field_name": "Heater",
     "name": "Brûleur",
     "description_fr": "",
     "id": 11,
@@ -132,7 +132,7 @@
     "gem_slots": 2
   },
   {
-    "field_name": "Oval_Shield",
+    "field_name": "Oval",
     "name": "Oval",
     "description_fr": "",
     "id": 12,
@@ -144,7 +144,7 @@
     "gem_slots": 2
   },
   {
-    "field_name": "Knight_Shield",
+    "field_name": "Knight",
     "name": "Muraille",
     "description_fr": "",
     "id": 13,
@@ -156,7 +156,7 @@
     "gem_slots": 2
   },
   {
-    "field_name": "Hoplite_Shield",
+    "field_name": "Hoplite",
     "name": "Bouclier Gallois",
     "description_fr": "",
     "id": 14,
@@ -168,7 +168,7 @@
     "gem_slots": 3
   },
   {
-    "field_name": "Jazeraint_Shield",
+    "field_name": "Jazeraint",
     "name": "Bouclier Romain",
     "description_fr": "",
     "id": 15,
@@ -180,7 +180,7 @@
     "gem_slots": 3
   },
   {
-    "field_name": "Dread_Shield",
+    "field_name": "Dread",
     "name": "Bouclier Spartiate",
     "description_fr": "",
     "id": 16,
