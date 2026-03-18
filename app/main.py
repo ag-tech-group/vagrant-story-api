@@ -4,6 +4,7 @@ import uuid
 import structlog
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
+from scalar_fastapi import get_scalar_api_reference
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
@@ -27,6 +28,7 @@ app = FastAPI(
     title="Vagrant Story API",
     description="Public game data API for Vagrant Story — weapons, armor, gems, materials, crafting",
     version="0.1.0",
+    docs_url=None,
 )
 
 app.add_middleware(
@@ -84,6 +86,14 @@ app.include_router(gems_router)
 app.include_router(materials_router)
 app.include_router(consumables_router)
 app.include_router(crafting_router)
+
+
+@app.get("/docs", include_in_schema=False)
+async def scalar_docs():
+    return get_scalar_api_reference(
+        openapi_url=app.openapi_url,
+        title=app.title,
+    )
 
 
 @app.get("/")
