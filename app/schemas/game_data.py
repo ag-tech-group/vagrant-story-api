@@ -49,6 +49,22 @@ class ArmorRead(BaseModel):
     int_stat: int = Field(serialization_alias="int")
     agi_stat: int = Field(serialization_alias="agi")
     gem_slots: int
+    human: int = 0
+    beast: int = 0
+    undead: int = 0
+    phantom: int = 0
+    dragon: int = 0
+    evil: int = 0
+    fire: int = 0
+    water: int = 0
+    wind: int = 0
+    earth: int = 0
+    light: int = 0
+    dark: int = 0
+    blunt: int = 0
+    edged: int = 0
+    piercing: int = 0
+    physical: int = 0
 
     model_config = {"from_attributes": True, "populate_by_name": True}
 
