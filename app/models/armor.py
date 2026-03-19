@@ -18,3 +18,22 @@ class Armor(Base):
     int_stat: Mapped[int] = mapped_column("int", Integer, default=0)
     agi_stat: Mapped[int] = mapped_column("agi", Integer, default=0)
     gem_slots: Mapped[int] = mapped_column(Integer, default=0)
+    # Class affinities
+    human: Mapped[int] = mapped_column(Integer, default=0)
+    beast: Mapped[int] = mapped_column(Integer, default=0)
+    undead: Mapped[int] = mapped_column(Integer, default=0)
+    phantom: Mapped[int] = mapped_column(Integer, default=0)
+    dragon: Mapped[int] = mapped_column(Integer, default=0)
+    evil: Mapped[int] = mapped_column(Integer, default=0)
+    # Elemental affinities
+    fire: Mapped[int] = mapped_column(Integer, default=0)
+    water: Mapped[int] = mapped_column(Integer, default=0)
+    wind: Mapped[int] = mapped_column(Integer, default=0)
+    earth: Mapped[int] = mapped_column(Integer, default=0)
+    light: Mapped[int] = mapped_column(Integer, default=0)
+    dark: Mapped[int] = mapped_column(Integer, default=0)
+    # Damage type resistances
+    blunt: Mapped[int] = mapped_column(Integer, default=0)
+    edged: Mapped[int] = mapped_column(Integer, default=0)
+    piercing: Mapped[int] = mapped_column(Integer, default=0)
+    physical: Mapped[int] = mapped_column(Integer, default=0)
