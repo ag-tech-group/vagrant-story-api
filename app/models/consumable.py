@@ -1,4 +1,4 @@
-from sqlalchemy import Integer, String
+from sqlalchemy import Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.types import JSON
 
@@ -13,4 +13,5 @@ class Consumable(Base):
     field_name: Mapped[str] = mapped_column(String(100))
     name: Mapped[str] = mapped_column(String(100))
     description_fr: Mapped[str] = mapped_column(String(500), default="")
+    description: Mapped[str] = mapped_column(Text, default="")
     effects: Mapped[dict | None] = mapped_column(JSON, nullable=True)
