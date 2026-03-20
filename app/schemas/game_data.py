@@ -139,6 +139,19 @@ class ConsumableRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class SpellRead(BaseModel):
+    id: int
+    name: str
+    category: str
+    mp_cost: str = ""
+    targeting: str = ""
+    affinity: str = ""
+    effect: str = ""
+    grimoire: str = ""
+
+    model_config = {"from_attributes": True}
+
+
 class CraftingRecipeRead(BaseModel):
     id: int
     category: str

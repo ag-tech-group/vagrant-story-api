@@ -4,6 +4,7 @@ from app.routers.crafting import router as crafting_router
 from app.routers.gems import router as gems_router
 from app.routers.grips import router as grips_router
 from app.routers.materials import router as materials_router
+from app.routers.spells import router as spells_router
 from app.routers.weapons import router as weapons_router
 
 __all__ = [
@@ -13,5 +14,6 @@ __all__ = [
     "gems_router",
     "grips_router",
     "materials_router",
+    "spells_router",
     "weapons_router",
 ]
