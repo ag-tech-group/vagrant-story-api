@@ -3,7 +3,7 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 
 
-class WeaponRead(BaseModel):
+class BladeRead(BaseModel):
     id: int
     game_id: int
     field_name: str

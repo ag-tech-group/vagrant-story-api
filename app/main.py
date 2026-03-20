@@ -13,6 +13,7 @@ from app.config import settings
 from app.logging import setup_logging
 from app.routers import (
     armor_router,
+    blades_router,
     consumables_router,
     crafting_router,
     gems_router,
@@ -23,7 +24,6 @@ from app.routers import (
     sigils_router,
     spells_router,
     user_router,
-    weapons_router,
     workshops_router,
 )
 
@@ -32,7 +32,7 @@ logger = structlog.get_logger("app.request")
 
 app = FastAPI(
     title="Vagrant Story API",
-    description="Public game data API for Vagrant Story — weapons, armor, gems, materials, crafting",
+    description="Public game data API for Vagrant Story — blades, armor, gems, materials, crafting",
     version="0.1.0",
     docs_url=None,
 )
@@ -87,7 +87,7 @@ async def request_logging_middleware(request: Request, call_next) -> Response:
     return response
 
 
-app.include_router(weapons_router)
+app.include_router(blades_router)
 app.include_router(grips_router)
 app.include_router(armor_router)
 app.include_router(gems_router)

@@ -1,8 +1,8 @@
 from httpx import AsyncClient
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.models.blade import Blade
 from app.models.material import Material
-from app.models.weapon import Weapon
 
 
 class TestHealth:
@@ -17,18 +17,18 @@ class TestHealth:
         assert resp.json()["service"] == "vagrant-story-api"
 
 
-class TestWeapons:
+class TestBlades:
     async def test_list_empty(self, client: AsyncClient):
-        resp = await client.get("/weapons")
+        resp = await client.get("/blades")
         assert resp.status_code == 200
         assert resp.json() == []
 
     async def test_list_with_data(self, client: AsyncClient, session: AsyncSession):
-        weapon = Weapon(
+        blade = Blade(
             game_id=1,
             field_name="Test_Sword",
             name="Test Sword",
-            description_fr="Une épée de test.",
+            description_fr="Une epee de test.",
             blade_type="Sword",
             damage_type="Edged",
             risk=1,
@@ -38,10 +38,10 @@ class TestWeapons:
             range_stat=3,
             damage=5,
         )
-        session.add(weapon)
+        session.add(blade)
         await session.commit()
 
-        resp = await client.get("/weapons")
+        resp = await client.get("/blades")
         assert resp.status_code == 200
         data = resp.json()
         assert len(data) == 1
@@ -50,7 +50,7 @@ class TestWeapons:
         assert data[0]["range"] == 3
 
     async def test_get_by_id(self, client: AsyncClient, session: AsyncSession):
-        weapon = Weapon(
+        blade = Blade(
             game_id=5,
             field_name="Katana",
             name="Katana",
@@ -59,20 +59,20 @@ class TestWeapons:
             str_stat=16,
             range_stat=4,
         )
-        session.add(weapon)
+        session.add(blade)
         await session.commit()
 
-        resp = await client.get(f"/weapons/{weapon.id}")
+        resp = await client.get(f"/blades/{blade.id}")
         assert resp.status_code == 200
         assert resp.json()["name"] == "Katana"
 
     async def test_not_found(self, client: AsyncClient):
-        resp = await client.get("/weapons/999")
+        resp = await client.get("/blades/999")
         assert resp.status_code == 404
 
     async def test_search(self, client: AsyncClient, session: AsyncSession):
         session.add(
-            Weapon(
+            Blade(
                 game_id=1,
                 field_name="A",
                 name="Claymore",
@@ -81,7 +81,7 @@ class TestWeapons:
             )
         )
         session.add(
-            Weapon(
+            Blade(
                 game_id=2,
                 field_name="B",
                 name="Dagger",
@@ -91,7 +91,7 @@ class TestWeapons:
         )
         await session.commit()
 
-        resp = await client.get("/weapons?q=clay")
+        resp = await client.get("/blades?q=clay")
         assert len(resp.json()) == 1
         assert resp.json()[0]["name"] == "Claymore"
 

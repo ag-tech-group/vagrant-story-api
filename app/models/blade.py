@@ -4,8 +4,8 @@ from sqlalchemy.orm import Mapped, mapped_column
 from app.database import Base
 
 
-class Weapon(Base):
-    __tablename__ = "weapons"
+class Blade(Base):
+    __tablename__ = "blades"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     game_id: Mapped[int] = mapped_column(Integer, default=0)
