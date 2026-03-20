@@ -3,7 +3,7 @@
     "field_name": "Cure_Root",
     "id": 1,
     "name": "Cure Root",
-    "description_fr": "Racine d'une herbe revigorante. Rétablit 50 HP.",
+    "description_fr": "Racine d'une herbe revigorante. R\u00e9tablit 50 HP.",
     "effects": [
       {
         "target": "SELF",
@@ -11,7 +11,8 @@
         "modifier": "HP",
         "value": 50
       }
-    ]
+    ],
+    "description": "Restores 50 HP"
   },
   {
     "field_name": "Cure_Bulb",
@@ -25,13 +26,14 @@
         "modifier": "HP",
         "value": 100
       }
-    ]
+    ],
+    "description": "Restores 100 HP"
   },
   {
     "field_name": "Cure_Toadstool",
     "id": 3,
     "name": "Cure Toadstool",
-    "description_fr": "Extrait d'une plante rajeunissante. Rétablit 150 HP.",
+    "description_fr": "Extrait d'une plante rajeunissante. R\u00e9tablit 150 HP.",
     "effects": [
       {
         "target": "SELF",
@@ -39,13 +41,14 @@
         "modifier": "HP",
         "value": 150
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Elixir_of_Queens",
     "id": 4,
     "name": "Elixir of Queens",
-    "description_fr": "Potion végétale reconstituante. Restaure tous les HP.",
+    "description_fr": "Potion v\u00e9g\u00e9tale reconstituante. Restaure tous les HP.",
     "effects": [
       {
         "target": "SELF",
@@ -53,13 +56,14 @@
         "modifier": "HP",
         "value": 32767
       }
-    ]
+    ],
+    "description": "Adds a few points of HP"
   },
   {
     "field_name": "Mana_Root",
     "id": 5,
     "name": "Mana Root",
-    "description_fr": "Racine d'une herbe stimulant l'intelligence. Rétablit 25 MP.",
+    "description_fr": "Racine d'une herbe stimulant l'intelligence. R\u00e9tablit 25 MP.",
     "effects": [
       {
         "target": "SELF",
@@ -67,7 +71,8 @@
         "modifier": "MP",
         "value": 25
       }
-    ]
+    ],
+    "description": "Restores 25 MP"
   },
   {
     "field_name": "Mana_Bulb",
@@ -81,13 +86,14 @@
         "modifier": "MP",
         "value": 50
       }
-    ]
+    ],
+    "description": "Restores 50 MP"
   },
   {
     "field_name": "Mana_Toadstool",
     "id": 7,
     "name": "Mana Toadstool",
-    "description_fr": "Extrait de plante vivifiant l'intelligence. Rétablit 100 MP.",
+    "description_fr": "Extrait de plante vivifiant l'intelligence. R\u00e9tablit 100 MP.",
     "effects": [
       {
         "target": "SELF",
@@ -95,13 +101,14 @@
         "modifier": "MP",
         "value": 100
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Elixir_of_Kings",
     "id": 8,
     "name": "Elixir of Kings",
-    "description_fr": "Potion végétale stimulant l'intelligence. Recharge tous les MP.",
+    "description_fr": "Potion v\u00e9g\u00e9tale stimulant l'intelligence. Recharge tous les MP.",
     "effects": [
       {
         "target": "SELF",
@@ -109,13 +116,14 @@
         "modifier": "MP",
         "value": 32767
       }
-    ]
+    ],
+    "description": "Adds a few points of Strength"
   },
   {
     "field_name": "Vera_Root",
     "id": 9,
     "name": "Vera Root",
-    "description_fr": "Racine stimulant le système nerveux. Réduit les Risks de 25 points.",
+    "description_fr": "Racine stimulant le syst\u00e8me nerveux. R\u00e9duit les Risks de 25 points.",
     "effects": [
       {
         "target": "SELF",
@@ -123,13 +131,14 @@
         "modifier": "RISK",
         "value": -25
       }
-    ]
+    ],
+    "description": "Lowers RISK by 25"
   },
   {
     "field_name": "Vera_Bulb",
     "id": 10,
     "name": "Vera Bulb",
-    "description_fr": "Bulbe qui stimule le système nerveux. Réduit les Risks de 50 points.",
+    "description_fr": "Bulbe qui stimule le syst\u00e8me nerveux. R\u00e9duit les Risks de 50 points.",
     "effects": [
       {
         "target": "SELF",
@@ -137,13 +146,14 @@
         "modifier": "RISK",
         "value": -50
       }
-    ]
+    ],
+    "description": "Lowers RISK by 50"
   },
   {
     "field_name": "Vera_Toadstool",
     "id": 11,
     "name": "Vera Toadstool",
-    "description_fr": "Extrait végétal stimulant le système nerveux. Réduit les Risks de 75 points.",
+    "description_fr": "Extrait v\u00e9g\u00e9tal stimulant le syst\u00e8me nerveux. R\u00e9duit les Risks de 75 points.",
     "effects": [
       {
         "target": "SELF",
@@ -151,13 +161,14 @@
         "modifier": "RISK",
         "value": -75
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Elixir_of_Sages",
     "id": 12,
     "name": "Elixir of Sages",
-    "description_fr": "Potion végétale vivifiant le système nerveux. Réduit les Risks à 0.",
+    "description_fr": "Potion v\u00e9g\u00e9tale vivifiant le syst\u00e8me nerveux. R\u00e9duit les Risks \u00e0 0.",
     "effects": [
       {
         "target": "SELF",
@@ -165,13 +176,14 @@
         "modifier": "RISK",
         "value": 32767
       }
-    ]
+    ],
+    "description": "Adds a few points of Intelligence"
   },
   {
     "field_name": "Faerie_Wing",
     "id": 13,
     "name": "Faerie Wing",
-    "description_fr": "Antidote des seigneurs de LéaMundis. Restaure 100 HP et MP.",
+    "description_fr": "Antidote des seigneurs de L\u00e9aMundis. Restaure 100 HP et MP.",
     "effects": [
       {
         "target": "SELF",
@@ -185,13 +197,14 @@
         "modifier": "MP",
         "value": 100
       }
-    ]
+    ],
+    "description": "Temporarily increases speed and jumps"
   },
   {
     "field_name": "Angelic_Paean",
     "id": 14,
     "name": "Angelic Paean",
-    "description_fr": "Antidote céleste. Rétablit tous les HP et MP.",
+    "description_fr": "Antidote c\u00e9leste. R\u00e9tablit tous les HP et MP.",
     "effects": [
       {
         "target": "SELF",
@@ -205,13 +218,14 @@
         "modifier": "MP",
         "value": 32767
       }
-    ]
+    ],
+    "description": "Cures Curse"
   },
   {
     "field_name": "Amanita",
     "id": 15,
     "name": "Amanita",
-    "description_fr": "Potion expérimentale des alchimistes royaux. Restaure 25 HP, réduit les Risks de 25 points.",
+    "description_fr": "Potion exp\u00e9rimentale des alchimistes royaux. Restaure 25 HP, r\u00e9duit les Risks de 25 points.",
     "effects": [
       {
         "target": "SELF",
@@ -225,13 +239,14 @@
         "modifier": "RISK",
         "value": -25
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Snowfly_Draught",
     "id": 16,
     "name": "Snowfly Draught",
-    "description_fr": "Réactif d'anciens sorciers bafoués. Restaure 50 HP, réduit les Risks de 50 points.",
+    "description_fr": "R\u00e9actif d'anciens sorciers bafou\u00e9s. Restaure 50 HP, r\u00e9duit les Risks de 50 points.",
     "effects": [
       {
         "target": "SELF",
@@ -245,27 +260,30 @@
         "modifier": "RISK",
         "value": -50
       }
-    ]
+    ],
+    "description": "Cancels magical effects cast on target"
   },
   {
     "field_name": "Alchemists_Reagent",
     "id": 17,
     "name": "Alchemist's Reagent",
-    "description_fr": "Mixture d'ailes de lucioles séchées. Annule tous les sortilèges.",
-    "effects": []
+    "description_fr": "Mixture d'ailes de lucioles s\u00e9ch\u00e9es. Annule tous les sortil\u00e8ges.",
+    "effects": [],
+    "description": "Restores 25 HP / lowers RISK by 25"
   },
   {
     "field_name": "Yggdrasils_Tears",
     "id": 18,
     "name": "Yggdrasil's Tears",
-    "description_fr": "Poudre des fées accélérant les mouvements et rallongeant temporairement les sauts.",
-    "effects": []
+    "description_fr": "Poudre des f\u00e9es acc\u00e9l\u00e9rant les mouvements et rallongeant temporairement les sauts.",
+    "effects": [],
+    "description": "Cures Paralysis"
   },
   {
     "field_name": "Nectar_of_the_Gods",
     "id": 19,
     "name": "Nectar of the Gods",
-    "description_fr": "Elixir utilisé à l'époque de l'Inquisition. Augmente niveau total: FRC (Force).",
+    "description_fr": "Elixir utilis\u00e9 \u00e0 l'\u00e9poque de l'Inquisition. Augmente niveau total: FRC (Force).",
     "effects": [
       {
         "target": "SELF",
@@ -273,7 +291,8 @@
         "modifier": "STR",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Panacea",
@@ -287,13 +306,14 @@
         "modifier": "INT",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": "Cures Paralysis / Poison / Numbness"
   },
   {
     "field_name": "Quicksilver",
     "id": 21,
     "name": "Quicksilver",
-    "description_fr": "Elixir des adorateurs de Saint Iokus. Augmente niveau total: AGL (Agilité).",
+    "description_fr": "Elixir des adorateurs de Saint Iokus. Augmente niveau total: AGL (Agilit\u00e9).",
     "effects": [
       {
         "target": "SELF",
@@ -301,13 +321,14 @@
         "modifier": "AGI",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Soul_Kiss",
     "id": 22,
     "name": "Soul Kiss",
-    "description_fr": "Elixir des vierges de LéaMundis. Augmente le niveau total de vos HP.",
+    "description_fr": "Elixir des vierges de L\u00e9aMundis. Augmente le niveau total de vos HP.",
     "effects": [
       {
         "target": "SELF",
@@ -315,13 +336,14 @@
         "modifier": "HP",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Sorcerers_Reagent",
     "id": 23,
     "name": "Sorcerer's Reagent",
-    "description_fr": "Elixir jadis utilisé par les mages. Augmente le niveau total de vos MP.",
+    "description_fr": "Elixir jadis utilis\u00e9 par les mages. Augmente le niveau total de vos MP.",
     "effects": [
       {
         "target": "SELF",
@@ -329,13 +351,14 @@
         "modifier": "MP",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": "Restores 50 HP / lowers RISK by 50"
   },
   {
     "field_name": "Eye_of_Argon",
     "id": 24,
     "name": "Eye of Argon",
-    "description_fr": "Vin rouge de LéaMundis, délicat mais fort en bouche.",
+    "description_fr": "Vin rouge de L\u00e9aMundis, d\u00e9licat mais fort en bouche.",
     "effects": [
       {
         "target": "SELF",
@@ -343,13 +366,14 @@
         "modifier": "STR",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": "Temporarily allows Ashley to see traps"
   },
   {
     "field_name": "Morion_Gem",
     "id": 25,
     "name": "Morion Gem",
-    "description_fr": "Le plus noble des vins rouges, de l'arôme et du bouquet.",
+    "description_fr": "Le plus noble des vins rouges, de l'ar\u00f4me et du bouquet.",
     "effects": [
       {
         "target": "SELF",
@@ -357,13 +381,14 @@
         "modifier": "INT",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Gold_Key",
     "id": 26,
     "name": "Gold Key",
-    "description_fr": "Vin blanc des vignes de LéaMundis, réputé pour son odeur de miel.",
+    "description_fr": "Vin blanc des vignes de L\u00e9aMundis, r\u00e9put\u00e9 pour son odeur de miel.",
     "effects": [
       {
         "target": "SELF",
@@ -371,13 +396,14 @@
         "modifier": "AGI",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Silver_Key",
     "id": 27,
     "name": "Silver Key",
-    "description_fr": "Vin doux de grande qualité.",
+    "description_fr": "Vin doux de grande qualit\u00e9.",
     "effects": [
       {
         "target": "SELF",
@@ -385,13 +411,14 @@
         "modifier": "HP",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Bronze_Key",
     "id": 28,
     "name": "Bronze Key",
-    "description_fr": "Vin pétillant, tiré d'un mélange de trois célèbres cépages.",
+    "description_fr": "Vin p\u00e9tillant, tir\u00e9 d'un m\u00e9lange de trois c\u00e9l\u00e8bres c\u00e9pages.",
     "effects": [
       {
         "target": "SELF",
@@ -399,13 +426,15 @@
         "modifier": "MP",
         "value": "ItemEffect.Roll(4"
       }
-    ]
+    ],
+    "description": ""
   },
   {
     "field_name": "Iron_Key",
     "id": 29,
     "name": "Iron Key",
-    "description_fr": "Révèle tous les pièges d'une pièce, pendant un bref instant.",
-    "effects": []
+    "description_fr": "R\u00e9v\u00e8le tous les pi\u00e8ges d'une pi\u00e8ce, pendant un bref instant.",
+    "effects": [],
+    "description": ""
   }
 ]

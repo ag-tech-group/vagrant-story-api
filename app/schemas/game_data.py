@@ -75,10 +75,28 @@ class GemRead(BaseModel):
     field_name: str
     name: str
     description_fr: str
+    description: str = ""
     magnitude: str
     affinity_type: str
+    gem_type: str = ""
+    str_stat: int = Field(0, serialization_alias="str")
+    int_stat: int = Field(0, serialization_alias="int")
+    agi_stat: int = Field(0, serialization_alias="agi")
+    human: int = 0
+    beast: int = 0
+    undead: int = 0
+    phantom: int = 0
+    dragon: int = 0
+    evil: int = 0
+    physical: int = 0
+    fire: int = 0
+    water: int = 0
+    wind: int = 0
+    earth: int = 0
+    light: int = 0
+    dark: int = 0
 
-    model_config = {"from_attributes": True}
+    model_config = {"from_attributes": True, "populate_by_name": True}
 
 
 class MaterialRead(BaseModel):
@@ -110,6 +128,7 @@ class ConsumableRead(BaseModel):
     field_name: str
     name: str
     description_fr: str
+    description: str = ""
     effects: list | dict | None = None
 
     model_config = {"from_attributes": True}
