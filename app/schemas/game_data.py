@@ -152,6 +152,17 @@ class SpellRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class KeyRead(BaseModel):
+    id: int
+    name: str
+    area: str = ""
+    room: str = ""
+    source: str = ""
+    locations_used: str = ""
+
+    model_config = {"from_attributes": True}
+
+
 class CraftingRecipeRead(BaseModel):
     id: int
     category: str
