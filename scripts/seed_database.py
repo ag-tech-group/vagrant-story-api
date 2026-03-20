@@ -9,12 +9,12 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 
 from app.config import settings
 from app.models.armor import Armor
+from app.models.blade import Blade
 from app.models.consumable import Consumable
 from app.models.crafting_recipe import CraftingRecipe, MaterialRecipe
 from app.models.gem import Gem
 from app.models.grip import Grip
 from app.models.material import Material
-from app.models.weapon import Weapon
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
@@ -68,7 +68,7 @@ async def main():
     id_map = {"id": "game_id"}
 
     async with async_session() as session:
-        await seed_model(session, Weapon, "weapons.json", id_map)
+        await seed_model(session, Blade, "weapons.json", id_map)
         await seed_model(session, Grip, "grips.json", id_map)
         await seed_model(
             session,

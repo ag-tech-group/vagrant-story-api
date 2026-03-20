@@ -12,6 +12,7 @@ from app.database import Base
 # Import all models so Alembic can detect them
 from app.models import (  # noqa: F401
     Armor,
+    Blade,
     Consumable,
     CraftingRecipe,
     Gem,
@@ -22,7 +23,6 @@ from app.models import (  # noqa: F401
     MaterialRecipe,
     Sigil,
     Spell,
-    Weapon,
     Workshop,
 )
 
