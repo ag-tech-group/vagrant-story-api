@@ -135,6 +135,13 @@ class ConsumableRead(BaseModel):
     description_fr: str
     description: str = ""
     effects: list | dict | None = None
+    hp_restore: str = ""
+    mp_restore: str = ""
+    risk_reduce: str = ""
+    status_cure: str = ""
+    permanent_stat: str = ""
+    drop_rate: str = ""
+    drop_location: str = ""
 
     model_config = {"from_attributes": True}
 
