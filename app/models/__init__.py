@@ -5,6 +5,7 @@ from app.models.gem import Gem
 from app.models.grip import Grip
 from app.models.key import Key
 from app.models.material import Material
+from app.models.sigil import Sigil
 from app.models.spell import Spell
 from app.models.weapon import Weapon
 
@@ -17,6 +18,7 @@ __all__ = [
     "Key",
     "Material",
     "MaterialRecipe",
+    "Sigil",
     "Spell",
     "Weapon",
 ]
