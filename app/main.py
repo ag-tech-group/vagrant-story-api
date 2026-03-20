@@ -17,6 +17,7 @@ from app.routers import (
     crafting_router,
     gems_router,
     grips_router,
+    keys_router,
     materials_router,
     spells_router,
     weapons_router,
@@ -87,6 +88,7 @@ app.include_router(gems_router)
 app.include_router(materials_router)
 app.include_router(consumables_router)
 app.include_router(spells_router)
+app.include_router(keys_router)
 app.include_router(crafting_router)
 
 
