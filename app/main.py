@@ -16,6 +16,7 @@ from app.routers import (
     consumables_router,
     crafting_router,
     gems_router,
+    grimoires_router,
     grips_router,
     keys_router,
     materials_router,
@@ -91,6 +92,7 @@ app.include_router(consumables_router)
 app.include_router(sigils_router)
 app.include_router(spells_router)
 app.include_router(keys_router)
+app.include_router(grimoires_router)
 app.include_router(crafting_router)
 
 

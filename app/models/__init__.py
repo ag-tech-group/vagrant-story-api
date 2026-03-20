@@ -2,6 +2,7 @@ from app.models.armor import Armor
 from app.models.consumable import Consumable
 from app.models.crafting_recipe import CraftingRecipe, MaterialRecipe
 from app.models.gem import Gem
+from app.models.grimoire import Grimoire
 from app.models.grip import Grip
 from app.models.key import Key
 from app.models.material import Material
@@ -14,6 +15,7 @@ __all__ = [
     "Consumable",
     "CraftingRecipe",
     "Gem",
+    "Grimoire",
     "Grip",
     "Key",
     "Material",
