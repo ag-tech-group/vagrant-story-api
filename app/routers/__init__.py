@@ -9,6 +9,7 @@ from app.routers.materials import router as materials_router
 from app.routers.sigils import router as sigils_router
 from app.routers.spells import router as spells_router
 from app.routers.weapons import router as weapons_router
+from app.routers.workshops import router as workshops_router
 
 __all__ = [
     "armor_router",
@@ -22,4 +23,5 @@ __all__ = [
     "sigils_router",
     "spells_router",
     "weapons_router",
+    "workshops_router",
 ]

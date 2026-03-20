@@ -23,6 +23,7 @@ from app.models import (  # noqa: F401
     Sigil,
     Spell,
     Weapon,
+    Workshop,
 )
 
 # this is the Alembic Config object, which provides
