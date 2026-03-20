@@ -113,6 +113,15 @@ class MaterialRead(BaseModel):
     str_modifier: int
     int_modifier: int
     agi_modifier: int
+    blade_str: int = 0
+    blade_int: int = 0
+    blade_agi: int = 0
+    shield_str: int = 0
+    shield_int: int = 0
+    shield_agi: int = 0
+    armor_str: int = 0
+    armor_int: int = 0
+    armor_agi: int = 0
     human: int
     beast: int
     undead: int
