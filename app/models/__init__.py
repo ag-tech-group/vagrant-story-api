@@ -9,6 +9,7 @@ from app.models.material import Material
 from app.models.sigil import Sigil
 from app.models.spell import Spell
 from app.models.weapon import Weapon
+from app.models.workshop import Workshop
 
 __all__ = [
     "Armor",
@@ -23,4 +24,5 @@ __all__ = [
     "Sigil",
     "Spell",
     "Weapon",
+    "Workshop",
 ]

@@ -23,6 +23,7 @@ from app.routers import (
     sigils_router,
     spells_router,
     weapons_router,
+    workshops_router,
 )
 
 setup_logging()
@@ -93,6 +94,7 @@ app.include_router(sigils_router)
 app.include_router(spells_router)
 app.include_router(keys_router)
 app.include_router(grimoires_router)
+app.include_router(workshops_router)
 app.include_router(crafting_router)
 
 

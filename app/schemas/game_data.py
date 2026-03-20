@@ -187,6 +187,16 @@ class GrimoireRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class WorkshopRead(BaseModel):
+    id: int
+    name: str
+    area: str = ""
+    available_materials: str = ""
+    description: str = ""
+
+    model_config = {"from_attributes": True}
+
+
 class CraftingRecipeRead(BaseModel):
     id: int
     category: str
