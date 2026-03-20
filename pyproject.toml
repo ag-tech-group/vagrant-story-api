@@ -16,6 +16,9 @@ dependencies = [
     "limits>=5.8.0",
     "structlog>=25.0.0",
     "scalar-fastapi>=1.8.1",
+    "pyjwt>=2.12.1",
+    "cryptography>=46.0.5",
+    "httpx>=0.28.1",
 ]
 
 [dependency-groups]

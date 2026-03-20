@@ -22,6 +22,7 @@ from app.routers import (
     materials_router,
     sigils_router,
     spells_router,
+    user_router,
     weapons_router,
     workshops_router,
 )
@@ -40,8 +41,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origin_list,
     allow_origin_regex=settings.cors_origin_regex,
-    allow_credentials=False,
-    allow_methods=["GET", "OPTIONS"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["Content-Type"],
 )
 
@@ -53,7 +54,9 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 @app.middleware("http")
 async def add_cache_headers(request: Request, call_next) -> Response:
     response = await call_next(request)
-    if request.method == "GET" and response.status_code == 200:
+    if request.url.path.startswith("/user/"):
+        response.headers["Cache-Control"] = "no-store"
+    elif request.method == "GET" and response.status_code == 200:
         response.headers["Cache-Control"] = "public, max-age=3600"
     return response
 
@@ -96,6 +99,7 @@ app.include_router(keys_router)
 app.include_router(grimoires_router)
 app.include_router(workshops_router)
 app.include_router(crafting_router)
+app.include_router(user_router)
 
 
 @app.get("/docs", include_in_schema=False)
