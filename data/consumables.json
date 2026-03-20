@@ -30,9 +30,9 @@
     "description": "Restores 100 HP"
   },
   {
-    "field_name": "Cure_Toadstool",
+    "field_name": "Cure_Tonic",
     "id": 3,
-    "name": "Cure Toadstool",
+    "name": "Cure Tonic",
     "description_fr": "Extrait d'une plante rajeunissante. R\u00e9tablit 150 HP.",
     "effects": [
       {
@@ -42,7 +42,7 @@
         "value": 150
       }
     ],
-    "description": ""
+    "description": "Restores 150 HP"
   },
   {
     "field_name": "Elixir_of_Queens",
@@ -90,9 +90,9 @@
     "description": "Restores 50 MP"
   },
   {
-    "field_name": "Mana_Toadstool",
+    "field_name": "Mana_Tonic",
     "id": 7,
-    "name": "Mana Toadstool",
+    "name": "Mana Tonic",
     "description_fr": "Extrait de plante vivifiant l'intelligence. R\u00e9tablit 100 MP.",
     "effects": [
       {
@@ -102,7 +102,7 @@
         "value": 100
       }
     ],
-    "description": ""
+    "description": "Restores 150 MP"
   },
   {
     "field_name": "Elixir_of_Kings",
@@ -150,9 +150,9 @@
     "description": "Lowers RISK by 50"
   },
   {
-    "field_name": "Vera_Toadstool",
+    "field_name": "Vera_Tonic",
     "id": 11,
-    "name": "Vera Toadstool",
+    "name": "Vera Tonic",
     "description_fr": "Extrait v\u00e9g\u00e9tal stimulant le syst\u00e8me nerveux. R\u00e9duit les Risks de 75 points.",
     "effects": [
       {
@@ -162,7 +162,7 @@
         "value": -75
       }
     ],
-    "description": ""
+    "description": "Lowers RISK by 150"
   },
   {
     "field_name": "Elixir_of_Sages",
@@ -222,27 +222,6 @@
     "description": "Cures Curse"
   },
   {
-    "field_name": "Amanita",
-    "id": 15,
-    "name": "Amanita",
-    "description_fr": "Potion exp\u00e9rimentale des alchimistes royaux. Restaure 25 HP, r\u00e9duit les Risks de 25 points.",
-    "effects": [
-      {
-        "target": "SELF",
-        "type": "MODIFIER",
-        "modifier": "HP",
-        "value": 25
-      },
-      {
-        "target": "SELF",
-        "type": "MODIFIER",
-        "modifier": "RISK",
-        "value": -25
-      }
-    ],
-    "description": ""
-  },
-  {
     "field_name": "Snowfly_Draught",
     "id": 16,
     "name": "Snowfly Draught",
@@ -280,21 +259,6 @@
     "description": "Cures Paralysis"
   },
   {
-    "field_name": "Nectar_of_the_Gods",
-    "id": 19,
-    "name": "Nectar of the Gods",
-    "description_fr": "Elixir utilis\u00e9 \u00e0 l'\u00e9poque de l'Inquisition. Augmente niveau total: FRC (Force).",
-    "effects": [
-      {
-        "target": "SELF",
-        "type": "PERMA_MOD",
-        "modifier": "STR",
-        "value": "ItemEffect.Roll(4"
-      }
-    ],
-    "description": ""
-  },
-  {
     "field_name": "Panacea",
     "id": 20,
     "name": "Panacea",
@@ -308,36 +272,6 @@
       }
     ],
     "description": "Cures Paralysis / Poison / Numbness"
-  },
-  {
-    "field_name": "Quicksilver",
-    "id": 21,
-    "name": "Quicksilver",
-    "description_fr": "Elixir des adorateurs de Saint Iokus. Augmente niveau total: AGL (Agilit\u00e9).",
-    "effects": [
-      {
-        "target": "SELF",
-        "type": "PERMA_MOD",
-        "modifier": "AGI",
-        "value": "ItemEffect.Roll(4"
-      }
-    ],
-    "description": ""
-  },
-  {
-    "field_name": "Soul_Kiss",
-    "id": 22,
-    "name": "Soul Kiss",
-    "description_fr": "Elixir des vierges de L\u00e9aMundis. Augmente le niveau total de vos HP.",
-    "effects": [
-      {
-        "target": "SELF",
-        "type": "PERMA_MOD",
-        "modifier": "HP",
-        "value": "ItemEffect.Roll(4"
-      }
-    ],
-    "description": ""
   },
   {
     "field_name": "Sorcerers_Reagent",
@@ -368,21 +302,6 @@
       }
     ],
     "description": "Temporarily allows Ashley to see traps"
-  },
-  {
-    "field_name": "Morion_Gem",
-    "id": 25,
-    "name": "Morion Gem",
-    "description_fr": "Le plus noble des vins rouges, de l'ar\u00f4me et du bouquet.",
-    "effects": [
-      {
-        "target": "SELF",
-        "type": "PERMA_MOD",
-        "modifier": "INT",
-        "value": "ItemEffect.Roll(4"
-      }
-    ],
-    "description": ""
   },
   {
     "field_name": "Gold_Key",
@@ -436,5 +355,117 @@
     "description_fr": "R\u00e9v\u00e8le tous les pi\u00e8ges d'une pi\u00e8ce, pendant un bref instant.",
     "effects": [],
     "description": ""
+  },
+  {
+    "field_name": "Cure_Potion",
+    "name": "Cure Potion",
+    "description": "Restores all HP",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Mana_Potion",
+    "name": "Mana Potion",
+    "description": "Restores all MP",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Vera_Potion",
+    "name": "Vera Potion",
+    "description": "Clears all RISK",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Acolytes_Nostrum",
+    "name": "Acolyte's Nostrum",
+    "description": "Restores 100 HP / MP",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Saints_Nostrum",
+    "name": "Saint's Nostrum",
+    "description": "Restores all HP / MP",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Faerie_Chortle",
+    "name": "Faerie Chortle",
+    "description": "Cures Poison",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Spirit_Orison",
+    "name": "Spirit Orison",
+    "description": "Cures Numbness",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Elixir_of_Mages",
+    "name": "Elixir of Mages",
+    "description": "Adds a few points of MP",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Elixir_of_Dragoons",
+    "name": "Elixir of Dragoons",
+    "description": "Adds a few points of Agility",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Audentia",
+    "name": "Audentia",
+    "description": "Adds a few points of HP",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Virtus",
+    "name": "Virtus",
+    "description": "Adds a few points of MP",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Valens",
+    "name": "Valens",
+    "description": "Adds a few points of Strength",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Prudens",
+    "name": "Prudens",
+    "description": "Adds a few points of Intelligence",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
+  },
+  {
+    "field_name": "Volare",
+    "name": "Volare",
+    "description": "Adds a few points of Agility",
+    "game_id": 0,
+    "description_fr": "",
+    "effects": null
   }
 ]
