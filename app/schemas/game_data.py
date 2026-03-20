@@ -163,6 +163,17 @@ class KeyRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class SigilRead(BaseModel):
+    id: int
+    name: str
+    area: str = ""
+    room: str = ""
+    source: str = ""
+    door_unlocks: str = ""
+
+    model_config = {"from_attributes": True}
+
+
 class CraftingRecipeRead(BaseModel):
     id: int
     category: str

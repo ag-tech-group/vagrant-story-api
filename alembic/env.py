@@ -19,6 +19,7 @@ from app.models import (  # noqa: F401
     Key,
     Material,
     MaterialRecipe,
+    Sigil,
     Spell,
     Weapon,
 )
