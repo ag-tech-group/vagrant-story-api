@@ -57,7 +57,7 @@
         "value": 32767
       }
     ],
-    "description": "Adds a few points of HP"
+    "description": "Permanently adds a few points to max HP"
   },
   {
     "field_name": "Mana_Root",
@@ -102,7 +102,7 @@
         "value": 100
       }
     ],
-    "description": "Restores 150 MP"
+    "description": "Restores 100 MP"
   },
   {
     "field_name": "Elixir_of_Kings",
@@ -117,7 +117,7 @@
         "value": 32767
       }
     ],
-    "description": "Adds a few points of Strength"
+    "description": "Permanently adds a few points to STR"
   },
   {
     "field_name": "Vera_Root",
@@ -162,7 +162,7 @@
         "value": -75
       }
     ],
-    "description": "Lowers RISK by 150"
+    "description": "Lowers RISK by 75"
   },
   {
     "field_name": "Elixir_of_Sages",
@@ -177,7 +177,7 @@
         "value": 32767
       }
     ],
-    "description": "Adds a few points of Intelligence"
+    "description": "Permanently adds a few points to INT"
   },
   {
     "field_name": "Faerie_Wing",
@@ -198,7 +198,7 @@
         "value": 100
       }
     ],
-    "description": "Temporarily increases speed and jumps"
+    "description": "Temporarily increases speed and jump height"
   },
   {
     "field_name": "Angelic_Paean",
@@ -240,7 +240,7 @@
         "value": -50
       }
     ],
-    "description": "Cancels magical effects cast on target"
+    "description": "Cancels all magical effects cast on target"
   },
   {
     "field_name": "Alchemists_Reagent",
@@ -248,7 +248,7 @@
     "name": "Alchemist's Reagent",
     "description_fr": "Mixture d'ailes de lucioles s\u00e9ch\u00e9es. Annule tous les sortil\u00e8ges.",
     "effects": [],
-    "description": "Restores 25 HP / lowers RISK by 25"
+    "description": "Restores 25 HP, lowers RISK by 25"
   },
   {
     "field_name": "Yggdrasils_Tears",
@@ -271,7 +271,7 @@
         "value": "ItemEffect.Roll(4"
       }
     ],
-    "description": "Cures Paralysis / Poison / Numbness"
+    "description": "Cures Paralysis, Poison, and Numbness"
   },
   {
     "field_name": "Sorcerers_Reagent",
@@ -286,7 +286,7 @@
         "value": "ItemEffect.Roll(4"
       }
     ],
-    "description": "Restores 50 HP / lowers RISK by 50"
+    "description": "Restores 50 HP, lowers RISK by 50"
   },
   {
     "field_name": "Eye_of_Argon",
@@ -301,7 +301,7 @@
         "value": "ItemEffect.Roll(4"
       }
     ],
-    "description": "Temporarily allows Ashley to see traps"
+    "description": "Temporarily reveals traps in the room"
   },
   {
     "field_name": "Gold_Key",
@@ -383,7 +383,7 @@
   {
     "field_name": "Acolytes_Nostrum",
     "name": "Acolyte's Nostrum",
-    "description": "Restores 100 HP / MP",
+    "description": "Restores 100 HP and MP",
     "game_id": 0,
     "description_fr": "",
     "effects": null
@@ -391,7 +391,7 @@
   {
     "field_name": "Saints_Nostrum",
     "name": "Saint's Nostrum",
-    "description": "Restores all HP / MP",
+    "description": "Restores all HP and MP",
     "game_id": 0,
     "description_fr": "",
     "effects": null
@@ -415,7 +415,7 @@
   {
     "field_name": "Elixir_of_Mages",
     "name": "Elixir of Mages",
-    "description": "Adds a few points of MP",
+    "description": "Permanently adds a few points to max MP",
     "game_id": 0,
     "description_fr": "",
     "effects": null
@@ -423,7 +423,7 @@
   {
     "field_name": "Elixir_of_Dragoons",
     "name": "Elixir of Dragoons",
-    "description": "Adds a few points of Agility",
+    "description": "Permanently adds a few points to AGI",
     "game_id": 0,
     "description_fr": "",
     "effects": null
@@ -431,7 +431,7 @@
   {
     "field_name": "Audentia",
     "name": "Audentia",
-    "description": "Adds a few points of HP",
+    "description": "Permanently adds a few points to max HP",
     "game_id": 0,
     "description_fr": "",
     "effects": null
@@ -439,7 +439,7 @@
   {
     "field_name": "Virtus",
     "name": "Virtus",
-    "description": "Adds a few points of MP",
+    "description": "Permanently adds a few points to max MP",
     "game_id": 0,
     "description_fr": "",
     "effects": null
@@ -447,7 +447,7 @@
   {
     "field_name": "Valens",
     "name": "Valens",
-    "description": "Adds a few points of Strength",
+    "description": "Permanently adds a few points to STR",
     "game_id": 0,
     "description_fr": "",
     "effects": null
@@ -455,7 +455,7 @@
   {
     "field_name": "Prudens",
     "name": "Prudens",
-    "description": "Adds a few points of Intelligence",
+    "description": "Permanently adds a few points to INT",
     "game_id": 0,
     "description_fr": "",
     "effects": null
@@ -463,7 +463,7 @@
   {
     "field_name": "Volare",
     "name": "Volare",
-    "description": "Adds a few points of Agility",
+    "description": "Permanently adds a few points to AGI",
     "game_id": 0,
     "description_fr": "",
     "effects": null
