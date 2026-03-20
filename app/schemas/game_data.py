@@ -27,10 +27,15 @@ class GripRead(BaseModel):
     name: str
     description_fr: str
     wep_file_id: int
-    grip_type: int
+    grip_type: str = ""
+    compatible_weapons: str = ""
     str_stat: int = Field(serialization_alias="str")
     int_stat: int = Field(serialization_alias="int")
     agi_stat: int = Field(serialization_alias="agi")
+    blunt: int = 0
+    edged: int = 0
+    piercing: int = 0
+    gem_slots: int = 0
     dp: int | None = None
     pp: int | None = None
 
