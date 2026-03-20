@@ -5,13 +5,14 @@ Revises: f6d096e20deb
 Create Date: 2026-03-19 17:40:39.528358
 
 """
+
 from collections.abc import Sequence
 
 from alembic import op
 
 # revision identifiers, used by Alembic.
-revision: str = 'cd8fb71e975b'
-down_revision: str | Sequence[str] | None = 'f6d096e20deb'
+revision: str = "cd8fb71e975b"
+down_revision: str | Sequence[str] | None = "f6d096e20deb"
 branch_labels: str | Sequence[str] | None = None
 depends_on: str | Sequence[str] | None = None
 
@@ -50,13 +51,9 @@ REVERSE_RENAMES = [
 
 def upgrade() -> None:
     for old, new in RENAMES:
-        op.execute(
-            f"UPDATE weapons SET blade_type = '{new}' WHERE blade_type = '{old}'"
-        )
+        op.execute(f"UPDATE weapons SET blade_type = '{new}' WHERE blade_type = '{old}'")
 
 
 def downgrade() -> None:
     for old, new in REVERSE_RENAMES:
-        op.execute(
-            f"UPDATE weapons SET blade_type = '{new}' WHERE blade_type = '{old}'"
-        )
+        op.execute(f"UPDATE weapons SET blade_type = '{new}' WHERE blade_type = '{old}'")
