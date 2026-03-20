@@ -26,7 +26,9 @@ def upgrade() -> None:
         "consumables", sa.Column("description", sa.Text(), server_default="", nullable=False)
     )
     op.add_column("gems", sa.Column("description", sa.Text(), server_default="", nullable=False))
-    op.add_column("gems", sa.Column("gem_type", sa.String(length=50), nullable=False))
+    op.add_column(
+        "gems", sa.Column("gem_type", sa.String(length=50), server_default="", nullable=False)
+    )
     op.add_column("gems", sa.Column("str", sa.Integer(), server_default="0", nullable=False))
     op.add_column("gems", sa.Column("int", sa.Integer(), server_default="0", nullable=False))
     op.add_column("gems", sa.Column("agi", sa.Integer(), server_default="0", nullable=False))
