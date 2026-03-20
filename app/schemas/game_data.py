@@ -196,6 +196,16 @@ class GrimoireRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class GrimoireAggregated(BaseModel):
+    id: int
+    name: str
+    spell_name: str = ""
+    areas: str = ""
+    sources: str = ""
+    drop_rates: str = ""
+    repeatable: bool = False
+
+
 class WorkshopRead(BaseModel):
     id: int
     name: str
