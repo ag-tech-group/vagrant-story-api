@@ -174,6 +174,19 @@ class SigilRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class GrimoireRead(BaseModel):
+    id: int
+    name: str
+    spell_name: str = ""
+    area: str = ""
+    room: str = ""
+    source: str = ""
+    drop_rate: str = ""
+    repeatable: bool = False
+
+    model_config = {"from_attributes": True}
+
+
 class CraftingRecipeRead(BaseModel):
     id: int
     category: str

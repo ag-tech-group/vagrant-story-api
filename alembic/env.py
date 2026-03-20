@@ -15,6 +15,7 @@ from app.models import (  # noqa: F401
     Consumable,
     CraftingRecipe,
     Gem,
+    Grimoire,
     Grip,
     Key,
     Material,
