@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from pydantic import BaseModel, Field
 
 
@@ -227,5 +229,74 @@ class MaterialRecipeRead(BaseModel):
     material_2: str
     result_material: str
     tier_change: int
+
+    model_config = {"from_attributes": True}
+
+
+# ── Inventory schemas ──────────────────────────────────────────────────
+
+
+class InventoryItemCreate(BaseModel):
+    item_type: str
+    item_id: int
+    material: str | None = None
+    grip_id: int | None = None
+    gem_1_id: int | None = None
+    gem_2_id: int | None = None
+    gem_3_id: int | None = None
+    quantity: int = 1
+
+
+class InventoryItemRead(BaseModel):
+    id: int
+    inventory_id: int
+    item_type: str
+    item_id: int
+    material: str | None = None
+    grip_id: int | None = None
+    gem_1_id: int | None = None
+    gem_2_id: int | None = None
+    gem_3_id: int | None = None
+    quantity: int = 1
+
+    model_config = {"from_attributes": True}
+
+
+class InventoryItemUpdate(BaseModel):
+    item_type: str | None = None
+    item_id: int | None = None
+    material: str | None = None
+    grip_id: int | None = None
+    gem_1_id: int | None = None
+    gem_2_id: int | None = None
+    gem_3_id: int | None = None
+    quantity: int | None = None
+
+
+class InventoryCreate(BaseModel):
+    name: str
+
+
+class InventoryUpdate(BaseModel):
+    name: str
+
+
+class InventoryListRead(BaseModel):
+    id: int
+    user_id: str
+    name: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
+class InventoryRead(BaseModel):
+    id: int
+    user_id: str
+    name: str
+    created_at: datetime
+    updated_at: datetime
+    items: list[InventoryItemRead] = []
 
     model_config = {"from_attributes": True}

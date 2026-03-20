@@ -4,6 +4,7 @@ from app.models.crafting_recipe import CraftingRecipe, MaterialRecipe
 from app.models.gem import Gem
 from app.models.grimoire import Grimoire
 from app.models.grip import Grip
+from app.models.inventory import Inventory, InventoryItem
 from app.models.key import Key
 from app.models.material import Material
 from app.models.sigil import Sigil
@@ -18,6 +19,8 @@ __all__ = [
     "Gem",
     "Grimoire",
     "Grip",
+    "Inventory",
+    "InventoryItem",
     "Key",
     "Material",
     "MaterialRecipe",
