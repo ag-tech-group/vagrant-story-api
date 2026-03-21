@@ -13,7 +13,9 @@ from app.config import settings
 from app.logging import setup_logging
 from app.routers import (
     armor_router,
+    battle_abilities_router,
     blades_router,
+    break_arts_router,
     consumables_router,
     crafting_router,
     gems_router,
@@ -93,6 +95,8 @@ app.include_router(armor_router)
 app.include_router(gems_router)
 app.include_router(materials_router)
 app.include_router(consumables_router)
+app.include_router(break_arts_router)
+app.include_router(battle_abilities_router)
 app.include_router(sigils_router)
 app.include_router(spells_router)
 app.include_router(keys_router)

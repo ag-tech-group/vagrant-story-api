@@ -1,5 +1,7 @@
 from app.models.armor import Armor
+from app.models.battle_ability import BattleAbility
 from app.models.blade import Blade
+from app.models.break_art import BreakArt
 from app.models.consumable import Consumable
 from app.models.crafting_recipe import CraftingRecipe, MaterialRecipe
 from app.models.gem import Gem
@@ -14,7 +16,9 @@ from app.models.workshop import Workshop
 
 __all__ = [
     "Armor",
+    "BattleAbility",
     "Blade",
+    "BreakArt",
     "Consumable",
     "CraftingRecipe",
     "Gem",

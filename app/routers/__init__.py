@@ -1,5 +1,7 @@
 from app.routers.armor import router as armor_router
+from app.routers.battle_abilities import router as battle_abilities_router
 from app.routers.blades import router as blades_router
+from app.routers.break_arts import router as break_arts_router
 from app.routers.consumables import router as consumables_router
 from app.routers.crafting import router as crafting_router
 from app.routers.gems import router as gems_router
@@ -14,7 +16,9 @@ from app.routers.workshops import router as workshops_router
 
 __all__ = [
     "armor_router",
+    "battle_abilities_router",
     "blades_router",
+    "break_arts_router",
     "consumables_router",
     "crafting_router",
     "gems_router",
