@@ -12,6 +12,7 @@ from slowapi.util import get_remote_address
 from app.config import settings
 from app.logging import setup_logging
 from app.routers import (
+    areas_router,
     armor_router,
     battle_abilities_router,
     blades_router,
@@ -26,6 +27,7 @@ from app.routers import (
     keys_router,
     materials_router,
     rankings_router,
+    rooms_router,
     sigils_router,
     spells_router,
     titles_router,
@@ -111,6 +113,8 @@ app.include_router(crafting_router)
 app.include_router(characters_router)
 app.include_router(titles_router)
 app.include_router(rankings_router)
+app.include_router(areas_router)
+app.include_router(rooms_router)
 app.include_router(user_router)
 
 
