@@ -216,6 +216,31 @@ class GrimoireAggregated(BaseModel):
     repeatable: bool = False
 
 
+class BreakArtRead(BaseModel):
+    id: int
+    name: str
+    weapon_type: str
+    hp_cost: int
+    attack_multiplier: str
+    damage_type: str
+    affinity: str
+    special_effect: str | None = None
+    kills_required: int
+
+    model_config = {"from_attributes": True}
+
+
+class BattleAbilityRead(BaseModel):
+    id: int
+    name: str
+    ability_type: str
+    risk_cost: int
+    effect: str
+    power: str
+
+    model_config = {"from_attributes": True}
+
+
 class WorkshopRead(BaseModel):
     id: int
     name: str
