@@ -21,3 +21,4 @@ class Blade(Base):
     agi_stat: Mapped[int] = mapped_column("agi", Integer, default=0)
     range_stat: Mapped[int] = mapped_column("range", Integer, default=0)
     damage: Mapped[int] = mapped_column(Integer, default=0)
+    hands: Mapped[str] = mapped_column(String(2), default="1H")
