@@ -1,6 +1,6 @@
 [project]
 name = "vagrant-story-api"
-version = "0.1.0"
+version = "0.2.0"
 description = "Public game data API for Vagrant Story"
 readme = "README.md"
 requires-python = ">=3.12"
