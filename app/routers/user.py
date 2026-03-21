@@ -17,6 +17,8 @@ from app.schemas.game_data import (
 
 router = APIRouter(prefix="/user/inventories", tags=["user"])
 
+VALID_EQUIP_SLOTS = {"right_hand", "left_hand", "head", "body", "legs", "arms", "accessory"}
+
 
 async def _get_user_inventory(
     inventory_id: int,
@@ -99,6 +101,26 @@ async def add_item(
     session: AsyncSession = Depends(get_async_session),
 ):
     await _get_user_inventory(inventory_id, user_id, session)
+
+    if body.equip_slot is not None:
+        if body.equip_slot not in VALID_EQUIP_SLOTS:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid equip_slot. Must be one of: {', '.join(sorted(VALID_EQUIP_SLOTS))}",
+            )
+        # Check that the slot is not already occupied in this inventory
+        existing = await session.execute(
+            select(InventoryItem).where(
+                InventoryItem.inventory_id == inventory_id,
+                InventoryItem.equip_slot == body.equip_slot,
+            )
+        )
+        if existing.scalar_one_or_none():
+            raise HTTPException(
+                status_code=400,
+                detail=f"Equip slot '{body.equip_slot}' is already occupied",
+            )
+
     item = InventoryItem(inventory_id=inventory_id, **body.model_dump())
     session.add(item)
     await session.commit()
@@ -124,7 +146,30 @@ async def update_item(
     item = result.scalar_one_or_none()
     if not item:
         raise HTTPException(status_code=404, detail="Item not found")
+
     update_data = body.model_dump(exclude_unset=True)
+
+    if "equip_slot" in update_data and update_data["equip_slot"] is not None:
+        slot = update_data["equip_slot"]
+        if slot not in VALID_EQUIP_SLOTS:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid equip_slot. Must be one of: {', '.join(sorted(VALID_EQUIP_SLOTS))}",
+            )
+        # Check that the slot is not already occupied by another item
+        existing = await session.execute(
+            select(InventoryItem).where(
+                InventoryItem.inventory_id == inventory_id,
+                InventoryItem.equip_slot == slot,
+                InventoryItem.id != item_id,
+            )
+        )
+        if existing.scalar_one_or_none():
+            raise HTTPException(
+                status_code=400,
+                detail=f"Equip slot '{slot}' is already occupied",
+            )
+
     for field, value in update_data.items():
         setattr(item, field, value)
     await session.commit()

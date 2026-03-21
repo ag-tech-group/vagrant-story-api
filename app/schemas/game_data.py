@@ -355,6 +355,7 @@ class InventoryItemCreate(BaseModel):
     gem_1_id: int | None = None
     gem_2_id: int | None = None
     gem_3_id: int | None = None
+    equip_slot: str | None = None
     quantity: int = 1
 
 
@@ -368,6 +369,7 @@ class InventoryItemRead(BaseModel):
     gem_1_id: int | None = None
     gem_2_id: int | None = None
     gem_3_id: int | None = None
+    equip_slot: str | None = None
     quantity: int = 1
 
     model_config = {"from_attributes": True}
@@ -381,6 +383,7 @@ class InventoryItemUpdate(BaseModel):
     gem_1_id: int | None = None
     gem_2_id: int | None = None
     gem_3_id: int | None = None
+    equip_slot: str | None = None
     quantity: int | None = None
 
 
