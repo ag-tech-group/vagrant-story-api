@@ -18,6 +18,7 @@ class BladeRead(BaseModel):
     agi_stat: int = Field(serialization_alias="agi")
     range_stat: int = Field(serialization_alias="range")
     damage: int
+    hands: str = "1H"
 
     model_config = {"from_attributes": True, "populate_by_name": True}
 
