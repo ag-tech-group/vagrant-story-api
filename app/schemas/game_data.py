@@ -2,6 +2,41 @@ from datetime import datetime
 
 from pydantic import BaseModel, Field
 
+# ── Area / Room schemas ────────────────────────────────────────────
+
+
+class RoomRead(BaseModel):
+    id: int
+    name: str
+    area_id: int
+    area_name: str = ""
+
+    model_config = {"from_attributes": True}
+
+
+class RoomDetailRead(BaseModel):
+    id: int
+    name: str
+    area_id: int
+    area_name: str = ""
+
+    model_config = {"from_attributes": True}
+
+
+class AreaRead(BaseModel):
+    id: int
+    name: str
+
+    model_config = {"from_attributes": True}
+
+
+class AreaDetailRead(BaseModel):
+    id: int
+    name: str
+    rooms: list[RoomRead] = []
+
+    model_config = {"from_attributes": True}
+
 
 class BladeRead(BaseModel):
     id: int
@@ -176,6 +211,7 @@ class KeyRead(BaseModel):
     name: str
     area: str = ""
     room: str = ""
+    room_id: int | None = None
     source: str = ""
     locations_used: str = ""
 
@@ -187,6 +223,7 @@ class SigilRead(BaseModel):
     name: str
     area: str = ""
     room: str = ""
+    room_id: int | None = None
     source: str = ""
     door_unlocks: str = ""
 
@@ -199,6 +236,7 @@ class GrimoireRead(BaseModel):
     spell_name: str = ""
     area: str = ""
     room: str = ""
+    room_id: int | None = None
     source: str = ""
     drop_rate: str = ""
     repeatable: bool = False
@@ -272,6 +310,7 @@ class WorkshopRead(BaseModel):
     id: int
     name: str
     area: str = ""
+    room_id: int | None = None
     available_materials: str = ""
     description: str = ""
 
@@ -393,6 +432,7 @@ class ChestListRead(BaseModel):
     id: int
     area: str
     room: str
+    room_id: int | None = None
     lock_type: str | None = None
 
     model_config = {"from_attributes": True}
@@ -402,6 +442,7 @@ class ChestRead(BaseModel):
     id: int
     area: str
     room: str
+    room_id: int | None = None
     lock_type: str | None = None
     items: list[ChestItemRead] = []
 

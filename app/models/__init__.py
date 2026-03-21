@@ -1,3 +1,4 @@
+from app.models.area import Area
 from app.models.armor import Armor
 from app.models.battle_ability import BattleAbility
 from app.models.blade import Blade
@@ -13,12 +14,14 @@ from app.models.inventory import Inventory, InventoryItem
 from app.models.key import Key
 from app.models.material import Material
 from app.models.ranking import Ranking
+from app.models.room import Room
 from app.models.sigil import Sigil
 from app.models.spell import Spell
 from app.models.title import Title
 from app.models.workshop import Workshop
 
 __all__ = [
+    "Area",
     "Armor",
     "BattleAbility",
     "Blade",
@@ -37,6 +40,7 @@ __all__ = [
     "Material",
     "MaterialRecipe",
     "Ranking",
+    "Room",
     "Sigil",
     "Spell",
     "Title",
