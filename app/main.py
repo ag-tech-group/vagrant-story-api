@@ -16,6 +16,7 @@ from app.routers import (
     battle_abilities_router,
     blades_router,
     break_arts_router,
+    characters_router,
     consumables_router,
     crafting_router,
     gems_router,
@@ -23,8 +24,10 @@ from app.routers import (
     grips_router,
     keys_router,
     materials_router,
+    rankings_router,
     sigils_router,
     spells_router,
+    titles_router,
     user_router,
     workshops_router,
 )
@@ -103,6 +106,9 @@ app.include_router(keys_router)
 app.include_router(grimoires_router)
 app.include_router(workshops_router)
 app.include_router(crafting_router)
+app.include_router(characters_router)
+app.include_router(titles_router)
+app.include_router(rankings_router)
 app.include_router(user_router)
 
 

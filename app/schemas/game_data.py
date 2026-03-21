@@ -241,6 +241,33 @@ class BattleAbilityRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class CharacterRead(BaseModel):
+    id: int
+    name: str
+    role: str
+    description: str = ""
+
+    model_config = {"from_attributes": True}
+
+
+class TitleRead(BaseModel):
+    id: int
+    number: int
+    name: str
+    requirement: str = ""
+
+    model_config = {"from_attributes": True}
+
+
+class RankingRead(BaseModel):
+    id: int
+    level: int
+    name: str
+    requirement: str = ""
+
+    model_config = {"from_attributes": True}
+
+
 class WorkshopRead(BaseModel):
     id: int
     name: str
