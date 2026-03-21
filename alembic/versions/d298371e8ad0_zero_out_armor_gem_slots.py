@@ -20,9 +20,7 @@ depends_on: str | Sequence[str] | None = None
 def upgrade() -> None:
     # Armor (Helm/Body/Leg/Arm) cannot have gems — only shields and blades (via grips) can.
     # The gem_slots values were junk data from extraction.
-    op.execute(
-        "UPDATE armor SET gem_slots = 0 WHERE armor_type IN ('Helm', 'Body', 'Leg', 'Arm')"
-    )
+    op.execute("UPDATE armor SET gem_slots = 0 WHERE armor_type IN ('Helm', 'Body', 'Leg', 'Arm')")
 
 
 def downgrade() -> None:
