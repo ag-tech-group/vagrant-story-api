@@ -3,6 +3,7 @@ from app.models.battle_ability import BattleAbility
 from app.models.blade import Blade
 from app.models.break_art import BreakArt
 from app.models.character import Character
+from app.models.chest import Chest, ChestItem
 from app.models.consumable import Consumable
 from app.models.crafting_recipe import CraftingRecipe, MaterialRecipe
 from app.models.gem import Gem
@@ -23,6 +24,8 @@ __all__ = [
     "Blade",
     "BreakArt",
     "Character",
+    "Chest",
+    "ChestItem",
     "Consumable",
     "CraftingRecipe",
     "Gem",

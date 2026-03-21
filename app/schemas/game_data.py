@@ -372,3 +372,37 @@ class InventoryRead(BaseModel):
     items: list[InventoryItemRead] = []
 
     model_config = {"from_attributes": True}
+
+
+# ── Chest schemas ────────────────────────────────────────────────────
+
+
+class ChestItemRead(BaseModel):
+    id: int
+    chest_id: int
+    item_type: str
+    item_name: str
+    material: str | None = None
+    gem_slots: int | None = None
+    quantity: int = 1
+
+    model_config = {"from_attributes": True}
+
+
+class ChestListRead(BaseModel):
+    id: int
+    area: str
+    room: str
+    lock_type: str | None = None
+
+    model_config = {"from_attributes": True}
+
+
+class ChestRead(BaseModel):
+    id: int
+    area: str
+    room: str
+    lock_type: str | None = None
+    items: list[ChestItemRead] = []
+
+    model_config = {"from_attributes": True}

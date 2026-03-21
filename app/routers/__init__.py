@@ -3,6 +3,7 @@ from app.routers.battle_abilities import router as battle_abilities_router
 from app.routers.blades import router as blades_router
 from app.routers.break_arts import router as break_arts_router
 from app.routers.characters import router as characters_router
+from app.routers.chests import router as chests_router
 from app.routers.consumables import router as consumables_router
 from app.routers.crafting import router as crafting_router
 from app.routers.gems import router as gems_router
@@ -23,6 +24,7 @@ __all__ = [
     "blades_router",
     "break_arts_router",
     "characters_router",
+    "chests_router",
     "consumables_router",
     "crafting_router",
     "gems_router",
