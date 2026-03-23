@@ -37,6 +37,7 @@ class InventoryItem(Base):
     gem_2_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
     gem_3_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
     equip_slot: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    storage: Mapped[str] = mapped_column(String(20), server_default="bag")
     quantity: Mapped[int] = mapped_column(Integer, server_default="1")
 
     inventory: Mapped["Inventory"] = relationship(back_populates="items")

@@ -19,6 +19,7 @@ from app.schemas.game_data import (
 router = APIRouter(prefix="/user/inventories", tags=["user"])
 
 VALID_EQUIP_SLOTS = {"right_hand", "left_hand", "head", "body", "legs", "arms", "accessory"}
+VALID_STORAGE = {"bag", "container"}
 
 
 async def _get_user_inventory(
@@ -103,10 +104,20 @@ async def import_items(
 ):
     inventory = await _get_user_inventory(inventory_id, user_id, session)
 
-    # Validate equip_slots and check for duplicates within the import batch
+    # Validate storage and equip_slots, check for duplicates within the import batch
     seen_slots: set[str] = set()
     for item_data in body.items:
+        if item_data.storage not in VALID_STORAGE:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid storage. Must be one of: {', '.join(sorted(VALID_STORAGE))}",
+            )
         if item_data.equip_slot is not None:
+            if item_data.storage != "bag":
+                raise HTTPException(
+                    status_code=400,
+                    detail="Items with equip_slot must have storage 'bag'",
+                )
             if item_data.equip_slot not in VALID_EQUIP_SLOTS:
                 raise HTTPException(
                     status_code=400,
@@ -157,7 +168,18 @@ async def add_item(
 ):
     await _get_user_inventory(inventory_id, user_id, session)
 
+    if body.storage not in VALID_STORAGE:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid storage. Must be one of: {', '.join(sorted(VALID_STORAGE))}",
+        )
+
     if body.equip_slot is not None:
+        if body.storage != "bag":
+            raise HTTPException(
+                status_code=400,
+                detail="Items with equip_slot must have storage 'bag'",
+            )
         if body.equip_slot not in VALID_EQUIP_SLOTS:
             raise HTTPException(
                 status_code=400,
@@ -203,6 +225,22 @@ async def update_item(
         raise HTTPException(status_code=404, detail="Item not found")
 
     update_data = body.model_dump(exclude_unset=True)
+
+    if "storage" in update_data and update_data["storage"] is not None:
+        if update_data["storage"] not in VALID_STORAGE:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid storage. Must be one of: {', '.join(sorted(VALID_STORAGE))}",
+            )
+
+    # Determine effective storage after update
+    effective_storage = update_data.get("storage", item.storage)
+    effective_equip_slot = update_data.get("equip_slot", item.equip_slot)
+    if effective_equip_slot is not None and effective_storage != "bag":
+        raise HTTPException(
+            status_code=400,
+            detail="Items with equip_slot must have storage 'bag'",
+        )
 
     if "equip_slot" in update_data and update_data["equip_slot"] is not None:
         slot = update_data["equip_slot"]
