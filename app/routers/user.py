@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy import select
+from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.dependencies import get_current_user
@@ -7,6 +7,7 @@ from app.database import get_async_session
 from app.models.inventory import Inventory, InventoryItem
 from app.schemas.game_data import (
     InventoryCreate,
+    InventoryImportRequest,
     InventoryItemCreate,
     InventoryItemRead,
     InventoryItemUpdate,
@@ -91,6 +92,60 @@ async def delete_inventory(
     inventory = await _get_user_inventory(inventory_id, user_id, session)
     await session.delete(inventory)
     await session.commit()
+
+
+@router.post("/{inventory_id}/import", response_model=InventoryRead)
+async def import_items(
+    inventory_id: int,
+    body: InventoryImportRequest,
+    user_id: str = Depends(get_current_user),
+    session: AsyncSession = Depends(get_async_session),
+):
+    inventory = await _get_user_inventory(inventory_id, user_id, session)
+
+    # Validate equip_slots and check for duplicates within the import batch
+    seen_slots: set[str] = set()
+    for item_data in body.items:
+        if item_data.equip_slot is not None:
+            if item_data.equip_slot not in VALID_EQUIP_SLOTS:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Invalid equip_slot. Must be one of: {', '.join(sorted(VALID_EQUIP_SLOTS))}",
+                )
+            if item_data.equip_slot in seen_slots:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Duplicate equip_slot '{item_data.equip_slot}' in import batch",
+                )
+            seen_slots.add(item_data.equip_slot)
+
+    if body.clear_existing:
+        await session.execute(
+            delete(InventoryItem).where(InventoryItem.inventory_id == inventory_id)
+        )
+    else:
+        # Check that imported equip_slots don't conflict with existing items
+        for slot in seen_slots:
+            existing = await session.execute(
+                select(InventoryItem).where(
+                    InventoryItem.inventory_id == inventory_id,
+                    InventoryItem.equip_slot == slot,
+                )
+            )
+            if existing.scalar_one_or_none():
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Equip slot '{slot}' is already occupied",
+                )
+
+    new_items = [
+        InventoryItem(inventory_id=inventory_id, **item_data.model_dump())
+        for item_data in body.items
+    ]
+    session.add_all(new_items)
+    await session.commit()
+    await session.refresh(inventory)
+    return inventory
 
 
 @router.post("/{inventory_id}/items", response_model=InventoryItemRead, status_code=201)

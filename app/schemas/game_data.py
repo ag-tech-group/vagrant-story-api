@@ -387,6 +387,11 @@ class InventoryItemUpdate(BaseModel):
     quantity: int | None = None
 
 
+class InventoryImportRequest(BaseModel):
+    items: list[InventoryItemCreate]
+    clear_existing: bool = False
+
+
 class InventoryCreate(BaseModel):
     name: str
 
