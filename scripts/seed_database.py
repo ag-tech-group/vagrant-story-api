@@ -13,6 +13,7 @@ from app.models.blade import Blade
 from app.models.consumable import Consumable
 from app.models.crafting_recipe import CraftingRecipe, MaterialRecipe
 from app.models.enemy import Enemy, EnemyBodyPart, EnemyDrop
+from app.models.enemy_encounter import EnemyEncounter
 from app.models.gem import Gem
 from app.models.grip import Grip
 from app.models.material import Material
@@ -161,6 +162,20 @@ async def seed_enemy_drops(session: AsyncSession):
     print(f"  enemy_drops: {total} drops seeded")
 
 
+async def seed_encounter_data(session: AsyncSession):
+    """Seed missing rooms/areas and enemy encounters."""
+    result = await session.execute(select(EnemyEncounter).limit(1))
+    if result.scalar_one_or_none():
+        print("  enemy_encounters: already seeded, skipping")
+        return
+
+    # Import here to reuse the logic from the dedicated script
+    from scripts.seed_encounters import seed_encounters, seed_missing_rooms_and_areas
+
+    room_lookup = await seed_missing_rooms_and_areas(session)
+    await seed_encounters(session, room_lookup)
+
+
 async def main():
     print("Seeding database...")
 
@@ -182,6 +197,7 @@ async def main():
         await seed_model(session, MaterialRecipe, "material_recipes.json")
         await seed_enemies(session)
         await seed_enemy_drops(session)
+        await seed_encounter_data(session)
 
     await engine.dispose()
     print("Done!")

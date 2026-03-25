@@ -8,6 +8,7 @@ from app.models.chest import Chest, ChestItem
 from app.models.consumable import Consumable
 from app.models.crafting_recipe import CraftingRecipe, MaterialRecipe
 from app.models.enemy import Enemy, EnemyBodyPart, EnemyDrop
+from app.models.enemy_encounter import EnemyEncounter
 from app.models.gem import Gem
 from app.models.grimoire import Grimoire
 from app.models.grip import Grip
@@ -35,6 +36,7 @@ __all__ = [
     "Enemy",
     "EnemyBodyPart",
     "EnemyDrop",
+    "EnemyEncounter",
     "Gem",
     "Grimoire",
     "Grip",
