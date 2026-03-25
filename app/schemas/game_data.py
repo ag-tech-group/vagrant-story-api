@@ -560,3 +560,25 @@ class ChestRead(BaseModel):
     items: list[ChestItemRead] = []
 
     model_config = {"from_attributes": True}
+
+
+# ── Drop location schemas ────────────────────────────────────────────
+
+
+class ItemDropLocationRead(BaseModel):
+    enemy_name: str
+    enemy_id: int
+    enemy_class: str
+    area_name: str
+    area_id: int
+    room_name: str
+    body_part: str
+    item: str
+    material: str = ""
+    drop_chance: str
+    drop_value: int = 0
+    grip: str = ""
+    quantity: int = 1
+    condition: str = ""
+
+    model_config = {"from_attributes": True}
