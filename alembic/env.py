@@ -16,6 +16,8 @@ from app.models import (  # noqa: F401
     Blade,
     Consumable,
     CraftingRecipe,
+    Enemy,
+    EnemyBodyPart,
     Gem,
     Grimoire,
     Grip,

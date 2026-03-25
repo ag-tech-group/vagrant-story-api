@@ -344,6 +344,79 @@ class MaterialRecipeRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+# ── Enemy schemas ──────────────────────────────────────────────────────
+
+
+class EnemyBodyPartRead(BaseModel):
+    id: int
+    enemy_id: int
+    name: str
+    physical: int = 0
+    air: int = 0
+    fire: int = 0
+    earth: int = 0
+    water: int = 0
+    light: int = 0
+    dark: int = 0
+    blunt: int = 0
+    edged: int = 0
+    piercing: int = 0
+    evade: int = 0
+    chain_evade: int = 0
+
+    model_config = {"from_attributes": True}
+
+
+class EnemyRead(BaseModel):
+    id: int
+    name: str
+    enemy_class: str
+    hp: int
+    mp: int
+    str_stat: int = Field(serialization_alias="str")
+    int_stat: int = Field(serialization_alias="int")
+    agi_stat: int = Field(serialization_alias="agi")
+    encyclopaedia_number: int | None = None
+    description: str = ""
+    movement: int = 0
+    is_boss: bool = False
+
+    model_config = {"from_attributes": True, "populate_by_name": True}
+
+
+class EnemyDetailRead(BaseModel):
+    id: int
+    name: str
+    enemy_class: str
+    hp: int
+    mp: int
+    str_stat: int = Field(serialization_alias="str")
+    int_stat: int = Field(serialization_alias="int")
+    agi_stat: int = Field(serialization_alias="agi")
+    encyclopaedia_number: int | None = None
+    description: str = ""
+    movement: int = 0
+    is_boss: bool = False
+    body_parts: list[EnemyBodyPartRead] = []
+    drops: list["EnemyDropRead"] = []
+
+    model_config = {"from_attributes": True, "populate_by_name": True}
+
+
+class EnemyDropRead(BaseModel):
+    id: int
+    enemy_id: int
+    body_part: str
+    item: str
+    material: str = ""
+    drop_chance: str
+    drop_value: int = 0
+    grip: str = ""
+    quantity: int = 1
+
+    model_config = {"from_attributes": True}
+
+
 # ── Inventory schemas ──────────────────────────────────────────────────
 
 
