@@ -384,14 +384,30 @@ class EnemyRead(BaseModel):
     model_config = {"from_attributes": True, "populate_by_name": True}
 
 
+class EncounterDropRead(BaseModel):
+    id: int
+    encounter_id: int
+    body_part: str
+    item: str
+    material: str = ""
+    drop_chance: str
+    drop_value: int = 0
+    grip: str = ""
+    quantity: int = 1
+
+    model_config = {"from_attributes": True}
+
+
 class EnemyEncounterRead(BaseModel):
     id: int
     enemy_id: int
     room_id: int
     room_name: str = ""
+    area_id: int = 0
     area_name: str = ""
     condition: str = ""
     attacks: str = ""
+    drops: list[EncounterDropRead] = []
 
     model_config = {"from_attributes": True}
 

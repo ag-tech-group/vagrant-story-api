@@ -45,7 +45,7 @@ async def get_enemy(enemy_id: int, session: AsyncSession = Depends(get_async_ses
     if not enemy:
         raise HTTPException(status_code=404, detail="Enemy not found")
 
-    # Build encounter read objects with room/area names
+    # Build encounter read objects with room/area names and drops
     encounter_reads = []
     for enc in enemy.encounters:
         room = enc.room
@@ -55,9 +55,11 @@ async def get_enemy(enemy_id: int, session: AsyncSession = Depends(get_async_ses
                 enemy_id=enc.enemy_id,
                 room_id=enc.room_id,
                 room_name=room.name if room else "",
+                area_id=room.area_id if room else 0,
                 area_name=room.area.name if room and room.area else "",
                 condition=enc.condition,
                 attacks=enc.attacks,
+                drops=enc.drops,
             )
         )
 

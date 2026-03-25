@@ -16,6 +16,7 @@ from app.models import (  # noqa: F401
     Blade,
     Consumable,
     CraftingRecipe,
+    EncounterDrop,
     Enemy,
     EnemyBodyPart,
     EnemyEncounter,
