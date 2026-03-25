@@ -18,6 +18,7 @@ from app.models import (  # noqa: F401
     CraftingRecipe,
     Enemy,
     EnemyBodyPart,
+    EnemyEncounter,
     Gem,
     Grimoire,
     Grip,

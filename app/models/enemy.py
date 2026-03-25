@@ -1,9 +1,14 @@
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from sqlalchemy import Boolean, ForeignKey, Integer, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.database import Base
+
+if TYPE_CHECKING:
+    from app.models.enemy_encounter import EnemyEncounter
 
 
 class Enemy(Base):
@@ -26,6 +31,9 @@ class Enemy(Base):
         back_populates="enemy", cascade="all, delete-orphan", lazy="selectin"
     )
     drops: Mapped[list[EnemyDrop]] = relationship(
+        back_populates="enemy", cascade="all, delete-orphan", lazy="noload"
+    )
+    encounters: Mapped[list[EnemyEncounter]] = relationship(
         back_populates="enemy", cascade="all, delete-orphan", lazy="noload"
     )
 

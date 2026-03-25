@@ -384,6 +384,18 @@ class EnemyRead(BaseModel):
     model_config = {"from_attributes": True, "populate_by_name": True}
 
 
+class EnemyEncounterRead(BaseModel):
+    id: int
+    enemy_id: int
+    room_id: int
+    room_name: str = ""
+    area_name: str = ""
+    condition: str = ""
+    attacks: str = ""
+
+    model_config = {"from_attributes": True}
+
+
 class EnemyDetailRead(BaseModel):
     id: int
     name: str
@@ -399,6 +411,7 @@ class EnemyDetailRead(BaseModel):
     is_boss: bool = False
     body_parts: list[EnemyBodyPartRead] = []
     drops: list["EnemyDropRead"] = []
+    encounters: list[EnemyEncounterRead] = []
 
     model_config = {"from_attributes": True, "populate_by_name": True}
 

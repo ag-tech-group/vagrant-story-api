@@ -1,0 +1,1574 @@
+{
+  "Abandoned Mines B1 :: Coal Mine Storage": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Coal Mine Storage",
+    "match_type": "exact",
+    "room_id": 2
+  },
+  "Abandoned Mines B1 :: Conflict and Accord": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Conflict and Accord",
+    "match_type": "created",
+    "room_id": 1
+  },
+  "Abandoned Mines B1 :: Dreamers' Entrance": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Dreamers' Entrance",
+    "match_type": "created",
+    "room_id": 2
+  },
+  "Abandoned Mines B1 :: Everwant Passage": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Everwant Passage",
+    "match_type": "created",
+    "room_id": 3
+  },
+  "Abandoned Mines B1 :: Greed Knows No Bounds": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Greed Knows No Bounds",
+    "match_type": "created",
+    "room_id": 4
+  },
+  "Abandoned Mines B1 :: Miners' Resting Hall": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Miners' Resting Hall",
+    "match_type": "exact",
+    "room_id": 3
+  },
+  "Abandoned Mines B1 :: Pray to the Mineral Gods": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Pray to the Mineral Gods",
+    "match_type": "created",
+    "room_id": 5
+  },
+  "Abandoned Mines B1 :: Rust in Peace": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Rust in Peace",
+    "match_type": "exact",
+    "room_id": 5
+  },
+  "Abandoned Mines B1 :: The Battle's Beginning": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "The Battle's Beginning",
+    "match_type": "exact",
+    "room_id": 6
+  },
+  "Abandoned Mines B1 :: The Crossing": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "The Crossing",
+    "match_type": "created",
+    "room_id": 6
+  },
+  "Abandoned Mines B1 :: The Dark Tunnel": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "The Dark Tunnel",
+    "match_type": "created",
+    "room_id": 7
+  },
+  "Abandoned Mines B1 :: The Earthquake's Mark": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "The Earthquake's Mark",
+    "match_type": "created",
+    "room_id": 8
+  },
+  "Abandoned Mines B1 :: The End of the Line": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "The End of the Line",
+    "match_type": "created",
+    "room_id": 9
+  },
+  "Abandoned Mines B1 :: The Hall of Hope": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "The Hall of Hope",
+    "match_type": "created",
+    "room_id": 10
+  },
+  "Abandoned Mines B1 :: The Smeltry": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "The Smeltry",
+    "match_type": "exact",
+    "room_id": 7
+  },
+  "Abandoned Mines B1 :: The Suicide King": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "The Suicide King",
+    "match_type": "created",
+    "room_id": 11
+  },
+  "Abandoned Mines B1 :: Traitor's Parting": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "Traitor's Parting",
+    "match_type": "exact",
+    "room_id": 8
+  },
+  "Abandoned Mines B1 :: What Lies Ahead?": {
+    "api_area": "Abandoned Mines B1",
+    "api_room": "What Lies Ahead?",
+    "match_type": "created",
+    "room_id": 12
+  },
+  "Abandoned Mines B2 :: A Wager of Noble Gold": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "A Wager of Noble Gold",
+    "match_type": "created",
+    "room_id": 13
+  },
+  "Abandoned Mines B2 :: Acolyte's Burial Vault": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Acolyte's Burial Vault",
+    "match_type": "exact",
+    "room_id": 9
+  },
+  "Abandoned Mines B2 :: Bandits' Hollow": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Bandits' Hollow",
+    "match_type": "created",
+    "room_id": 14
+  },
+  "Abandoned Mines B2 :: Crossing of Blood": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Crossing of Blood",
+    "match_type": "created",
+    "room_id": 15
+  },
+  "Abandoned Mines B2 :: Cry of the Beast": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Cry of the Beast",
+    "match_type": "created",
+    "room_id": 16
+  },
+  "Abandoned Mines B2 :: Delusions of Happiness": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Delusions of Happiness",
+    "match_type": "exact",
+    "room_id": 10
+  },
+  "Abandoned Mines B2 :: Desire's Passage": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Desire's Passage",
+    "match_type": "created",
+    "room_id": 17
+  },
+  "Abandoned Mines B2 :: Dining in Darkness": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Dining in Darkness",
+    "match_type": "exact",
+    "room_id": 11
+  },
+  "Abandoned Mines B2 :: Gambler's Passage": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Gambler's Passage",
+    "match_type": "created",
+    "room_id": 18
+  },
+  "Abandoned Mines B2 :: Hall of Contemplation": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Hall of Contemplation",
+    "match_type": "created",
+    "room_id": 19
+  },
+  "Abandoned Mines B2 :: Hall of the Empty Sconce": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Hall of the Empty Sconce",
+    "match_type": "created",
+    "room_id": 20
+  },
+  "Abandoned Mines B2 :: Hidden Resources": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Hidden Resources",
+    "match_type": "exact",
+    "room_id": 12
+  },
+  "Abandoned Mines B2 :: Kilroy Was Here": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Kilroy Was Here",
+    "match_type": "created",
+    "room_id": 21
+  },
+  "Abandoned Mines B2 :: Lambs to the Slaughter": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Lambs to the Slaughter",
+    "match_type": "created",
+    "room_id": 22
+  },
+  "Abandoned Mines B2 :: Senses Lost": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Senses Lost",
+    "match_type": "created",
+    "room_id": 23
+  },
+  "Abandoned Mines B2 :: Suicidal Desires": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Suicidal Desires",
+    "match_type": "exact",
+    "room_id": 13
+  },
+  "Abandoned Mines B2 :: The Abandoned Catspaw": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "The Abandoned Catspaw",
+    "match_type": "created",
+    "room_id": 24
+  },
+  "Abandoned Mines B2 :: The Lunatic Veins": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "The Lunatic Veins",
+    "match_type": "created",
+    "room_id": 25
+  },
+  "Abandoned Mines B2 :: The Miner's End": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "The Miner's End",
+    "match_type": "exact",
+    "room_id": 14
+  },
+  "Abandoned Mines B2 :: The Ore of Legend": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "The Ore of Legend",
+    "match_type": "created",
+    "room_id": 26
+  },
+  "Abandoned Mines B2 :: Tomb of the Reborn": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Tomb of the Reborn",
+    "match_type": "exact",
+    "room_id": 15
+  },
+  "Abandoned Mines B2 :: Treaty Room": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Treaty Room",
+    "match_type": "created",
+    "room_id": 27
+  },
+  "Abandoned Mines B2 :: Way of Lost Children": {
+    "api_area": "Abandoned Mines B2",
+    "api_room": "Way of Lost Children",
+    "match_type": "created",
+    "room_id": 28
+  },
+  "Catacombs :: Bandits' Hideout": {
+    "api_area": "Catacombs",
+    "api_room": "Bandits' Hideout",
+    "match_type": "exact",
+    "room_id": 16
+  },
+  "Catacombs :: Faith Overcame Fear": {
+    "api_area": "Catacombs",
+    "api_room": "Faith Overcame Fear",
+    "match_type": "created",
+    "room_id": 29
+  },
+  "Catacombs :: Hall of Dying Hope": {
+    "api_area": "Catacombs",
+    "api_room": "Hall of Dying Hope",
+    "match_type": "created",
+    "room_id": 30
+  },
+  "Catacombs :: Hall of Sworn Revenge": {
+    "api_area": "Catacombs",
+    "api_room": "Hall of Sworn Revenge",
+    "match_type": "created",
+    "room_id": 31
+  },
+  "Catacombs :: Hallway of Heroes": {
+    "api_area": "Catacombs",
+    "api_room": "Hallway of Heroes",
+    "match_type": "created",
+    "room_id": 32
+  },
+  "Catacombs :: Persecution Hall": {
+    "api_area": "Catacombs",
+    "api_room": "Persecution Hall",
+    "match_type": "created",
+    "room_id": 33
+  },
+  "Catacombs :: Repent, O ye Sinners": {
+    "api_area": "Catacombs",
+    "api_room": "Repent, O ye Sinners",
+    "match_type": "created",
+    "room_id": 34
+  },
+  "Catacombs :: Rodent-Ridden Chamber": {
+    "api_area": "Catacombs",
+    "api_room": "Rodent-Ridden Chamber",
+    "match_type": "exact",
+    "room_id": 18
+  },
+  "Catacombs :: Shrine to the Martyrs": {
+    "api_area": "Catacombs",
+    "api_room": "Shrine to the Martyrs",
+    "match_type": "created",
+    "room_id": 35
+  },
+  "Catacombs :: The Beast's Domain": {
+    "api_area": "Catacombs",
+    "api_room": "The Beast's Domain",
+    "match_type": "exact",
+    "room_id": 19
+  },
+  "Catacombs :: The Lamenting Mother (post-quake)": {
+    "api_area": "Catacombs",
+    "api_room": "The Lamenting Mother (post-quake)",
+    "match_type": "created",
+    "room_id": 36
+  },
+  "Catacombs :: The Lamenting Mother (pre-quake)": {
+    "api_area": "Catacombs",
+    "api_room": "The Lamenting Mother (pre-quake)",
+    "match_type": "created",
+    "room_id": 37
+  },
+  "Catacombs :: The Last Blessing": {
+    "api_area": "Catacombs",
+    "api_room": "The Last Blessing",
+    "match_type": "created",
+    "room_id": 38
+  },
+  "Catacombs :: The Last Stab of Hope": {
+    "api_area": "Catacombs",
+    "api_room": "The Last Stab of Hope",
+    "match_type": "created",
+    "room_id": 39
+  },
+  "Catacombs :: The Reaper's Victims": {
+    "api_area": "Catacombs",
+    "api_room": "The Reaper's Victims",
+    "match_type": "created",
+    "room_id": 40
+  },
+  "Catacombs :: The Weeping Corridor": {
+    "api_area": "Catacombs",
+    "api_room": "The Weeping Corridor",
+    "match_type": "created",
+    "room_id": 41
+  },
+  "Catacombs :: The Withered Spring": {
+    "api_area": "Catacombs",
+    "api_room": "The Withered Spring",
+    "match_type": "exact",
+    "room_id": 21
+  },
+  "City Walls East :: The Cornered Savage": {
+    "api_area": "City Walls East",
+    "api_room": "The Cornered Savage",
+    "match_type": "created",
+    "room_id": 42
+  },
+  "City Walls East :: The Dream-Weavers": {
+    "api_area": "City Walls East",
+    "api_room": "The Dream-Weavers",
+    "match_type": "created",
+    "room_id": 43
+  },
+  "City Walls East :: The Invaders are Found": {
+    "api_area": "City Walls East",
+    "api_room": "The Invaders are Found",
+    "match_type": "created",
+    "room_id": 44
+  },
+  "City Walls East :: The Squire's Gathering": {
+    "api_area": "City Walls East",
+    "api_room": "The Squire's Gathering",
+    "match_type": "created",
+    "room_id": 45
+  },
+  "City Walls North :: A Welcome Invasion": {
+    "api_area": "City Walls North",
+    "api_room": "A Welcome Invasion",
+    "match_type": "created",
+    "room_id": 46
+  },
+  "City Walls North :: Be for Battle Prepared": {
+    "api_area": "City Walls North",
+    "api_room": "Be for Battle Prepared",
+    "match_type": "created",
+    "room_id": 47
+  },
+  "City Walls North :: Destruction and Rebirth": {
+    "api_area": "City Walls North",
+    "api_room": "Destruction and Rebirth",
+    "match_type": "created",
+    "room_id": 48
+  },
+  "City Walls North :: From Boy to Hero": {
+    "api_area": "City Walls North",
+    "api_room": "From Boy to Hero",
+    "match_type": "created",
+    "room_id": 49
+  },
+  "City Walls North :: From Squire to Knight": {
+    "api_area": "City Walls North",
+    "api_room": "From Squire to Knight",
+    "match_type": "created",
+    "room_id": 50
+  },
+  "City Walls North :: Traces of Invasion Past": {
+    "api_area": "City Walls North",
+    "api_room": "Traces of Invasion Past",
+    "match_type": "created",
+    "room_id": 51
+  },
+  "City Walls South :: Swords for the Land": {
+    "api_area": "City Walls South",
+    "api_room": "Swords for the Land",
+    "match_type": "created",
+    "room_id": 52
+  },
+  "City Walls South :: The Boy's Training Room": {
+    "api_area": "City Walls South",
+    "api_room": "The Boy's Training Room",
+    "match_type": "created",
+    "room_id": 53
+  },
+  "City Walls South :: The Weeping Boy": {
+    "api_area": "City Walls South",
+    "api_room": "The Weeping Boy",
+    "match_type": "created",
+    "room_id": 54
+  },
+  "City Walls South :: Where Weary Riders Rest": {
+    "api_area": "City Walls South",
+    "api_room": "Where Weary Riders Rest",
+    "match_type": "created",
+    "room_id": 55
+  },
+  "City Walls West :: The Gabled Hall": {
+    "api_area": "City Walls West",
+    "api_room": "The Gabled Hall",
+    "match_type": "created",
+    "room_id": 56
+  },
+  "Escapeway :: Blood and the Beast": {
+    "api_area": "Escapeway",
+    "api_room": "Blood and the Beast",
+    "match_type": "created",
+    "room_id": 57
+  },
+  "Escapeway :: Buried Alive": {
+    "api_area": "Escapeway",
+    "api_room": "Buried Alive",
+    "match_type": "exact",
+    "room_id": 23
+  },
+  "Escapeway :: Facing Your Illusions": {
+    "api_area": "Escapeway",
+    "api_room": "Facing Your Illusions",
+    "match_type": "created",
+    "room_id": 58
+  },
+  "Escapeway :: Fear and Loathing": {
+    "api_area": "Escapeway",
+    "api_room": "Fear and Loathing",
+    "match_type": "exact",
+    "room_id": 24
+  },
+  "Escapeway :: Movement of Fear": {
+    "api_area": "Escapeway",
+    "api_room": "Movement of Fear",
+    "match_type": "created",
+    "room_id": 59
+  },
+  "Escapeway :: Shelter From the Quake": {
+    "api_area": "Escapeway",
+    "api_room": "Shelter From the Quake",
+    "match_type": "created",
+    "room_id": 60
+  },
+  "Escapeway :: The Darkness Drinks": {
+    "api_area": "Escapeway",
+    "api_room": "The Darkness Drinks",
+    "match_type": "created",
+    "room_id": 61
+  },
+  "Escapeway :: Where Body and Soul Part": {
+    "api_area": "Escapeway",
+    "api_room": "Where Body and Soul Part",
+    "match_type": "exact",
+    "room_id": 25
+  },
+  "Forgotten Pathway :: Awaiting Retribution": {
+    "api_area": "Forgotten Pathway",
+    "api_room": "Awaiting Retribution",
+    "match_type": "exact",
+    "room_id": 26
+  },
+  "Forgotten Pathway :: Slaugher of the Innocent": {
+    "api_area": "Forgotten Pathway",
+    "api_room": "Slaugher of the Innocent",
+    "match_type": "created",
+    "room_id": 62
+  },
+  "Forgotten Pathway :: The Fallen Knight": {
+    "api_area": "Forgotten Pathway",
+    "api_room": "The Fallen Knight",
+    "match_type": "exact",
+    "room_id": 27
+  },
+  "Forgotten Pathway :: The Oracle Sins No More": {
+    "api_area": "Forgotten Pathway",
+    "api_room": "The Oracle Sins No More",
+    "match_type": "created",
+    "room_id": 63
+  },
+  "Game Intro :: Inside Manor": {
+    "api_area": "Game Intro",
+    "api_room": "Inside Manor",
+    "match_type": "created",
+    "room_id": 64
+  },
+  "Game Intro :: Outside Manor": {
+    "api_area": "Game Intro",
+    "api_room": "Outside Manor",
+    "match_type": "created",
+    "room_id": 65
+  },
+  "Great Cathedral B1 :: Order and Chaos": {
+    "api_area": "Great Cathedral B1",
+    "api_room": "Order and Chaos",
+    "match_type": "exact",
+    "room_id": 28
+  },
+  "Great Cathedral B1 :: Sanity and Madness": {
+    "api_area": "Great Cathedral B1",
+    "api_room": "Sanity and Madness",
+    "match_type": "created",
+    "room_id": 66
+  },
+  "Great Cathedral B1 :: Truth and Lies": {
+    "api_area": "Great Cathedral B1",
+    "api_room": "Truth and Lies",
+    "match_type": "exact",
+    "room_id": 29
+  },
+  "Great Cathedral Dome :: Dome": {
+    "api_area": "Great Cathedral Dome",
+    "api_room": "Dome",
+    "match_type": "created",
+    "room_id": 67
+  },
+  "Great Cathedral Dome :: Paling": {
+    "api_area": "Great Cathedral Dome",
+    "api_room": "Paling",
+    "match_type": "created",
+    "room_id": 68
+  },
+  "Great Cathedral L1 :: A Light in the Dark": {
+    "api_area": "Great Cathedral L1",
+    "api_room": "A Light in the Dark",
+    "match_type": "exact",
+    "room_id": 30
+  },
+  "Great Cathedral L1 :: Monk's Leap": {
+    "api_area": "Great Cathedral L1",
+    "api_room": "Monk's Leap",
+    "match_type": "exact",
+    "room_id": 31
+  },
+  "Great Cathedral L1 :: The Flayed Confessional": {
+    "api_area": "Great Cathedral L1",
+    "api_room": "The Flayed Confessional",
+    "match_type": "exact",
+    "room_id": 32
+  },
+  "Great Cathedral L2 :: Maelstrom of Malice": {
+    "api_area": "Great Cathedral L2",
+    "api_room": "Maelstrom of Malice",
+    "match_type": "exact",
+    "room_id": 36
+  },
+  "Great Cathedral L2 :: The Hall of Broken Vows": {
+    "api_area": "Great Cathedral L2",
+    "api_room": "Hall of Broken Vows",
+    "match_type": "fuzzy",
+    "room_id": 35
+  },
+  "Great Cathedral L2 :: What Ails You, Kills You": {
+    "api_area": "Great Cathedral L2",
+    "api_room": "What Ails You, Kills You",
+    "match_type": "exact",
+    "room_id": 37
+  },
+  "Great Cathedral L3 :: Hopes of the Idealist": {
+    "api_area": "Great Cathedral L3",
+    "api_room": "Hopes of the Idealist",
+    "match_type": "exact",
+    "room_id": 38
+  },
+  "Iron Maiden B1 :: Blooding": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "Blooding",
+    "match_type": "created",
+    "room_id": 69
+  },
+  "Iron Maiden B1 :: Burial": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "Burial",
+    "match_type": "exact",
+    "room_id": 39
+  },
+  "Iron Maiden B1 :: Cleansing the Soul": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "Cleansing the Soul",
+    "match_type": "created",
+    "room_id": 70
+  },
+  "Iron Maiden B1 :: Hanging": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "Hanging",
+    "match_type": "created",
+    "room_id": 71
+  },
+  "Iron Maiden B1 :: Heretic's Fork": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "Heretic's Fork",
+    "match_type": "created",
+    "room_id": 72
+  },
+  "Iron Maiden B1 :: Knotting": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "Knotting",
+    "match_type": "exact",
+    "room_id": 40
+  },
+  "Iron Maiden B1 :: Spanish Tickler": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "Spanish Tickler",
+    "match_type": "exact",
+    "room_id": 41
+  },
+  "Iron Maiden B1 :: Starvation": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "Starvation",
+    "match_type": "exact",
+    "room_id": 42
+  },
+  "Iron Maiden B1 :: The Branks": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "The Branks",
+    "match_type": "exact",
+    "room_id": 43
+  },
+  "Iron Maiden B1 :: The Cauldron": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "The Cauldron",
+    "match_type": "exact",
+    "room_id": 44
+  },
+  "Iron Maiden B1 :: The Chair of Spikes": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "The Chair of Spikes",
+    "match_type": "created",
+    "room_id": 73
+  },
+  "Iron Maiden B1 :: The Ducking Stool": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "The Ducking Stool",
+    "match_type": "exact",
+    "room_id": 45
+  },
+  "Iron Maiden B1 :: The Judas Cradle": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "The Judas Cradle",
+    "match_type": "exact",
+    "room_id": 46
+  },
+  "Iron Maiden B1 :: The Wheel": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "The Wheel",
+    "match_type": "exact",
+    "room_id": 47
+  },
+  "Iron Maiden B1 :: The Whirligig": {
+    "api_area": "Iron Maiden B1",
+    "api_room": "The Whirligig",
+    "match_type": "created",
+    "room_id": 74
+  },
+  "Iron Maiden B2 :: Brank": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Brank",
+    "match_type": "created",
+    "room_id": 75
+  },
+  "Iron Maiden B2 :: Lead Sprinkler": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Lead Sprinkler",
+    "match_type": "exact",
+    "room_id": 48
+  },
+  "Iron Maiden B2 :: Ordeal By Fire": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Ordeal by Fire",
+    "match_type": "case_insensitive",
+    "room_id": 49
+  },
+  "Iron Maiden B2 :: Pressing": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Pressing",
+    "match_type": "exact",
+    "room_id": 50
+  },
+  "Iron Maiden B2 :: Squassation": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Squassation",
+    "match_type": "exact",
+    "room_id": 51
+  },
+  "Iron Maiden B2 :: Strangulation": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Strangulation",
+    "match_type": "created",
+    "room_id": 76
+  },
+  "Iron Maiden B2 :: Tablillas": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Tablillas",
+    "match_type": "created",
+    "room_id": 77
+  },
+  "Iron Maiden B2 :: The Cold's Bridle": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Cold's Bridle",
+    "match_type": "created",
+    "room_id": 78
+  },
+  "Iron Maiden B2 :: The Eunics' Lot": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Eunics' Lot",
+    "match_type": "created",
+    "room_id": 79
+  },
+  "Iron Maiden B2 :: The Mind Burns": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Mind Burns",
+    "match_type": "created",
+    "room_id": 80
+  },
+  "Iron Maiden B2 :: The Oven at Neisse": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Oven at Neisse",
+    "match_type": "created",
+    "room_id": 81
+  },
+  "Iron Maiden B2 :: The Rack": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Rack",
+    "match_type": "created",
+    "room_id": 82
+  },
+  "Iron Maiden B2 :: The Saw": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Saw",
+    "match_type": "exact",
+    "room_id": 52
+  },
+  "Iron Maiden B2 :: The Shin-Vice": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Shin-Vice",
+    "match_type": "exact",
+    "room_id": 53
+  },
+  "Iron Maiden B2 :: The Spider": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Spider",
+    "match_type": "created",
+    "room_id": 83
+  },
+  "Iron Maiden B2 :: The Strappado": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "The Strappado",
+    "match_type": "created",
+    "room_id": 84
+  },
+  "Iron Maiden B2 :: Thumbscrews": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Thumbscrews",
+    "match_type": "created",
+    "room_id": 85
+  },
+  "Iron Maiden B2 :: Tongue Slicer": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Tongue Slicer",
+    "match_type": "created",
+    "room_id": 86
+  },
+  "Iron Maiden B2 :: Tormentum Insomniae": {
+    "api_area": "Iron Maiden B2",
+    "api_room": "Tormentum Insomniae",
+    "match_type": "created",
+    "room_id": 87
+  },
+  "Iron Maiden B3 :: Dunking the Witch": {
+    "api_area": "Iron Maiden B3",
+    "api_room": "Dunking the Witch",
+    "match_type": "exact",
+    "room_id": 54
+  },
+  "Iron Maiden B3 :: Saint Elmo's Belt": {
+    "api_area": "Iron Maiden B3",
+    "api_room": "Saint Elmo's Belt",
+    "match_type": "exact",
+    "room_id": 55
+  },
+  "Iron Maiden B3 :: The Iron Maiden": {
+    "api_area": "Iron Maiden B3",
+    "api_room": "The Iron Maiden",
+    "match_type": "exact",
+    "room_id": 56
+  },
+  "Limestone Quarry :: Ascension": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Ascension",
+    "match_type": "created",
+    "room_id": 88
+  },
+  "Limestone Quarry :: Atone for Eternity": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Atone for Eternity",
+    "match_type": "created",
+    "room_id": 89
+  },
+  "Limestone Quarry :: Bacchus is Cheap": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Bacchus is Cheap",
+    "match_type": "created",
+    "room_id": 90
+  },
+  "Limestone Quarry :: Bonds of Friendship": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Bonds of Friendship",
+    "match_type": "exact",
+    "room_id": 57
+  },
+  "Limestone Quarry :: Companions in Arms": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Companions in Arms",
+    "match_type": "exact",
+    "room_id": 58
+  },
+  "Limestone Quarry :: Corridor of Tales": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Corridor of Tales",
+    "match_type": "created",
+    "room_id": 91
+  },
+  "Limestone Quarry :: Dream of the Holy Land": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Dream of the Holy Land",
+    "match_type": "exact",
+    "room_id": 59
+  },
+  "Limestone Quarry :: Drowned in Fleeting Joy": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Drowned in Fleeting Joy",
+    "match_type": "exact",
+    "room_id": 60
+  },
+  "Limestone Quarry :: Excavated Hollow": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Excavated Hollow",
+    "match_type": "exact",
+    "room_id": 61
+  },
+  "Limestone Quarry :: Hall of the Wage-Paying": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Hall of the Wage-Paying",
+    "match_type": "exact",
+    "room_id": 62
+  },
+  "Limestone Quarry :: Parting Regrets": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Parting Regrets",
+    "match_type": "created",
+    "room_id": 92
+  },
+  "Limestone Quarry :: Screams of the Wounded": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Screams of the Wounded",
+    "match_type": "created",
+    "room_id": 93
+  },
+  "Limestone Quarry :: Sinner's Sustenence": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Sinner's Sustenence",
+    "match_type": "created",
+    "room_id": 94
+  },
+  "Limestone Quarry :: Stair to Sanctuary": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Stair to Sanctuary",
+    "match_type": "created",
+    "room_id": 95
+  },
+  "Limestone Quarry :: Stone and Sulfurous Fire": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Stone and Sulfurous Fire",
+    "match_type": "exact",
+    "room_id": 63
+  },
+  "Limestone Quarry :: The Air Stirs": {
+    "api_area": "Limestone Quarry",
+    "api_room": "The Air Stirs",
+    "match_type": "created",
+    "room_id": 96
+  },
+  "Limestone Quarry :: The Fallen Hall": {
+    "api_area": "Limestone Quarry",
+    "api_room": "The Fallen Hall",
+    "match_type": "created",
+    "room_id": 97
+  },
+  "Limestone Quarry :: The Ore-Bearers": {
+    "api_area": "Limestone Quarry",
+    "api_room": "The Ore-Bearers",
+    "match_type": "created",
+    "room_id": 98
+  },
+  "Limestone Quarry :: The Rotten Core": {
+    "api_area": "Limestone Quarry",
+    "api_room": "The Rotten Core",
+    "match_type": "created",
+    "room_id": 99
+  },
+  "Limestone Quarry :: The Timely Dew of Sleep": {
+    "api_area": "Limestone Quarry",
+    "api_room": "The Timely Dew of Sleep",
+    "match_type": "created",
+    "room_id": 100
+  },
+  "Limestone Quarry :: Torture Without End": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Torture Without End",
+    "match_type": "created",
+    "room_id": 101
+  },
+  "Limestone Quarry :: Where the Serpent Hunts": {
+    "api_area": "Limestone Quarry",
+    "api_room": "Where the Serpent Hunts",
+    "match_type": "created",
+    "room_id": 102
+  },
+  "Sanctum :: Advent Ground": {
+    "api_area": "Sanctum",
+    "api_room": "Advent Ground",
+    "match_type": "created",
+    "room_id": 103
+  },
+  "Sanctum :: Alchemists' Laboratory": {
+    "api_area": "Sanctum",
+    "api_room": "Alchemists' Laboratory",
+    "match_type": "exact",
+    "room_id": 64
+  },
+  "Sanctum :: Corridor of the Clerics": {
+    "api_area": "Sanctum",
+    "api_room": "Corridor of the Clerics",
+    "match_type": "created",
+    "room_id": 104
+  },
+  "Sanctum :: Hall of Sacrilege": {
+    "api_area": "Sanctum",
+    "api_room": "Hall of Sacrilege",
+    "match_type": "exact",
+    "room_id": 65
+  },
+  "Sanctum :: Hallowed Hope": {
+    "api_area": "Sanctum",
+    "api_room": "Hallowed Hope",
+    "match_type": "created",
+    "room_id": 105
+  },
+  "Sanctum :: Passage of the Refugees": {
+    "api_area": "Sanctum",
+    "api_room": "Passage of the Refugees",
+    "match_type": "created",
+    "room_id": 106
+  },
+  "Sanctum :: Priests' Confinement": {
+    "api_area": "Sanctum",
+    "api_room": "Priests' Confinement",
+    "match_type": "created",
+    "room_id": 107
+  },
+  "Sanctum :: Prisoners' Niche": {
+    "api_area": "Sanctum",
+    "api_room": "Prisoners' Niche",
+    "match_type": "created",
+    "room_id": 108
+  },
+  "Sanctum :: Shrine of the Martyrs": {
+    "api_area": "Sanctum",
+    "api_room": "Shrine of the Martyrs",
+    "match_type": "created",
+    "room_id": 109
+  },
+  "Sanctum :: The Academia Corridor": {
+    "api_area": "Sanctum",
+    "api_room": "The Academia Corridor",
+    "match_type": "created",
+    "room_id": 110
+  },
+  "Sanctum :: The Cleansing Chantry": {
+    "api_area": "Sanctum",
+    "api_room": "The Cleansing Chantry",
+    "match_type": "exact",
+    "room_id": 66
+  },
+  "Sanctum :: Theology Classroom": {
+    "api_area": "Sanctum",
+    "api_room": "Theology Classroom",
+    "match_type": "exact",
+    "room_id": 67
+  },
+  "Snowfly Forest :: Fluttering Hope": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Fluttering Hope",
+    "match_type": "created",
+    "room_id": 111
+  },
+  "Snowfly Forest :: Forest River": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Forest River",
+    "match_type": "exact",
+    "room_id": 68
+  },
+  "Snowfly Forest :: Hewn from Nature": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Hewn from Nature",
+    "match_type": "exact",
+    "room_id": 69
+  },
+  "Snowfly Forest :: Lamenting to the Moon": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Lamenting to the Moon",
+    "match_type": "created",
+    "room_id": 112
+  },
+  "Snowfly Forest :: Return to the Land": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Return to the Land",
+    "match_type": "exact",
+    "room_id": 71
+  },
+  "Snowfly Forest :: Running with the Wolves": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Running with the Wolves",
+    "match_type": "created",
+    "room_id": 113
+  },
+  "Snowfly Forest :: The Birds and the Bees": {
+    "api_area": "Snowfly Forest",
+    "api_room": "The Birds and the Bees",
+    "match_type": "created",
+    "room_id": 114
+  },
+  "Snowfly Forest :: The Giving Trees": {
+    "api_area": "Snowfly Forest",
+    "api_room": "The Giving Trees",
+    "match_type": "created",
+    "room_id": 115
+  },
+  "Snowfly Forest :: The Hollow Hills": {
+    "api_area": "Snowfly Forest",
+    "api_room": "The Hollow Hills",
+    "match_type": "created",
+    "room_id": 116
+  },
+  "Snowfly Forest :: The Secret Path": {
+    "api_area": "Snowfly Forest",
+    "api_room": "The Secret Path",
+    "match_type": "created",
+    "room_id": 117
+  },
+  "Snowfly Forest :: The Woodcutter's Run": {
+    "api_area": "Snowfly Forest",
+    "api_room": "The Woodcutter's Run",
+    "match_type": "created",
+    "room_id": 118
+  },
+  "Snowfly Forest :: The Wounded Boar": {
+    "api_area": "Snowfly Forest",
+    "api_room": "The Wounded Boar",
+    "match_type": "created",
+    "room_id": 119
+  },
+  "Snowfly Forest :: The Yellow Wood": {
+    "api_area": "Snowfly Forest",
+    "api_room": "The Yellow Wood",
+    "match_type": "created",
+    "room_id": 120
+  },
+  "Snowfly Forest :: Traces of the Beast": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Traces of the Beast",
+    "match_type": "created",
+    "room_id": 121
+  },
+  "Snowfly Forest :: Where Soft Rains Fell": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Where Soft Rains Fell",
+    "match_type": "created",
+    "room_id": 122
+  },
+  "Snowfly Forest :: Which Way Home": {
+    "api_area": "Snowfly Forest",
+    "api_room": "Which Way Home",
+    "match_type": "created",
+    "room_id": 123
+  },
+  "Snowfly Forest :: You Are the Prey": {
+    "api_area": "Snowfly Forest",
+    "api_room": "You Are the Prey",
+    "match_type": "created",
+    "room_id": 124
+  },
+  "Snowfly Forest East :: Nature's Womb": {
+    "api_area": "Snowfly Forest East",
+    "api_room": "Nature's Womb",
+    "match_type": "exact",
+    "room_id": 72
+  },
+  "Temple of Kiltia :: Chamber of Reason": {
+    "api_area": "Temple of Kiltia",
+    "api_room": "Chamber of Reason",
+    "match_type": "created",
+    "room_id": 125
+  },
+  "Temple of Kiltia :: Hall of Prayer": {
+    "api_area": "Temple of Kiltia",
+    "api_room": "Hall of Prayer",
+    "match_type": "exact",
+    "room_id": 74
+  },
+  "Temple of Kiltia :: The Chapel of Meschaunce": {
+    "api_area": "Temple of Kiltia",
+    "api_room": "The Chapel of Meschaunce",
+    "match_type": "exact",
+    "room_id": 75
+  },
+  "Temple of Kiltia :: Those who Fear the Light": {
+    "api_area": "Temple of Kiltia",
+    "api_room": "Those who Fear the Light",
+    "match_type": "exact",
+    "room_id": 76
+  },
+  "The Keep :: The Warrior's Rest": {
+    "api_area": "The Keep",
+    "api_room": "The Warrior's Rest",
+    "match_type": "exact",
+    "room_id": 77
+  },
+  "The Keep Time Trials :: The Keep Time Trials": {
+    "api_area": "The Keep Time Trials",
+    "api_room": "The Keep Time Trials",
+    "match_type": "created",
+    "room_id": 126
+  },
+  "Town Center East :: Gharmes Walk": {
+    "api_area": "Town Center East",
+    "api_room": "Gharmes Walk",
+    "match_type": "exact",
+    "room_id": 78
+  },
+  "Town Center East :: Kesch Bridge": {
+    "api_area": "Town Center East",
+    "api_room": "Kesch Bridge",
+    "match_type": "created",
+    "room_id": 127
+  },
+  "Town Center East :: Rue Crimnade": {
+    "api_area": "Town Center East",
+    "api_room": "Rue Crimnade",
+    "match_type": "exact",
+    "room_id": 79
+  },
+  "Town Center East :: Rue Fisserano": {
+    "api_area": "Town Center East",
+    "api_room": "Rue Fisserano",
+    "match_type": "exact",
+    "room_id": 80
+  },
+  "Town Center East :: Shasras Hill Park": {
+    "api_area": "Town Center East",
+    "api_room": "Shasras Hill Park",
+    "match_type": "created",
+    "room_id": 128
+  },
+  "Town Center South :: Forcas Rise": {
+    "api_area": "Town Center South",
+    "api_room": "Forcas Rise",
+    "match_type": "created",
+    "room_id": 129
+  },
+  "Town Center South :: Rue Aliano": {
+    "api_area": "Town Center South",
+    "api_room": "Rue Aliano",
+    "match_type": "created",
+    "room_id": 130
+  },
+  "Town Center South :: Rue Morgue": {
+    "api_area": "Town Center South",
+    "api_room": "Rue Morgue",
+    "match_type": "created",
+    "room_id": 131
+  },
+  "Town Center South :: Rue Volnac": {
+    "api_area": "Town Center South",
+    "api_room": "Rue Volnac",
+    "match_type": "created",
+    "room_id": 132
+  },
+  "Town Center West :: Rue Mal Fallde": {
+    "api_area": "Town Center West",
+    "api_room": "Rue Mal Fallde",
+    "match_type": "created",
+    "room_id": 133
+  },
+  "Town Center West :: Rue Sant D'alsa": {
+    "api_area": "Town Center West",
+    "api_room": "Rue Sant D'alsa",
+    "match_type": "created",
+    "room_id": 134
+  },
+  "Town Center West :: The Rene Coastroad": {
+    "api_area": "Town Center West",
+    "api_room": "The Rene Coastroad",
+    "match_type": "created",
+    "room_id": 135
+  },
+  "Town Center West :: Tircolas Flow": {
+    "api_area": "Town Center West",
+    "api_room": "Tircolas Flow",
+    "match_type": "exact",
+    "room_id": 84
+  },
+  "Town Center West :: Villeport Way": {
+    "api_area": "Town Center West",
+    "api_room": "Villeport Way",
+    "match_type": "created",
+    "room_id": 136
+  },
+  "Undercity East :: A Knight Sells his Sword": {
+    "api_area": "Undercity East",
+    "api_room": "A Knight Sells his Sword",
+    "match_type": "created",
+    "room_id": 137
+  },
+  "Undercity East :: Arms Against Invaders": {
+    "api_area": "Undercity East",
+    "api_room": "Arms Against Invaders",
+    "match_type": "exact",
+    "room_id": 85
+  },
+  "Undercity East :: Bazaar of the Bizarre": {
+    "api_area": "Undercity East",
+    "api_room": "Bazaar of the Bizarre",
+    "match_type": "exact",
+    "room_id": 86
+  },
+  "Undercity East :: Catspaw Blackmarket": {
+    "api_area": "Undercity East",
+    "api_room": "Catspaw Blackmarket",
+    "match_type": "exact",
+    "room_id": 87
+  },
+  "Undercity East :: Gemsword Blackmarket": {
+    "api_area": "Undercity East",
+    "api_room": "Gemsword Blackmarket",
+    "match_type": "exact",
+    "room_id": 88
+  },
+  "Undercity East :: Hall to a New World": {
+    "api_area": "Undercity East",
+    "api_room": "Hall to a New World",
+    "match_type": "created",
+    "room_id": 138
+  },
+  "Undercity East :: Noble Gold and Silk": {
+    "api_area": "Undercity East",
+    "api_room": "Noble Gold and Silk",
+    "match_type": "created",
+    "room_id": 139
+  },
+  "Undercity East :: Place of Free Words": {
+    "api_area": "Undercity East",
+    "api_room": "Place of Free Words",
+    "match_type": "exact",
+    "room_id": 89
+  },
+  "Undercity East :: Sale of the Sword": {
+    "api_area": "Undercity East",
+    "api_room": "Sale of the Sword",
+    "match_type": "exact",
+    "room_id": 90
+  },
+  "Undercity East :: The Pirate's Son": {
+    "api_area": "Undercity East",
+    "api_room": "The Pirate's Son",
+    "match_type": "created",
+    "room_id": 140
+  },
+  "Undercity East :: Weapons Not Allowed": {
+    "api_area": "Undercity East",
+    "api_room": "Weapons Not Allowed",
+    "match_type": "exact",
+    "room_id": 91
+  },
+  "Undercity East :: Where Black Waters Ran": {
+    "api_area": "Undercity East",
+    "api_room": "Where Black Waters Ran",
+    "match_type": "exact",
+    "room_id": 92
+  },
+  "Undercity West :: Beggars of the Mouthharp": {
+    "api_area": "Undercity West",
+    "api_room": "Beggars of the Mouthharp",
+    "match_type": "created",
+    "room_id": 141
+  },
+  "Undercity West :: Bite the Master's Wounds": {
+    "api_area": "Undercity West",
+    "api_room": "Bite The Master's Wounds",
+    "match_type": "case_insensitive",
+    "room_id": 93
+  },
+  "Undercity West :: Corner of Prayers": {
+    "api_area": "Undercity West",
+    "api_room": "Corner of Prayers",
+    "match_type": "exact",
+    "room_id": 94
+  },
+  "Undercity West :: Corner of the Wretched": {
+    "api_area": "Undercity West",
+    "api_room": "Corner of the Wretched",
+    "match_type": "created",
+    "room_id": 142
+  },
+  "Undercity West :: Crossroads of Rest": {
+    "api_area": "Undercity West",
+    "api_room": "Crossroads of Rest",
+    "match_type": "created",
+    "room_id": 143
+  },
+  "Undercity West :: Fear of the Fall": {
+    "api_area": "Undercity West",
+    "api_room": "Fear of the Fall",
+    "match_type": "exact",
+    "room_id": 96
+  },
+  "Undercity West :: Hall of Poverty": {
+    "api_area": "Undercity West",
+    "api_room": "Hall of Poverty",
+    "match_type": "created",
+    "room_id": 144
+  },
+  "Undercity West :: Hope Obstructed": {
+    "api_area": "Undercity West",
+    "api_room": "Hope Obstructed",
+    "match_type": "created",
+    "room_id": 145
+  },
+  "Undercity West :: Larder for a Lean Winter": {
+    "api_area": "Undercity West",
+    "api_room": "Larder for a Lean Winter",
+    "match_type": "exact",
+    "room_id": 97
+  },
+  "Undercity West :: Nameless Dark Oblivion": {
+    "api_area": "Undercity West",
+    "api_room": "Nameless Dark Oblivion",
+    "match_type": "exact",
+    "room_id": 98
+  },
+  "Undercity West :: Path to the Greengrocer": {
+    "api_area": "Undercity West",
+    "api_room": "Path to the Greengrocer",
+    "match_type": "created",
+    "room_id": 146
+  },
+  "Undercity West :: Remembering Days of Yore": {
+    "api_area": "Undercity West",
+    "api_room": "Remembering Days of Yore",
+    "match_type": "exact",
+    "room_id": 99
+  },
+  "Undercity West :: Salvation for the Mother": {
+    "api_area": "Undercity West",
+    "api_room": "Salvation for the Mother",
+    "match_type": "created",
+    "room_id": 147
+  },
+  "Undercity West :: Sewer of Ravenous Rats": {
+    "api_area": "Undercity West",
+    "api_room": "Sewer of Ravenous Rats",
+    "match_type": "exact",
+    "room_id": 100
+  },
+  "Undercity West :: Sinner's Corner": {
+    "api_area": "Undercity West",
+    "api_room": "Sinner's Corner",
+    "match_type": "exact",
+    "room_id": 101
+  },
+  "Undercity West :: Tears from Empty Sockets": {
+    "api_area": "Undercity West",
+    "api_room": "Tears from Empty Sockets",
+    "match_type": "created",
+    "room_id": 148
+  },
+  "Undercity West :: The Body Fragile Yields": {
+    "api_area": "Undercity West",
+    "api_room": "The Body Fragile Yields",
+    "match_type": "created",
+    "room_id": 149
+  },
+  "Undercity West :: The Children's Hideout": {
+    "api_area": "Undercity West",
+    "api_room": "The Children's Hideout",
+    "match_type": "exact",
+    "room_id": 102
+  },
+  "Undercity West :: The Crumbling Market": {
+    "api_area": "Undercity West",
+    "api_room": "The Crumbling Market",
+    "match_type": "exact",
+    "room_id": 103
+  },
+  "Undercity West :: The Washing-Woman's Way": {
+    "api_area": "Undercity West",
+    "api_room": "The Washing-Woman's Way",
+    "match_type": "exact",
+    "room_id": 104
+  },
+  "Undercity West :: Underdark Fishmarket": {
+    "api_area": "Undercity West",
+    "api_room": "Underdark Fishmarket",
+    "match_type": "exact",
+    "room_id": 105
+  },
+  "Undercity West :: Way of the Mother Lode": {
+    "api_area": "Undercity West",
+    "api_room": "Way of the Mother Lode",
+    "match_type": "created",
+    "room_id": 150
+  },
+  "Wine Cellar :: A Laborer's Thirst": {
+    "api_area": "Wine Cellar",
+    "api_room": "A Laborer's Thirst",
+    "match_type": "created",
+    "room_id": 151
+  },
+  "Wine Cellar :: Blackmarket of Wines": {
+    "api_area": "Wine Cellar",
+    "api_room": "Blackmarket of Wines",
+    "match_type": "exact",
+    "room_id": 106
+  },
+  "Wine Cellar :: Chamber of Fear": {
+    "api_area": "Wine Cellar",
+    "api_room": "Chamber of Fear",
+    "match_type": "created",
+    "room_id": 152
+  },
+  "Wine Cellar :: Entrance to Darkness": {
+    "api_area": "Wine Cellar",
+    "api_room": "Entrance to Darkness",
+    "match_type": "created",
+    "room_id": 153
+  },
+  "Wine Cellar :: Fine Vintage Vault": {
+    "api_area": "Wine Cellar",
+    "api_room": "Fine Vintage Vault",
+    "match_type": "created",
+    "room_id": 154
+  },
+  "Wine Cellar :: Hall of Struggle": {
+    "api_area": "Wine Cellar",
+    "api_room": "Hall of Struggle",
+    "match_type": "created",
+    "room_id": 155
+  },
+  "Wine Cellar :: Room of Cheap Red Wine": {
+    "api_area": "Wine Cellar",
+    "api_room": "Room of Cheap Red Wine",
+    "match_type": "created",
+    "room_id": 156
+  },
+  "Wine Cellar :: Room of Cheap White Wine": {
+    "api_area": "Wine Cellar",
+    "api_room": "Room of Cheap White Wine",
+    "match_type": "created",
+    "room_id": 157
+  },
+  "Wine Cellar :: Room of Rotten Grapes (early)": {
+    "api_area": "Wine Cellar",
+    "api_room": "Room of Rotten Grapes (early)",
+    "match_type": "created",
+    "room_id": 158
+  },
+  "Wine Cellar :: Room of Rotten Grapes (later)": {
+    "api_area": "Wine Cellar",
+    "api_room": "Room of Rotten Grapes (later)",
+    "match_type": "created",
+    "room_id": 159
+  },
+  "Wine Cellar :: Smokebarrel Stair": {
+    "api_area": "Wine Cellar",
+    "api_room": "Smokebarrel Stair",
+    "match_type": "created",
+    "room_id": 160
+  },
+  "Wine Cellar :: The Gallows": {
+    "api_area": "Wine Cellar",
+    "api_room": "The Gallows",
+    "match_type": "exact",
+    "room_id": 108
+  },
+  "Wine Cellar :: The Gallows (later)": {
+    "api_area": "Wine Cellar",
+    "api_room": "Gallows",
+    "match_type": "fuzzy",
+    "room_id": 107
+  },
+  "Wine Cellar :: The Greedy One's Den": {
+    "api_area": "Wine Cellar",
+    "api_room": "The Greedy One's Den",
+    "match_type": "created",
+    "room_id": 161
+  },
+  "Wine Cellar :: The Hero's Winehall": {
+    "api_area": "Wine Cellar",
+    "api_room": "The Hero's Winehall",
+    "match_type": "exact",
+    "room_id": 109
+  },
+  "Wine Cellar :: The Reckoning Room": {
+    "api_area": "Wine Cellar",
+    "api_room": "The Reckoning Room",
+    "match_type": "exact",
+    "room_id": 110
+  },
+  "Wine Cellar :: The Rich Drown in Wine": {
+    "api_area": "Wine Cellar",
+    "api_room": "The Rich Drown in Wine",
+    "match_type": "created",
+    "room_id": 162
+  },
+  "Wine Cellar :: Wine Guild Hall": {
+    "api_area": "Wine Cellar",
+    "api_room": "Wine Guild Hall",
+    "match_type": "created",
+    "room_id": 163
+  },
+  "Wine Cellar :: Wine Magnate's Chambers": {
+    "api_area": "Wine Cellar",
+    "api_room": "Wine Magnate's Chambers",
+    "match_type": "created",
+    "room_id": 164
+  },
+  "Wine Cellar :: Worker's Breakroom": {
+    "api_area": "Wine Cellar",
+    "api_room": "Worker's Breakroom",
+    "match_type": "exact",
+    "room_id": 111
+  }
+}
