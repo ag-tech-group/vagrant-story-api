@@ -28,9 +28,7 @@ async def list_enemies(
 @router.get("/{enemy_id}", response_model=EnemyDetailRead)
 async def get_enemy(enemy_id: int, session: AsyncSession = Depends(get_async_session)):
     result = await session.execute(
-        select(Enemy)
-        .where(Enemy.id == enemy_id)
-        .options(selectinload(Enemy.drops))
+        select(Enemy).where(Enemy.id == enemy_id).options(selectinload(Enemy.drops))
     )
     enemy = result.scalar_one_or_none()
     if not enemy:
