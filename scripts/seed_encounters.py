@@ -14,7 +14,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from app.config import settings
 from app.models.area import Area
 from app.models.enemy import Enemy
-from app.models.enemy_encounter import EnemyEncounter
+from app.models.enemy_encounter import EncounterDrop, EnemyEncounter
 from app.models.room import Room
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -132,6 +132,7 @@ async def seed_encounters(session: AsyncSession, room_lookup: dict[str, int]):
     name_to_id: dict[str, int] = {e.name: e.id for e in enemies_result.scalars().all()}
 
     total = 0
+    total_drops = 0
     skipped_enemy = 0
     skipped_room = 0
     for enc in encounters:
@@ -149,18 +150,38 @@ async def seed_encounters(session: AsyncSession, room_lookup: dict[str, int]):
         attacks = ", ".join(enc.get("attacks", []))
         condition = enc.get("condition", "")
 
-        session.add(
-            EnemyEncounter(
-                enemy_id=enemy_id,
-                room_id=room_id,
-                condition=condition,
-                attacks=attacks,
-            )
+        encounter = EnemyEncounter(
+            enemy_id=enemy_id,
+            room_id=room_id,
+            condition=condition,
+            attacks=attacks,
         )
+        session.add(encounter)
+        await session.flush()
+
+        # Seed encounter drops
+        for drop_data in enc.get("drops", []):
+            drop_item = drop_data.get("item", "")
+            drop_chance = drop_data.get("drop_chance", "")
+            if not drop_item or drop_chance == "never":
+                continue
+            encounter_drop = EncounterDrop(
+                encounter_id=encounter.id,
+                body_part=drop_data.get("body_part", ""),
+                item=drop_item,
+                material=drop_data.get("material", "") or "",
+                drop_chance=drop_chance,
+                drop_value=drop_data.get("drop_value") or 0,
+                grip=drop_data.get("grip", "") or "",
+                quantity=drop_data.get("quantity", 1) or 1,
+            )
+            session.add(encounter_drop)
+            total_drops += 1
+
         total += 1
 
     await session.commit()
-    print(f"  enemy_encounters: {total} encounters seeded")
+    print(f"  enemy_encounters: {total} encounters seeded ({total_drops} drops)")
     if skipped_enemy:
         print(f"    (skipped {skipped_enemy} encounters: enemy name not found)")
     if skipped_room:
