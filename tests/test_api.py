@@ -2,6 +2,7 @@ from httpx import AsyncClient
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.models.blade import Blade
+from app.models.enemy import Enemy, EnemyBodyPart
 from app.models.material import Material
 
 
@@ -94,6 +95,102 @@ class TestBlades:
         resp = await client.get("/blades?q=clay")
         assert len(resp.json()) == 1
         assert resp.json()[0]["name"] == "Claymore"
+
+
+class TestEnemies:
+    async def test_list_empty(self, client: AsyncClient):
+        resp = await client.get("/enemies")
+        assert resp.status_code == 200
+        assert resp.json() == []
+
+    async def test_list_with_data(self, client: AsyncClient, session: AsyncSession):
+        enemy = Enemy(
+            name="Bat",
+            enemy_class="Beast",
+            hp=40,
+            mp=0,
+            str_stat=97,
+            int_stat=65,
+            agi_stat=90,
+        )
+        session.add(enemy)
+        await session.commit()
+
+        resp = await client.get("/enemies")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert len(data) == 1
+        assert data[0]["name"] == "Bat"
+        assert data[0]["enemy_class"] == "Beast"
+        assert data[0]["str"] == 97
+        assert data[0]["int"] == 65
+        assert data[0]["agi"] == 90
+
+    async def test_get_by_id_with_body_parts(self, client: AsyncClient, session: AsyncSession):
+        enemy = Enemy(
+            name="Bat",
+            enemy_class="Beast",
+            hp=40,
+            mp=0,
+            str_stat=97,
+            int_stat=65,
+            agi_stat=90,
+        )
+        session.add(enemy)
+        await session.flush()
+
+        bp = EnemyBodyPart(
+            enemy_id=enemy.id,
+            name="Body",
+            physical=-5,
+            air=25,
+            fire=-10,
+            earth=-25,
+            water=10,
+            light=-5,
+            dark=5,
+            blunt=0,
+            edged=-10,
+            piercing=-5,
+        )
+        session.add(bp)
+        await session.commit()
+
+        resp = await client.get(f"/enemies/{enemy.id}")
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["name"] == "Bat"
+        assert len(data["body_parts"]) == 1
+        assert data["body_parts"][0]["name"] == "Body"
+        assert data["body_parts"][0]["physical"] == -5
+        assert data["body_parts"][0]["air"] == 25
+
+    async def test_not_found(self, client: AsyncClient):
+        resp = await client.get("/enemies/999")
+        assert resp.status_code == 404
+
+    async def test_search(self, client: AsyncClient, session: AsyncSession):
+        session.add(
+            Enemy(
+                name="Bat", enemy_class="Beast", hp=40, mp=0, str_stat=97, int_stat=65, agi_stat=90
+            )
+        )
+        session.add(
+            Enemy(
+                name="Dragon",
+                enemy_class="Dragon",
+                hp=480,
+                mp=0,
+                str_stat=118,
+                int_stat=132,
+                agi_stat=95,
+            )
+        )
+        await session.commit()
+
+        resp = await client.get("/enemies?q=bat")
+        assert len(resp.json()) == 1
+        assert resp.json()[0]["name"] == "Bat"
 
 
 class TestMaterials:

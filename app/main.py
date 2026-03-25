@@ -21,6 +21,7 @@ from app.routers import (
     chests_router,
     consumables_router,
     crafting_router,
+    enemies_router,
     gems_router,
     grimoires_router,
     grips_router,
@@ -111,6 +112,7 @@ app.include_router(workshops_router)
 app.include_router(chests_router)
 app.include_router(crafting_router)
 app.include_router(characters_router)
+app.include_router(enemies_router)
 app.include_router(titles_router)
 app.include_router(rankings_router)
 app.include_router(areas_router)

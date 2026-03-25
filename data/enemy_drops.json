@@ -1,0 +1,8143 @@
+[
+  {
+    "enemy_name": "Air Elemental (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Foudre",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Air Elemental (Weak)",
+    "drops": [
+      {
+        "body_part": "Accessory",
+        "item": "Marduk",
+        "drop_chance": "remote",
+        "drop_value": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Foudre",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Arch Dragon",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Acacia Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Acolyte's Nostrum",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Asura",
+    "drops": [
+      {
+        "body_part": "Accessory",
+        "item": "Marlene's Ring",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Tigertail Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Basilisk",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Snowfly Draught",
+        "drop_chance": "excellent",
+        "drop_value": 64
+      }
+    ]
+  },
+  {
+    "enemy_name": "Bat",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "very good",
+        "drop_value": 52
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Root",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "good",
+        "drop_value": 38
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "very good",
+        "drop_value": 52
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Eye of Argon",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "fair",
+        "drop_value": 25
+      }
+    ]
+  },
+  {
+    "enemy_name": "Bejart",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Guisarme",
+        "material": "Bronze",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Blood Lizard",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Basinet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Basinet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Armet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Plate Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Plate Glove",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Chain Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Fluted Armor",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Plate Mail",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Light Greave",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Missaglia",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Missaglia",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scorpion",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Wooden Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Firangi",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Knuckle Guard",
+        "gem": "Orion"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Corcesca",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Winged Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Footman's Mace 2H",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sarissa Grip",
+        "gem": "Braveheart"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Tabar",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamshir",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Counter Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "War Hammer",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Gendarme"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Falchion",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Counter Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Claymore",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Counter Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Balbriggan",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Sarissa Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Voulge",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Framea Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Fauchard",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Framea Pole",
+        "gem": "Gnome Emerald"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Chamkaq",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Heavy Grip",
+        "gem": "Undine Jasper"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Round Shield",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "gem": "Death Queen"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Spiked Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "gem": "Manabreaker"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Casserole Shield",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Round Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Kite Shield",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Casserole Shield",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "gem": "Talos Feldspar"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Acolyte's Nostrum",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "excellent",
+        "drop_value": 64
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Snowfly Draught",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type B)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "fair",
+        "drop_value": 25
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type C)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Knuckles",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Ring Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Chain Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Light Greave",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rapier",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Short Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scimitar",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Norse Sword",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Short Hilt"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Buckler",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26
+      },
+      {
+        "body_part": "Shield",
+        "item": "Pelta Shield",
+        "material": "Wood",
+        "drop_chance": "fair",
+        "drop_value": 26
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type D)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Chain Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Chain Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Light Greave",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Langdebeve",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Gastraph Bow",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Simple Bolt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Glaive",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Wooden Pole"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type E)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Cabasset",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Short Sword",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Firangi",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Katana",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Quad Shield",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "gem": "Sylphid Topaz"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Circle Shield",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "gem": "Salamander Ruby"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type F)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Knuckles",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Chain Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Light Greave",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Spiked Club",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Battle Axe",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Guisarme",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Buckler",
+        "material": "Wood",
+        "drop_chance": "fair",
+        "drop_value": 26
+      },
+      {
+        "body_part": "Shield",
+        "item": "Targe",
+        "material": "Wood",
+        "drop_chance": "fair",
+        "drop_value": 26
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type G)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Cabasset",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Target Bow",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Javelin Bolt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scorpion",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Spiculum Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Footman's Mace 2H",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Sarissa Grip"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type H)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Cabasset",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Footman's Mace 1H",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Sarissa Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Tabarzin",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Large Crescent",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Tower Shield",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "gem": "Undine Jasper"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Quad Shield",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "gem": "Gnome Emerald"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type I)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Basinet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Rondanche",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Plate Glove",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Falchion",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Counter Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Schiavona",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Counter Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shotel",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Counter Guard"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Casserole Shield",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "gem": "Sylphid Topaz"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Kite Shield",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "gem": "Gnome Emerald"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type J)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Basinet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Tilt Glove",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Plate Glove",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Tilt Glove",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Plate Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Sabre Halberd",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Gendarme"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Tabar",
+        "material": "Silver",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Gendarme"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "War Hammer",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Heavy Grip"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Heater Shield",
+        "material": "Bronze",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "gem": "Salamander Ruby"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Casserole Shield",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "gem": "Undine Jasper"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Crimson Blade (Type K)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Basinet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Armet",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Tilt Glove",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Plate Glove",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Missaglia",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Cranequin",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Javelin Bolt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Gloomwing",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Heavy Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Trident",
+        "material": "Iron",
+        "drop_chance": "fair",
+        "drop_value": 26,
+        "grip": "Winged Pole"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Damascus Crab",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Platinum Key",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Damascus Golem",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dao",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Palm Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Gaea",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dark Crusader (Strong)",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Rhomphaia",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Power Palm",
+        "gem": "Sigguld"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rhomphaia",
+        "material": "Hagane",
+        "drop_chance": "remote",
+        "drop_value": 5,
+        "grip": "Spiral Hilt",
+        "gem": "Marid Aquamarine"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rhomphaia",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Power Palm",
+        "gem": "Altema"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rhomphaia",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 10,
+        "grip": "Power Palm",
+        "gem": "Titan Malachite"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rhomphaia",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 10,
+        "grip": "Murderer's Hilt",
+        "gem": "Djinn Amber"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rhomphaia",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Murderer's Hilt",
+        "gem": "Ifrit Carnelian"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rhomphaia",
+        "material": "Silver",
+        "drop_chance": "remote",
+        "drop_value": 5,
+        "grip": "Spiral Hilt",
+        "gem": "Seraphim Diamond"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rhomphaia",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Murderer's Hilt",
+        "gem": "Dao Moonstone"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "very good",
+        "drop_value": 48
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dark Crusader (Weak)",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Katana",
+        "material": "Hagane",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Cross Guard",
+        "gem": "Demonia"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Deteriorer",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dark Dragon",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Verbena Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Kings",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dark Elemental (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cattleya Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Meteore",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dark Elemental (Weak)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dark Eye",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Teslae",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Patir",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Incendie",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Glace",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Zephyr",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Terre",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dark Skeleton",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Basinet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Basinet",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Plate Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Chamkaq",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Gendarme"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Windlass",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Javelin Bolt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Firangi",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Knuckle Guard",
+        "gem": "Iocus"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamshir",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Knuckle Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamshir",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Knuckle Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Footman's Mace 2H",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Gendarme"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Schiavona",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Side Ring"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Boar Spear",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Framea Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "War Hammer",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shotel",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Side Ring"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Falchion",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Side Ring"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Mjolnir",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Balbriggan",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Tabar",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Heavy Grip"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Kite Shield",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "gem": "Speedster"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Round Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "gem": "Brainshield"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Casserole Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Heater Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Kite Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Tonic",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Saint's Nostrum",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Potion",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Death",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Wizard Hat",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Armet",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Freiturnier",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Rondanche",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Wizard Robe",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamanic Staff",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Grimoire Grip",
+        "gem": "Marid Aquamarine"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Bishop's Crosier",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Bhuj Type",
+        "gem": "Berial Blackpearl"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Bishop's Crosier",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Grimoire Grip"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Talian Ring",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Diadra's Earring",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Morgan's Nails",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Saint's Nostrum",
+        "drop_chance": "good",
+        "drop_value": 38
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Mages",
+        "drop_chance": "good",
+        "drop_value": 38
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Djinn",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Foudre",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dragon",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Sages",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Analyse",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dragon Zombie",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Marigold Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Duane",
+    "drops": [
+      {
+        "body_part": "Body",
+        "item": "Wizard Robe",
+        "material": "Leather",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Wizard Staff",
+        "material": "Silver",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Sand Face"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Crimson Key",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Demolir",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Clef",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dullahan (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Mages",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Lux",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dullahan (Weak)",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Balbriggan",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Heavy Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Sabre Halberd",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Heavy Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Chamkaq",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sarissa Grip"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Round Shield",
+        "material": "Hagane",
+        "drop_chance": "fair",
+        "drop_value": 24,
+        "gem": "Powerfist"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Spiked Shield",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "gem": "Manabreaker"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Kings",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dummy (Affinity)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Kings",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dummy (Beast)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dummy (Dragon)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Root",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Dragoons",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dummy (Evil)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Sages",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dummy (Human)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dummy (Phantom)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Root",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Mages",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Dummy (Undead)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Kings",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Earth Dragon",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Bronze Key",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Parebrise",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Earth Elemental (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Gaea",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Earth Elemental (Weak)",
+    "drops": [
+      {
+        "body_part": "Accessory",
+        "item": "Palolo's Ring",
+        "drop_chance": "remote",
+        "drop_value": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Fire Elemental (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Flamme",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Fire Elemental (Weak)",
+    "drops": [
+      {
+        "body_part": "Accessory",
+        "item": "Tamulis Tongue",
+        "drop_chance": "remote",
+        "drop_value": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Flame Dragon",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Calla Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Sorcerer's Reagent",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Gargoyle",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Spirit Orison",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ghast",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Ring Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Cuisse",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Cuisse",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Long Boots",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Short Sword",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Cross Guard",
+        "gem": "Braveheart"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Tabarzin",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Sand Face"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Footman's Mace 1H",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Acolyte's Nostrum",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ghost (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Kings",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Zephyr",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ghost (Weak)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Teslae",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Incendie",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Terre",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 2
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Glace",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ghoul (One Arm)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Bandana",
+        "material": "Leather",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Sandals",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scramasax",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Francisca",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "fair",
+        "drop_value": 25
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ghoul (Two Arm)",
+    "drops": [
+      {
+        "body_part": "Body",
+        "item": "Hauberk",
+        "material": "Leather",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Sandals",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Dirk",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "enemy_name": "Giant Crab",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Sylphe",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Goblin",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Bone Helm",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Bear Mask",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Leather Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Knuckles",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Ring Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Cuirass",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Long Boots",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Cuisse",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Battle Knife",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scimitar",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Battle Axe",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sand Face"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Light Crossbow",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Steel Bolt"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Targe",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Shield",
+        "item": "Circle Shield",
+        "material": "Wood",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Spirit Orison",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Yggdrasil's Tears",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Panacea",
+        "drop_chance": "fair",
+        "drop_value": 26
+      }
+    ]
+  },
+  {
+    "enemy_name": "Goblin Leader",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Cuirass",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Cuisse",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Long Boots",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Spiked Club",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Goblin Club",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sand Face"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Pelta Shield",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Golem",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 2
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Dragoons",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Ameliorer",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Gremlin",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Basinet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Plate Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Plate Glove",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Poleyn",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Hatchet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Side Ring",
+        "gem": "Salamander Ruby"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shotel",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Side Ring",
+        "gem": "Morlock Jet"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Tabar",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Heavy Grip",
+        "gem": "Gnome Emerald"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Lug Crossbow",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Falarica Bolt",
+        "gem": "Sylphid Topaz"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Tabar",
+        "material": "Damascus",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Heavy Grip",
+        "gem": "Orion"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Lug Crossbow",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Falarica Bolt",
+        "gem": "Haeralis"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Khora",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Side Ring",
+        "gem": "Braveheart"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shotel",
+        "material": "Damascus",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Side Ring",
+        "gem": "Braveheart"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Round Shield",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "gem": "Nightkiller"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Spiked Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "gem": "Haeralis"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Tower Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "gem": "Nightkiller"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Snowfly Draught",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Acolyte's Nostrum",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Grissom",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Wizard Staff",
+        "material": "Hagane",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Sarissa Grip",
+        "gem": "Sylphid Topaz"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Swan Song",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Annuler",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Gnome",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Sages",
+        "drop_chance": "abysmal",
+        "drop_value": 1
+      }
+    ]
+  },
+  {
+    "enemy_name": "Harpy (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "excellent",
+        "drop_value": 64
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Banish",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Harpy (Weak)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Intensite",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 5
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Hellhound",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ichthious",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Faerie Wing",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ifrit",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Flamme",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Imp",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Snowfly Draught",
+        "drop_chance": "excellent",
+        "drop_value": 64
+      },
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Potion",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Iron Crab",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Valens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Kings",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "abysmal",
+        "drop_value": 1
+      }
+    ]
+  },
+  {
+    "enemy_name": "Iron Golem",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Colombine Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Dragoons",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Last Crusader (Strong)",
+    "drops": [
+      {
+        "body_part": "Accessory",
+        "item": "Agrias's Balm",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Purifier",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Alchemist's Reagent",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Dragoons",
+        "drop_chance": "abysmal",
+        "drop_value": 1
+      }
+    ]
+  },
+  {
+    "enemy_name": "Last Crusader (Weak)",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Holy Win",
+        "material": "Damascus",
+        "drop_chance": "remote",
+        "drop_value": 3,
+        "grip": "Spiral Hilt",
+        "gem": "Berial Blackpearl"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "very good",
+        "drop_value": 48
+      }
+    ]
+  },
+  {
+    "enemy_name": "Lich",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Wizard Hat",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Armet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Rondanche",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Bandage",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Tilt Glove",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Freiturnier",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Bandage",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Tilt Glove",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Wizard Robe",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Brigandine",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Missaglia",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Missaglia",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamanic Staff",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Grimoire Grip",
+        "gem": "Titan Malachite"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Bishop's Crosier",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Bhuj Type",
+        "gem": "Djinn Amber"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Iron",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Gendarme"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Clergy Rod",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Rusted Nails",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Marduk",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Agales's Chain",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Ghost Hound",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Kadesh Ring",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Diadra's Earring",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Eulelia Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Mages",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Radius",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Demolir",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Meteore",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Laurel Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Potion",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Lich Lord",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Wizard Hat",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Armet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Tilt Glove",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Rondanche",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Freiturnier",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Tilt Glove",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Tilt Glove",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Jambeau",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Missaglia",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Missaglia",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Grimoire Grip",
+        "gem": "Ifrit Carnelian"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamanic Staff",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Grimoire Grip",
+        "gem": "Dao Moonstone"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamanic Staff",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamanic Staff",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Tamulis Tongue",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Palolo's Ring",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Faufnir's Tear",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Balam Ring",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Potion",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Mages",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Radius",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Kings",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Sages",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Chest",
+        "item": "Wizard Robe",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Chest",
+        "item": "Plate Mail",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Chest",
+        "item": "Brigandine",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Chest",
+        "item": "Brigandine",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Lizardman (Strong)",
+    "drops": [
+      {
+        "body_part": "R.Arm",
+        "item": "Knuckles",
+        "material": "Iron",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Body",
+        "item": "Cuirass",
+        "material": "Leather",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Spear",
+        "material": "Iron",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Spiculum Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Glaive",
+        "material": "Bronze",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Wooden Pole"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Lily Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Antidote",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Lizardman (Weak)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Cabasset",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Cabasset",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Cabasset",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Chain Mail",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Light Greave",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scimitar",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Short Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Guisarme",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sand Face"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Langdebeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Short Sword",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Corcesca",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Winged Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Firangi",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Sabre Mace",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Chamkaq",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Sarissa Grip"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Buckler",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Spiked Shield",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Circle Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Tower Shield",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Yggdrasil's Tears",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Spirit Orison",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "very good",
+        "drop_value": 48
+      }
+    ]
+  },
+  {
+    "enemy_name": "Mandel",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Rapier",
+        "material": "Bronze",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Short Hilt"
+      }
+    ]
+  },
+  {
+    "enemy_name": "Marid",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Avalanche",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Mimic",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Valens",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Audentia",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Prudens",
+        "drop_chance": "remote",
+        "drop_value": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Virtus",
+        "drop_chance": "remote",
+        "drop_value": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Volare",
+        "drop_chance": "remote",
+        "drop_value": 3
+      }
+    ]
+  },
+  {
+    "enemy_name": "Minotaur",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Hand of Light",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Chamomile Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Guerir",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Debile",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Minotaur Lord",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Hand of Light",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Runkasyle",
+        "gem": "Titan Malachite"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Titan's Ring",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Alchemist's Reagent",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "remote",
+        "drop_value": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Sorcerer's Reagent",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Minotaur Zombie",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Hand of Light",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Rune Earrings",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Mummy",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Chamkaq",
+        "material": "Hagane",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Sarissa Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Shamshir",
+        "material": "Hagane",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Knuckle Guard"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Root",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "enemy_name": "Nightmare",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Meteore",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Dragoons",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Nightstalker (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Melissa Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Eclairer",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Nightstalker (Weak)",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Double Blade",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Bhuj Type",
+        "gem": "Morlock Jet"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ogre (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Kings",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Rempart",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ogre (Weak)",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Executioner",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Side Ring"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Balbriggan",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Heavy Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Claymore",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Side Ring"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Tabar",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Heavy Grip"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Lau Fei's Armlet",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Pushpaka",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Potion",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ogre Lord (Strong)",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Schiavona",
+        "material": "Iron",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Power Palm",
+        "gem": "Morlock Jet"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Agales's Chain",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Potion",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ogre Lord (Weak)",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Griever",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Runkasyle"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Cross Choker",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Potion",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ogre Zombie",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Bastard Sword",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Spiral Hilt"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Nimje Coif",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Azalea Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      }
+    ]
+  },
+  {
+    "enemy_name": "Orc",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Fusskampf",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Sabre Halberd",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sarissa Grip",
+        "gem": "Gnome Emerald"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Large Crescent",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Sabre Mace",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Executioner",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Knuckle Guard",
+        "gem": "Gnome Emerald"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Katana",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Counter Guard",
+        "gem": "Braveheart"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Claymore",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Executioner",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Counter Guard"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Eye of Argon",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "excellent",
+        "drop_value": 64
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Orc Leader",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Wizard Hat",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Barbut",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Wizard Robe",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Breastplate",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Footman's Mace 2H",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sarissa Grip",
+        "gem": "Sylphid Topaz"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Katana",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Knuckle Guard",
+        "gem": "Sylphid Topaz"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sarissa Grip",
+        "gem": "Hellraiser"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Large Crescent",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sarissa Grip",
+        "gem": "Gnome Emerald"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Sabre Mace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sarissa Grip",
+        "gem": "Gnome Emerald"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Clergy Rod",
+        "material": "Damascus",
+        "drop_chance": "remote",
+        "drop_value": 3,
+        "grip": "Gendarme",
+        "gem": "Angel Pearl"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Footman's Mace 2H",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sarissa Grip",
+        "gem": "Morlock Jet"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Poison Slime (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Panacea",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Poison Slime (Weak)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Panacea",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Quicksilver",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Khukuri",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Power Palm",
+        "gem": "Angel Pearl"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Hatchet",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Power Palm",
+        "gem": "Angel Pearl"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Baselard",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Side Ring",
+        "gem": "Angel Pearl"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Agrias's Balm",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Lionhead",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Rune Earrings",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "very good",
+        "drop_value": 48
+      }
+    ]
+  },
+  {
+    "enemy_name": "Ravana",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Schirra Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Sarjik",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Rapier",
+        "material": "Iron",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Root",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Shadow",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Foudre",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Gaea",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Flamme",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Avalanche",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Shrieker",
+    "drops": [
+      {
+        "body_part": "Weapon",
+        "item": "Kris",
+        "material": "Damascus",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Power Palm",
+        "gem": "Salamander Ruby"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Hatchet",
+        "material": "Silver",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Power Palm",
+        "gem": "Angel Pearl"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Khukuri",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 13,
+        "grip": "Power Palm",
+        "gem": "Morlock Jet"
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Salamander Ring",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Agrias's Balm",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Accessory",
+        "item": "Agrippa's Choker",
+        "drop_chance": "very poor",
+        "drop_value": 13
+      },
+      {
+        "body_part": "Misc",
+        "item": "Snowfly Draught",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Valens",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Prudens",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Volare",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Audentia",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Virtus",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Silver Wolf",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "good",
+        "drop_value": 38
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "good",
+        "drop_value": 38
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 39
+      }
+    ]
+  },
+  {
+    "enemy_name": "Skeleton (One Arm)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Bone Helm",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Bone Helm",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Goblin Club",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sand Face"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Hand Axe",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Hand Axe",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sand Face"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Battle Axe",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very good",
+        "drop_value": 52
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Saint's Nostrum",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Skeleton (Two Arm)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Bone Helm",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Bone Helm",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Sallet",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Knuckles",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Gauntlet",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Vambrace",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Cuirass",
+        "material": "Leather",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Segmentata",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Scale Armor",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Boots",
+        "material": "Leather",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Legs",
+        "item": "Light Greave",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Battle Axe",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Spatha",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Spear",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Wooden Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Spatha",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Short Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scorpion",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Winged Pole"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Rapier",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Knuckle Guard",
+        "gem": "Dragonite"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Morning Star",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Gendarme"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Corcesca",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Framea Pole"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Targe",
+        "material": "Wood",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Shield",
+        "item": "Kite Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "gem": "Brainshield"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "very poor",
+        "drop_value": 12
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 2
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Panacea",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Skeleton Knight",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Bear Mask",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Bone Helm",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Ring Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Norse Sword",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Guisarme",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Short Sword",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Short Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Gastraph Bow",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Steel Bolt"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Pelta Shield",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very poor",
+        "drop_value": 12
+      }
+    ]
+  },
+  {
+    "enemy_name": "Sky Dragon",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Tearose Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Demance",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Slime (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Yggdrasil's Tears",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Eye of Argon",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Slime (Weak)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Faerie Chortle",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Audentia",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Snow Dragon",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Barrer",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Panacea",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "abysmal",
+        "drop_value": 1
+      }
+    ]
+  },
+  {
+    "enemy_name": "Stirge",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Eye of Argon",
+        "drop_chance": "very good",
+        "drop_value": 48
+      }
+    ]
+  },
+  {
+    "enemy_name": "Water Elemental (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Avalanche",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Sages",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Acolyte's Nostrum",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Water Elemental (Weak)",
+    "drops": [
+      {
+        "body_part": "Accessory",
+        "item": "Talian Ring",
+        "drop_chance": "remote",
+        "drop_value": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Tonic",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Avalanche",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      }
+    ]
+  },
+  {
+    "enemy_name": "Wraith",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Angelic Paean",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Acolyte's Nostrum",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Potion",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mandrake Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Exsorcer",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Lux",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Patir",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Kalmia Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Venin",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Mages",
+        "drop_chance": "abysmal",
+        "drop_value": 1
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Zephyr",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Snowfly Draught",
+        "drop_chance": "very good",
+        "drop_value": 48
+      }
+    ]
+  },
+  {
+    "enemy_name": "Wyvern (Strong)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Hyacinth Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Tonic",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Ignifuge",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Wyvern Knight",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Dragoons",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Queens",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Chest Key",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Wyvern Queen",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Anemone Sigil",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Elixir of Sages",
+        "drop_chance": "always",
+        "drop_value": 255
+      }
+    ]
+  },
+  {
+    "enemy_name": "Zombie (One Arm)",
+    "drops": [
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "enemy_name": "Zombie (Two Arm)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Bear Mask",
+        "material": "Leather",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Leather Glove",
+        "material": "Leather",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Leather Glove",
+        "material": "Leather",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Sandals",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Boots",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Goblin Club",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Zombie Fighter",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Ring Mail",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Ring Sleeve",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Coif",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Leggings",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Boots",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Spatha",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scimitar",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "poor",
+        "drop_value": 16
+      }
+    ]
+  },
+  {
+    "enemy_name": "Zombie Knight (One Arm)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Cuisse",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Light Greave",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Battle Knife",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Short Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Hand Axe",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Wooden Grip"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Spatha",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Broad Sword",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Short Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Firangi",
+        "material": "Hagane",
+        "drop_chance": "good",
+        "drop_value": 32,
+        "grip": "Counter Guard"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "always",
+        "drop_value": 255,
+        "quantity": 3
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Zombie Knight (Two Arm)",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Bone Helm",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Chain Coif",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Head",
+        "item": "Bone Helm",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Ring Sleeve",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Knuckles",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Chain Sleeve",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Ring Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Chain Sleeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Ring Sleeve",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Knuckles",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Cuirass",
+        "material": "Leather",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Ring Mail",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Body",
+        "item": "Banded Mail",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Cuisse",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Gastraph Bow",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Simple Bolt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Scimitar",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Short Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Langdebeve",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Sand Face"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Gastraph Bow",
+        "material": "Bronze",
+        "drop_chance": "very poor",
+        "drop_value": 8,
+        "grip": "Steel Bolt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Short Sword",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Swept Hilt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Short Sword",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Knuckle Guard",
+        "gem": "Salamander Ruby"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Firangi",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Target Bow",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Javelin Bolt"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Short Sword",
+        "material": "Iron",
+        "drop_chance": "good",
+        "drop_value": 32,
+        "grip": "Knuckle Guard"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Quad Shield",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Shield",
+        "item": "Tower Shield",
+        "material": "Hagane",
+        "drop_chance": "good",
+        "drop_value": 32,
+        "gem": "Sylphid Topaz"
+      },
+      {
+        "body_part": "Shield",
+        "item": "Circle Shield",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Root",
+        "drop_chance": "fair",
+        "drop_value": 25
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Cure Bulb",
+        "drop_chance": "very good",
+        "drop_value": 48
+      },
+      {
+        "body_part": "Misc",
+        "item": "Alchemist's Reagent",
+        "drop_chance": "very poor",
+        "drop_value": 12
+      },
+      {
+        "body_part": "Misc",
+        "item": "Snowfly Draught",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Eye of Argon",
+        "drop_chance": "excellent",
+        "drop_value": 64
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  },
+  {
+    "enemy_name": "Zombie Mage",
+    "drops": [
+      {
+        "body_part": "Head",
+        "item": "Spangenhelm",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Head",
+        "item": "Wizard Hat",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Bandage",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Leather Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "R.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Leather Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Bandage",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "L.Arm",
+        "item": "Reinforced Glove",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Body",
+        "item": "Wizard Robe",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Ring Leggings",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Long Boots",
+        "material": "Leather",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Cuisse",
+        "material": "Hagane",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Legs",
+        "item": "Chain Leggings",
+        "material": "Iron",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Throwing Knife",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Knuckle Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Clergy Rod",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Sarissa Grip",
+        "gem": "Dragonite"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Kudi",
+        "material": "Hagane",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Cinquedea",
+        "material": "Iron",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Cross Guard"
+      },
+      {
+        "body_part": "Weapon",
+        "item": "Summoner Baton",
+        "material": "Bronze",
+        "drop_chance": "poor",
+        "drop_value": 16,
+        "grip": "Czekan Type"
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Incendie",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Teslae",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Glace",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Grimoire Terre",
+        "drop_chance": "very poor",
+        "drop_value": 8
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Root",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Vera Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      },
+      {
+        "body_part": "Misc",
+        "item": "Mana Bulb",
+        "drop_chance": "good",
+        "drop_value": 32
+      }
+    ]
+  }
+]

@@ -7,6 +7,7 @@ from app.routers.characters import router as characters_router
 from app.routers.chests import router as chests_router
 from app.routers.consumables import router as consumables_router
 from app.routers.crafting import router as crafting_router
+from app.routers.enemies import router as enemies_router
 from app.routers.gems import router as gems_router
 from app.routers.grimoires import router as grimoires_router
 from app.routers.grips import router as grips_router
@@ -29,6 +30,7 @@ __all__ = [
     "characters_router",
     "chests_router",
     "consumables_router",
+    "enemies_router",
     "crafting_router",
     "gems_router",
     "grimoires_router",
