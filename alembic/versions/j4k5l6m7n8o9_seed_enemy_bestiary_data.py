@@ -38,6 +38,29 @@ def upgrade() -> None:
     """Seed all enemy/bestiary data from JSON files."""
     conn = op.get_bind()
 
+    # ── Step 0: Create enemy_drops table if missing (fix for empty migration 6dd1) ──
+    result = conn.execute(
+        sa.text(
+            "SELECT EXISTS (SELECT 1 FROM information_schema.tables "
+            "WHERE table_name = 'enemy_drops')"
+        )
+    )
+    if not result.scalar():
+        op.create_table(
+            "enemy_drops",
+            sa.Column("id", sa.Integer(), autoincrement=True, nullable=False),
+            sa.Column("enemy_id", sa.Integer(), nullable=False),
+            sa.Column("body_part", sa.String(50), nullable=False),
+            sa.Column("item", sa.String(100), nullable=False),
+            sa.Column("material", sa.String(50), server_default="", nullable=False),
+            sa.Column("drop_chance", sa.String(50), nullable=False),
+            sa.Column("drop_value", sa.Integer(), server_default="0", nullable=False),
+            sa.Column("grip", sa.String(100), server_default="", nullable=False),
+            sa.Column("quantity", sa.Integer(), server_default="1", nullable=False),
+            sa.ForeignKeyConstraint(["enemy_id"], ["enemies.id"], ondelete="CASCADE"),
+            sa.PrimaryKeyConstraint("id"),
+        )
+
     # ── Step 1: Insert new areas ──────────────────────────────────
     for area_name in NEW_AREAS:
         conn.execute(
