@@ -7,11 +7,13 @@ from app.database import get_async_session
 from app.models.armor import Armor
 from app.models.blade import Blade
 from app.models.enemy import Enemy
+from app.models.gem import Gem
 from app.models.grip import Grip
 from app.models.inventory import Inventory, InventoryItem
 from app.models.material import Material
 from app.schemas.game_data import (
     LoadoutArmor,
+    LoadoutCombinedStats,
     LoadoutEnemyInfo,
     LoadoutRequest,
     LoadoutResponse,
@@ -92,6 +94,9 @@ async def optimize_loadout_endpoint(
     materials_result = await session.execute(select(Material))
     materials_db = {m.name: m for m in materials_result.scalars().all()}
 
+    gems_result = await session.execute(select(Gem))
+    gems_db = {g.id: g for g in gems_result.scalars().all()}
+
     # Run optimizer
     loadouts = optimize_loadout(
         inventory_items=filtered_items,
@@ -100,7 +105,9 @@ async def optimize_loadout_endpoint(
         grips_db=grips_db,
         armor_db=armor_db,
         materials_db=materials_db,
+        gems_db=gems_db,
         mode=request.mode,
+        include_2h=request.include_2h,
     )
 
     # Build response
@@ -130,6 +137,33 @@ async def optimize_loadout_endpoint(
                     )
                 )
 
+        # Compute combined player stats for this loadout
+        cs = loadout.compute_combined_stats()
+        combined = LoadoutCombinedStats(
+            str_stat=cs["str"],
+            int_stat=cs["int"],
+            agi_stat=cs["agi"],
+            range_stat=cs["range"],
+            risk=cs["risk"],
+            damage_type=cs["damage_type"],
+            blunt=cs["blunt"],
+            edged=cs["edged"],
+            piercing=cs["piercing"],
+            human=cs["human"],
+            beast=cs["beast"],
+            undead=cs["undead"],
+            phantom=cs["phantom"],
+            dragon=cs["dragon"],
+            evil=cs["evil"],
+            physical=cs["physical"],
+            fire=cs["fire"],
+            water=cs["water"],
+            wind=cs["wind"],
+            earth=cs["earth"],
+            light=cs["light"],
+            dark=cs["dark"],
+        )
+
         loadout_results.append(
             LoadoutResult(
                 rank=loadout.rank,
@@ -143,6 +177,7 @@ async def optimize_loadout_endpoint(
                     target_body_part=loadout.target_body_part,
                     target_reason=loadout.target_reason,
                 ),
+                combined_stats=combined,
             )
         )
 

@@ -594,6 +594,7 @@ class LoadoutRequest(BaseModel):
     include_equipped: bool = True
     include_bag: bool = True
     include_container: bool = True
+    include_2h: bool = True
 
 
 class LoadoutWeapon(BaseModel):
@@ -618,6 +619,33 @@ class LoadoutStats(BaseModel):
     target_reason: str = ""
 
 
+class LoadoutCombinedStats(BaseModel):
+    str_stat: int = Field(0, serialization_alias="str")
+    int_stat: int = Field(0, serialization_alias="int")
+    agi_stat: int = Field(0, serialization_alias="agi")
+    range_stat: int = Field(0, serialization_alias="range")
+    risk: int = 0
+    damage_type: str = ""
+    blunt: int = 0
+    edged: int = 0
+    piercing: int = 0
+    human: int = 0
+    beast: int = 0
+    undead: int = 0
+    phantom: int = 0
+    dragon: int = 0
+    evil: int = 0
+    physical: int = 0
+    fire: int = 0
+    water: int = 0
+    wind: int = 0
+    earth: int = 0
+    light: int = 0
+    dark: int = 0
+
+    model_config = {"from_attributes": True, "populate_by_name": True}
+
+
 class LoadoutResult(BaseModel):
     rank: int
     score: float
@@ -626,6 +654,7 @@ class LoadoutResult(BaseModel):
     weapon: LoadoutWeapon | None = None
     armor: list[LoadoutArmor] | None = None
     stats: LoadoutStats = LoadoutStats()
+    combined_stats: LoadoutCombinedStats | None = None
 
 
 class LoadoutEnemyInfo(BaseModel):
