@@ -392,10 +392,11 @@ def optimize_loadout(
         key = (
             loadout.blade.id if loadout.blade else None,
             loadout.grip.id if loadout.grip else None,
-            tuple(sorted(
-                (slot, a.id if a else None)
-                for slot, (a, _) in loadout.armor_pieces.items()
-            )) if loadout.armor_pieces else (),
+            tuple(
+                sorted((slot, a.id if a else None) for slot, (a, _) in loadout.armor_pieces.items())
+            )
+            if loadout.armor_pieces
+            else (),
         )
         if key not in seen:
             seen.add(key)
