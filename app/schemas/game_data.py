@@ -582,3 +582,60 @@ class ItemDropLocationRead(BaseModel):
     condition: str = ""
 
     model_config = {"from_attributes": True}
+
+
+# ── Loadout optimizer schemas ────────────────────────────────────────
+
+
+class LoadoutRequest(BaseModel):
+    inventory_id: int
+    enemy_id: int
+    mode: str = "full"  # full / offense / defense
+    include_equipped: bool = True
+    include_bag: bool = True
+    include_container: bool = True
+
+
+class LoadoutWeapon(BaseModel):
+    blade_name: str
+    blade_type: str
+    grip_name: str | None = None
+    material: str
+    damage_type: str
+    hands: str
+
+
+class LoadoutArmor(BaseModel):
+    slot: str
+    item_name: str
+    armor_type: str
+    material: str
+
+
+class LoadoutStats(BaseModel):
+    estimated_damage: float = 0.0
+    target_body_part: str = ""
+    target_reason: str = ""
+
+
+class LoadoutResult(BaseModel):
+    rank: int
+    score: float
+    offense_score: float | None = None
+    defense_score: float | None = None
+    weapon: LoadoutWeapon | None = None
+    armor: list[LoadoutArmor] | None = None
+    stats: LoadoutStats = LoadoutStats()
+
+
+class LoadoutEnemyInfo(BaseModel):
+    id: int
+    name: str
+    enemy_class: str
+    hp: int
+    mp: int
+
+
+class LoadoutResponse(BaseModel):
+    enemy: LoadoutEnemyInfo
+    loadouts: list[LoadoutResult] = []

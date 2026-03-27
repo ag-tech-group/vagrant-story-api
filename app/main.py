@@ -27,6 +27,7 @@ from app.routers import (
     grimoires_router,
     grips_router,
     keys_router,
+    loadout_router,
     materials_router,
     rankings_router,
     rooms_router,
@@ -119,6 +120,7 @@ app.include_router(rankings_router)
 app.include_router(areas_router)
 app.include_router(rooms_router)
 app.include_router(drops_router)
+app.include_router(loadout_router)
 app.include_router(user_router)
 
 

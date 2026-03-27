@@ -6,7 +6,7 @@ FastAPI service providing game data for Vagrant Story (PS1). Python 3.12, SQLAlc
 
 ```bash
 uv sync                                          # Install deps
-uv run uvicorn app.main:app --reload --port 8002  # Dev server
+uv run uvicorn app.main:app --reload --port 8000  # Dev server
 uv run alembic upgrade head                       # Run migrations
 uv run ruff check .                               # Lint
 uv run ruff format .                              # Format
@@ -16,7 +16,7 @@ PYTHONPATH=. uv run python scripts/seed_database.py  # Seed DB from JSON
 
 Pre-commit: ruff check --fix → ruff format → pytest. CI runs lint + test on push/PR.
 
-Docker alternative: `docker compose up` (API on :8002, Postgres on :5433).
+Docker alternative: `docker compose up` (API on :8000, Postgres on :5433).
 
 ## Database
 

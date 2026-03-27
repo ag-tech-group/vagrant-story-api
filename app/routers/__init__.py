@@ -13,6 +13,7 @@ from app.routers.gems import router as gems_router
 from app.routers.grimoires import router as grimoires_router
 from app.routers.grips import router as grips_router
 from app.routers.keys import router as keys_router
+from app.routers.loadout import router as loadout_router
 from app.routers.materials import router as materials_router
 from app.routers.rankings import router as rankings_router
 from app.routers.rooms import router as rooms_router
@@ -38,6 +39,7 @@ __all__ = [
     "grimoires_router",
     "grips_router",
     "keys_router",
+    "loadout_router",
     "materials_router",
     "rankings_router",
     "rooms_router",

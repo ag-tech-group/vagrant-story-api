@@ -1,0 +1,158 @@
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.auth.dependencies import get_current_user
+from app.database import get_async_session
+from app.models.armor import Armor
+from app.models.blade import Blade
+from app.models.enemy import Enemy
+from app.models.grip import Grip
+from app.models.inventory import Inventory, InventoryItem
+from app.models.material import Material
+from app.schemas.game_data import (
+    LoadoutArmor,
+    LoadoutEnemyInfo,
+    LoadoutRequest,
+    LoadoutResponse,
+    LoadoutResult,
+    LoadoutStats,
+    LoadoutWeapon,
+)
+from app.services.loadout_scorer import optimize_loadout
+
+router = APIRouter(prefix="/loadout", tags=["loadout"])
+
+
+@router.post("", response_model=LoadoutResponse)
+async def optimize_loadout_endpoint(
+    request: LoadoutRequest,
+    user_id: str = Depends(get_current_user),
+    session: AsyncSession = Depends(get_async_session),
+):
+    """Find the best equipment loadout from an inventory to fight a specific enemy."""
+    # Validate mode
+    if request.mode not in ("full", "offense", "defense"):
+        raise HTTPException(status_code=400, detail="Mode must be 'full', 'offense', or 'defense'")
+
+    # Fetch inventory (verify ownership)
+    inv_result = await session.execute(
+        select(Inventory).where(
+            Inventory.id == request.inventory_id,
+            Inventory.user_id == user_id,
+        )
+    )
+    inventory = inv_result.scalar_one_or_none()
+    if not inventory:
+        raise HTTPException(status_code=404, detail="Inventory not found")
+
+    # Fetch enemy with body parts (selectin is the default lazy strategy)
+    enemy_result = await session.execute(select(Enemy).where(Enemy.id == request.enemy_id))
+    enemy = enemy_result.scalar_one_or_none()
+    if not enemy:
+        raise HTTPException(status_code=404, detail="Enemy not found")
+
+    # Filter inventory items by storage preferences
+    allowed_storage: set[str] = set()
+    if request.include_bag:
+        allowed_storage.add("bag")
+    if request.include_container:
+        allowed_storage.add("container")
+
+    filtered_items: list[InventoryItem] = []
+    for item in inventory.items:
+        if item.storage in allowed_storage:
+            # If include_equipped is False, skip items that have an equip_slot
+            if not request.include_equipped and item.equip_slot is not None:
+                continue
+            filtered_items.append(item)
+
+    if not filtered_items:
+        return LoadoutResponse(
+            enemy=LoadoutEnemyInfo(
+                id=enemy.id,
+                name=enemy.name,
+                enemy_class=enemy.enemy_class,
+                hp=enemy.hp,
+                mp=enemy.mp,
+            ),
+            loadouts=[],
+        )
+
+    # Fetch all game data needed for scoring
+    blades_result = await session.execute(select(Blade))
+    blades_db = {b.id: b for b in blades_result.scalars().all()}
+
+    grips_result = await session.execute(select(Grip))
+    grips_db = {g.id: g for g in grips_result.scalars().all()}
+
+    armor_result = await session.execute(select(Armor))
+    armor_db = {a.id: a for a in armor_result.scalars().all()}
+
+    materials_result = await session.execute(select(Material))
+    materials_db = {m.name: m for m in materials_result.scalars().all()}
+
+    # Run optimizer
+    loadouts = optimize_loadout(
+        inventory_items=filtered_items,
+        enemy=enemy,
+        blades_db=blades_db,
+        grips_db=grips_db,
+        armor_db=armor_db,
+        materials_db=materials_db,
+        mode=request.mode,
+    )
+
+    # Build response
+    loadout_results: list[LoadoutResult] = []
+    for loadout in loadouts:
+        weapon = None
+        if loadout.blade:
+            weapon = LoadoutWeapon(
+                blade_name=loadout.blade.name,
+                blade_type=loadout.blade.blade_type,
+                grip_name=loadout.grip.name if loadout.grip else None,
+                material=loadout.blade_material.name if loadout.blade_material else "",
+                damage_type=loadout.blade.damage_type,
+                hands=loadout.blade.hands,
+            )
+
+        armor_list = None
+        if loadout.armor_pieces:
+            armor_list = []
+            for slot, (armor_item, mat) in loadout.armor_pieces.items():
+                armor_list.append(
+                    LoadoutArmor(
+                        slot=slot,
+                        item_name=armor_item.name,
+                        armor_type=armor_item.armor_type,
+                        material=mat.name,
+                    )
+                )
+
+        loadout_results.append(
+            LoadoutResult(
+                rank=loadout.rank,
+                score=round(loadout.score, 2),
+                offense_score=round(loadout.offense_score, 2) if loadout.offense_score else None,
+                defense_score=round(loadout.defense_score, 2) if loadout.defense_score else None,
+                weapon=weapon,
+                armor=armor_list,
+                stats=LoadoutStats(
+                    estimated_damage=round(loadout.estimated_damage, 1),
+                    target_body_part=loadout.target_body_part,
+                    target_reason=loadout.target_reason,
+                ),
+            )
+        )
+
+    return LoadoutResponse(
+        enemy=LoadoutEnemyInfo(
+            id=enemy.id,
+            name=enemy.name,
+            enemy_class=enemy.enemy_class,
+            hp=enemy.hp,
+            mp=enemy.mp,
+        ),
+        loadouts=loadout_results,
+    )
