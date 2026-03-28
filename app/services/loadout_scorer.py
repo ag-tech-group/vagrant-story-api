@@ -391,7 +391,7 @@ def _is_grip_compatible(grip: Grip, blade: Blade) -> bool:
     """Check if a grip is compatible with a blade based on compatible_weapons."""
     if not grip.compatible_weapons:
         return False
-    compatible = [w.strip() for w in grip.compatible_weapons.split(",")]
+    compatible = [w.strip() for w in grip.compatible_weapons.split("/")]
     return blade.blade_type in compatible
 
 
@@ -459,6 +459,10 @@ def optimize_loadout(
                 grip = grips_db.get(inv_item.grip_id)
                 if grip:
                     grip_items.append((inv_item, grip))
+        elif inv_item.item_type == "grip":
+            grip = grips_db.get(inv_item.item_id)
+            if grip:
+                grip_items.append((inv_item, grip))
         elif inv_item.item_type == "armor":
             armor = armor_db.get(inv_item.item_id)
             mat = materials_db.get(inv_item.material) if inv_item.material else null_mat
@@ -467,12 +471,6 @@ def optimize_loadout(
                 if slot:
                     item_gems = _resolve_gems(inv_item, gems_lookup)
                     armor_items_by_slot[slot].append((inv_item, armor, mat, item_gems))
-
-    # If no grips found from blade items, fall back to checking all grips in DB
-    # In practice grips come from the blade's grip_id
-    if not grip_items:
-        # Use a default grip if none are available
-        pass
 
     results: list[Loadout] = []
 

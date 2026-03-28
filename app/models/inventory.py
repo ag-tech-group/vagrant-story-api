@@ -17,6 +17,13 @@ class Inventory(Base):
         DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
     )
 
+    # Ashley's base character stats (from save file import, nullable for blank inventories)
+    base_hp: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    base_mp: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    base_str: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    base_int: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    base_agi: Mapped[int | None] = mapped_column(Integer, nullable=True)
+
     items: Mapped[list["InventoryItem"]] = relationship(
         back_populates="inventory", cascade="all, delete-orphan", lazy="selectin"
     )
