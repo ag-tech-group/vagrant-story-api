@@ -495,6 +495,11 @@ class InventoryItemUpdate(BaseModel):
 class InventoryImportRequest(BaseModel):
     items: list[InventoryItemCreate]
     clear_existing: bool = False
+    base_hp: int | None = None
+    base_mp: int | None = None
+    base_str: int | None = None
+    base_int: int | None = None
+    base_agi: int | None = None
 
 
 class InventoryCreate(BaseModel):
@@ -521,6 +526,11 @@ class InventoryRead(BaseModel):
     name: str
     created_at: datetime
     updated_at: datetime
+    base_hp: int | None = None
+    base_mp: int | None = None
+    base_str: int | None = None
+    base_int: int | None = None
+    base_agi: int | None = None
     items: list[InventoryItemRead] = []
 
     model_config = {"from_attributes": True}

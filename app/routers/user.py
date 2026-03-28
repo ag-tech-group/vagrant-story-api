@@ -149,6 +149,18 @@ async def import_items(
                     detail=f"Equip slot '{slot}' is already occupied",
                 )
 
+    # Update character stats if provided (from save file import)
+    if body.base_hp is not None:
+        inventory.base_hp = body.base_hp
+    if body.base_mp is not None:
+        inventory.base_mp = body.base_mp
+    if body.base_str is not None:
+        inventory.base_str = body.base_str
+    if body.base_int is not None:
+        inventory.base_int = body.base_int
+    if body.base_agi is not None:
+        inventory.base_agi = body.base_agi
+
     new_items = [
         InventoryItem(inventory_id=inventory_id, **item_data.model_dump())
         for item_data in body.items
