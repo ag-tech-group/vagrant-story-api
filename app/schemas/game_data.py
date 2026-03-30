@@ -475,6 +475,10 @@ class InventoryItemRead(BaseModel):
     equip_slot: str | None = None
     storage: str = "bag"
     quantity: int = 1
+    dp_current: int | None = None
+    dp_max: int | None = None
+    pp_current: int | None = None
+    pp_max: int | None = None
 
     model_config = {"from_attributes": True}
 
@@ -550,6 +554,10 @@ class GameSaveImportItem(BaseModel):
     equip_slot: str | None = None
     storage: str = "bag"
     quantity: int = 1
+    dp_current: int | None = None
+    dp_max: int | None = None
+    pp_current: int | None = None
+    pp_max: int | None = None
 
 
 class GameSaveImportRequest(BaseModel):

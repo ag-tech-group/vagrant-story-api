@@ -200,6 +200,10 @@ async def import_save(
                 equip_slot=equip_slot,
                 storage=item_data.storage,
                 quantity=item_data.quantity,
+                dp_current=item_data.dp_current,
+                dp_max=item_data.dp_max,
+                pp_current=item_data.pp_current,
+                pp_max=item_data.pp_max,
             )
         )
 
