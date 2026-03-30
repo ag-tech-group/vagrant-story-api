@@ -4,8 +4,15 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.dependencies import get_current_user
 from app.database import get_async_session
+from app.models.armor import Armor
+from app.models.blade import Blade
+from app.models.consumable import Consumable
+from app.models.gem import Gem
+from app.models.grip import Grip
 from app.models.inventory import Inventory, InventoryItem
 from app.schemas.game_data import (
+    GameSaveImportRequest,
+    GameSaveImportResponse,
     InventoryCreate,
     InventoryImportRequest,
     InventoryItemCreate,
@@ -59,6 +66,148 @@ async def create_inventory(
     await session.commit()
     await session.refresh(inventory)
     return inventory
+
+
+VALID_ITEM_TYPES = {"blade", "grip", "armor", "gem", "consumable"}
+
+
+@router.post("/import-save", response_model=GameSaveImportResponse, status_code=201)
+async def import_save(
+    body: GameSaveImportRequest,
+    user_id: str = Depends(get_current_user),
+    session: AsyncSession = Depends(get_async_session),
+):
+    """Create an inventory from a parsed game save file.
+
+    Items are identified by field_name (a stable game data identifier)
+    rather than database IDs. The server resolves field_names to database
+    records, making this endpoint safe to call from any client without
+    knowledge of the database schema.
+    """
+    warnings: list[str] = []
+
+    # Build field_name → DB record lookup maps
+    blades_by_fn = {b.field_name: b for b in (await session.execute(select(Blade))).scalars().all()}
+    grips_by_fn = {g.field_name: g for g in (await session.execute(select(Grip))).scalars().all()}
+    armor_by_fn = {a.field_name: a for a in (await session.execute(select(Armor))).scalars().all()}
+    gems_by_fn = {g.field_name: g for g in (await session.execute(select(Gem))).scalars().all()}
+    consumables_by_fn = {
+        c.field_name: c for c in (await session.execute(select(Consumable))).scalars().all()
+    }
+
+    type_to_map: dict[str, dict] = {
+        "blade": blades_by_fn,
+        "grip": grips_by_fn,
+        "armor": armor_by_fn,
+        "gem": gems_by_fn,
+        "consumable": consumables_by_fn,
+    }
+
+    # Create inventory (flush to get ID without committing)
+    inventory = Inventory(
+        user_id=user_id,
+        name=body.name,
+        base_hp=body.base_hp,
+        base_mp=body.base_mp,
+        base_str=body.base_str,
+        base_int=body.base_int,
+        base_agi=body.base_agi,
+    )
+    session.add(inventory)
+    await session.flush()
+
+    # Resolve items by field_name and create InventoryItems
+    seen_slots: set[str] = set()
+    new_items: list[InventoryItem] = []
+
+    for idx, item_data in enumerate(body.items):
+        if item_data.item_type not in VALID_ITEM_TYPES:
+            warnings.append(f"Item {idx}: unknown item_type '{item_data.item_type}', skipped")
+            continue
+
+        if item_data.storage not in VALID_STORAGE:
+            warnings.append(
+                f"Item {idx} ({item_data.field_name}): invalid storage '{item_data.storage}', skipped"
+            )
+            continue
+
+        # Resolve main item
+        lookup_map = type_to_map[item_data.item_type]
+        record = lookup_map.get(item_data.field_name)
+        if not record:
+            warnings.append(
+                f"Item {idx}: {item_data.item_type} '{item_data.field_name}' not found, skipped"
+            )
+            continue
+
+        # Resolve grip (for assembled weapons)
+        grip_id: int | None = None
+        if item_data.grip_field_name:
+            grip_record = grips_by_fn.get(item_data.grip_field_name)
+            if grip_record:
+                grip_id = grip_record.id
+            else:
+                warnings.append(
+                    f"Item {idx} ({item_data.field_name}): grip '{item_data.grip_field_name}' not found"
+                )
+
+        # Resolve gems (up to 3)
+        gem_ids: list[int | None] = [None, None, None]
+        for gi, gem_fn in enumerate(item_data.gem_field_names[:3]):
+            if gem_fn:
+                gem_record = gems_by_fn.get(gem_fn)
+                if gem_record:
+                    gem_ids[gi] = gem_record.id
+                else:
+                    warnings.append(
+                        f"Item {idx} ({item_data.field_name}): gem '{gem_fn}' not found"
+                    )
+
+        # Validate equip_slot
+        equip_slot = item_data.equip_slot
+        if equip_slot is not None:
+            if item_data.storage != "bag":
+                equip_slot = None
+            elif equip_slot not in VALID_EQUIP_SLOTS:
+                warnings.append(
+                    f"Item {idx} ({item_data.field_name}): invalid equip_slot '{equip_slot}', clearing"
+                )
+                equip_slot = None
+            elif equip_slot in seen_slots:
+                warnings.append(
+                    f"Item {idx} ({item_data.field_name}): duplicate equip_slot '{equip_slot}', clearing"
+                )
+                equip_slot = None
+
+        if equip_slot:
+            seen_slots.add(equip_slot)
+
+        # Accessories don't have meaningful materials
+        material = item_data.material
+        if item_data.item_type == "armor" and getattr(record, "armor_type", None) == "Accessory":
+            material = None
+
+        new_items.append(
+            InventoryItem(
+                inventory_id=inventory.id,
+                item_type=item_data.item_type,
+                item_id=record.id,
+                material=material,
+                grip_id=grip_id,
+                gem_1_id=gem_ids[0],
+                gem_2_id=gem_ids[1],
+                gem_3_id=gem_ids[2],
+                equip_slot=equip_slot,
+                storage=item_data.storage,
+                quantity=item_data.quantity,
+            )
+        )
+
+    session.add_all(new_items)
+    await session.commit()
+    await session.refresh(inventory)
+
+    return GameSaveImportResponse(inventory=inventory, warnings=warnings)
 
 
 @router.get("/{inventory_id}", response_model=InventoryRead)
