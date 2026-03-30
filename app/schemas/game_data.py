@@ -643,6 +643,11 @@ class LoadoutRequest(BaseModel):
     include_bag: bool = True
     include_container: bool = True
     include_2h: bool = True
+    # Optional player stats — if not provided, reads from inventory's base stats.
+    # Pass explicitly for public API use without a saved inventory.
+    player_str: int | None = None
+    player_int: int | None = None
+    player_agi: int | None = None
 
 
 class LoadoutWeapon(BaseModel):
@@ -661,8 +666,18 @@ class LoadoutArmor(BaseModel):
     material: str
 
 
+class LoadoutBodyPartScore(BaseModel):
+    name: str
+    estimated_damage: float = 0.0
+    hit_chance: int = 100
+    expected_damage: float = 0.0
+    is_recommended: bool = False
+
+
 class LoadoutStats(BaseModel):
     estimated_damage: float = 0.0
+    hit_chance: int = 100
+    expected_damage: float = 0.0
     target_body_part: str = ""
     target_reason: str = ""
 
@@ -703,6 +718,7 @@ class LoadoutResult(BaseModel):
     armor: list[LoadoutArmor] | None = None
     stats: LoadoutStats = LoadoutStats()
     combined_stats: LoadoutCombinedStats | None = None
+    body_parts: list[LoadoutBodyPartScore] = []
 
 
 class LoadoutEnemyInfo(BaseModel):

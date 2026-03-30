@@ -47,4 +47,10 @@ class InventoryItem(Base):
     storage: Mapped[str] = mapped_column(String(20), server_default="bag")
     quantity: Mapped[int] = mapped_column(Integer, server_default="1")
 
+    # DP/PP stats from save file import (nullable for manually created items)
+    dp_current: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    dp_max: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    pp_current: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    pp_max: Mapped[int | None] = mapped_column(Integer, nullable=True)
+
     inventory: Mapped["Inventory"] = relationship(back_populates="items")

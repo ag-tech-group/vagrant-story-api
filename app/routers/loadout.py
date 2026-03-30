@@ -13,6 +13,7 @@ from app.models.inventory import Inventory, InventoryItem
 from app.models.material import Material
 from app.schemas.game_data import (
     LoadoutArmor,
+    LoadoutBodyPartScore,
     LoadoutCombinedStats,
     LoadoutEnemyInfo,
     LoadoutRequest,
@@ -97,6 +98,11 @@ async def optimize_loadout_endpoint(
     gems_result = await session.execute(select(Gem))
     gems_db = {g.id: g for g in gems_result.scalars().all()}
 
+    # Resolve player stats: request overrides > inventory base stats > 0
+    player_str = request.player_str if request.player_str is not None else (inventory.base_str or 0)
+    player_int = request.player_int if request.player_int is not None else (inventory.base_int or 0)
+    player_agi = request.player_agi if request.player_agi is not None else (inventory.base_agi or 0)
+
     # Run optimizer
     loadouts = optimize_loadout(
         inventory_items=filtered_items,
@@ -108,6 +114,9 @@ async def optimize_loadout_endpoint(
         gems_db=gems_db,
         mode=request.mode,
         include_2h=request.include_2h,
+        player_str=player_str,
+        player_int=player_int,
+        player_agi=player_agi,
     )
 
     # Build response
@@ -164,6 +173,18 @@ async def optimize_loadout_endpoint(
             dark=cs["dark"],
         )
 
+        # Build body part breakdown
+        bp_list = [
+            LoadoutBodyPartScore(
+                name=bp.name,
+                estimated_damage=round(bp.estimated_damage, 1),
+                hit_chance=bp.hit_chance,
+                expected_damage=round(bp.expected_damage, 1),
+                is_recommended=(bp.name == loadout.target_body_part),
+            )
+            for bp in loadout.body_part_scores
+        ]
+
         loadout_results.append(
             LoadoutResult(
                 rank=loadout.rank,
@@ -174,10 +195,13 @@ async def optimize_loadout_endpoint(
                 armor=armor_list,
                 stats=LoadoutStats(
                     estimated_damage=round(loadout.estimated_damage, 1),
+                    hit_chance=loadout.hit_chance,
+                    expected_damage=round(loadout.expected_damage, 1),
                     target_body_part=loadout.target_body_part,
                     target_reason=loadout.target_reason,
                 ),
                 combined_stats=combined,
+                body_parts=bp_list,
             )
         )
 
