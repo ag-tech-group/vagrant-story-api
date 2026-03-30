@@ -536,6 +536,44 @@ class InventoryRead(BaseModel):
     model_config = {"from_attributes": True}
 
 
+# ── Game save import schemas ─────────────────────────────────────────
+
+
+class GameSaveImportItem(BaseModel):
+    """An item identified by field_name (stable across all DB instances)."""
+
+    item_type: str  # blade / grip / armor / gem / consumable
+    field_name: str  # e.g. "Power_Palm", "Khopesh"
+    material: str | None = None
+    grip_field_name: str | None = None
+    gem_field_names: list[str] = []
+    equip_slot: str | None = None
+    storage: str = "bag"
+    quantity: int = 1
+
+
+class GameSaveImportRequest(BaseModel):
+    """Create an inventory from a parsed game save file.
+
+    Items are identified by field_name rather than database IDs,
+    allowing external tools and clients to create inventories
+    using stable game data identifiers.
+    """
+
+    name: str
+    items: list[GameSaveImportItem]
+    base_hp: int | None = None
+    base_mp: int | None = None
+    base_str: int | None = None
+    base_int: int | None = None
+    base_agi: int | None = None
+
+
+class GameSaveImportResponse(BaseModel):
+    inventory: InventoryRead
+    warnings: list[str] = []
+
+
 # ── Chest schemas ────────────────────────────────────────────────────
 
 
