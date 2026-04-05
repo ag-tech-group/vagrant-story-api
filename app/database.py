@@ -12,9 +12,14 @@ class Base(DeclarativeBase):
     pass
 
 
+_connect_args: dict = {}
+if settings.database_require_ssl:
+    _connect_args["ssl"] = "require"
+
 engine = create_async_engine(
     settings.database_url,
     echo=settings.is_development,
+    connect_args=_connect_args,
 )
 
 async_session_maker = async_sessionmaker(

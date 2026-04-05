@@ -10,6 +10,8 @@ class Settings(BaseSettings):
     cors_origins: str = ""
     log_level: str = "INFO"
     auth_jwks_url: str = "https://auth-api.criticalbit.gg/auth/jwks"
+    auth_token_issuer: str = ""
+    database_require_ssl: bool = False
 
     @property
     def is_development(self) -> bool:
