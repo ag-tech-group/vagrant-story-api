@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -11,6 +11,7 @@ from app.models.gem import Gem
 from app.models.grip import Grip
 from app.models.inventory import Inventory, InventoryItem
 from app.models.material import Material
+from app.rate_limit import limiter
 from app.schemas.game_data import (
     LoadoutArmor,
     LoadoutBodyPartScore,
@@ -28,20 +29,22 @@ router = APIRouter(prefix="/loadout", tags=["loadout"])
 
 
 @router.post("", response_model=LoadoutResponse)
+@limiter.limit("10/minute")
 async def optimize_loadout_endpoint(
-    request: LoadoutRequest,
+    request: Request,
+    body: LoadoutRequest,
     user_id: str = Depends(get_current_user),
     session: AsyncSession = Depends(get_async_session),
 ):
     """Find the best equipment loadout from an inventory to fight a specific enemy."""
     # Validate mode
-    if request.mode not in ("full", "offense", "defense"):
+    if body.mode not in ("full", "offense", "defense"):
         raise HTTPException(status_code=400, detail="Mode must be 'full', 'offense', or 'defense'")
 
     # Fetch inventory (verify ownership)
     inv_result = await session.execute(
         select(Inventory).where(
-            Inventory.id == request.inventory_id,
+            Inventory.id == body.inventory_id,
             Inventory.user_id == user_id,
         )
     )
@@ -50,23 +53,23 @@ async def optimize_loadout_endpoint(
         raise HTTPException(status_code=404, detail="Inventory not found")
 
     # Fetch enemy with body parts (selectin is the default lazy strategy)
-    enemy_result = await session.execute(select(Enemy).where(Enemy.id == request.enemy_id))
+    enemy_result = await session.execute(select(Enemy).where(Enemy.id == body.enemy_id))
     enemy = enemy_result.scalar_one_or_none()
     if not enemy:
         raise HTTPException(status_code=404, detail="Enemy not found")
 
     # Filter inventory items by storage preferences
     allowed_storage: set[str] = set()
-    if request.include_bag:
+    if body.include_bag:
         allowed_storage.add("bag")
-    if request.include_container:
+    if body.include_container:
         allowed_storage.add("container")
 
     filtered_items: list[InventoryItem] = []
     for item in inventory.items:
         if item.storage in allowed_storage:
             # If include_equipped is False, skip items that have an equip_slot
-            if not request.include_equipped and item.equip_slot is not None:
+            if not body.include_equipped and item.equip_slot is not None:
                 continue
             filtered_items.append(item)
 
@@ -98,10 +101,10 @@ async def optimize_loadout_endpoint(
     gems_result = await session.execute(select(Gem))
     gems_db = {g.id: g for g in gems_result.scalars().all()}
 
-    # Resolve player stats: request overrides > inventory base stats > 0
-    player_str = request.player_str if request.player_str is not None else (inventory.base_str or 0)
-    player_int = request.player_int if request.player_int is not None else (inventory.base_int or 0)
-    player_agi = request.player_agi if request.player_agi is not None else (inventory.base_agi or 0)
+    # Resolve player stats: body overrides > inventory base stats > 0
+    player_str = body.player_str if body.player_str is not None else (inventory.base_str or 0)
+    player_int = body.player_int if body.player_int is not None else (inventory.base_int or 0)
+    player_agi = body.player_agi if body.player_agi is not None else (inventory.base_agi or 0)
 
     # Run optimizer
     loadouts = optimize_loadout(
@@ -112,8 +115,8 @@ async def optimize_loadout_endpoint(
         armor_db=armor_db,
         materials_db=materials_db,
         gems_db=gems_db,
-        mode=request.mode,
-        include_2h=request.include_2h,
+        mode=body.mode,
+        include_2h=body.include_2h,
         player_str=player_str,
         player_int=player_int,
         player_agi=player_agi,
