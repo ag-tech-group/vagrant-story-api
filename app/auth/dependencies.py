@@ -2,6 +2,7 @@
 
 import jwt
 import structlog
+import structlog.contextvars
 from fastapi import HTTPException, Request
 
 from app.auth.jwks import get_public_key
@@ -48,4 +49,5 @@ async def get_current_user(request: Request) -> str:
     if not user_id:
         raise HTTPException(status_code=401, detail="Invalid token: missing subject")
 
+    structlog.contextvars.bind_contextvars(user_id=user_id)
     return user_id

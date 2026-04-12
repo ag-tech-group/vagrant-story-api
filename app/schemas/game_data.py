@@ -497,7 +497,7 @@ class InventoryItemUpdate(BaseModel):
 
 
 class InventoryImportRequest(BaseModel):
-    items: list[InventoryItemCreate]
+    items: list[InventoryItemCreate] = Field(max_length=500)
     clear_existing: bool = False
     base_hp: int | None = None
     base_mp: int | None = None
@@ -507,11 +507,11 @@ class InventoryImportRequest(BaseModel):
 
 
 class InventoryCreate(BaseModel):
-    name: str
+    name: str = Field(min_length=1, max_length=100)
 
 
 class InventoryUpdate(BaseModel):
-    name: str
+    name: str = Field(min_length=1, max_length=100)
 
 
 class InventoryListRead(BaseModel):
@@ -568,8 +568,8 @@ class GameSaveImportRequest(BaseModel):
     using stable game data identifiers.
     """
 
-    name: str
-    items: list[GameSaveImportItem]
+    name: str = Field(min_length=1, max_length=100)
+    items: list[GameSaveImportItem] = Field(max_length=500)
     base_hp: int | None = None
     base_mp: int | None = None
     base_str: int | None = None
