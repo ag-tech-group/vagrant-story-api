@@ -12,10 +12,15 @@ class Settings(BaseSettings):
     auth_jwks_url: str = "https://auth-api.criticalbit.gg/auth/jwks"
     auth_token_issuer: str = ""
     database_require_ssl: bool = False
+    sentry_dsn: str = ""
 
     @property
     def is_development(self) -> bool:
         return self.environment == "development"
+
+    @property
+    def sentry_traces_sample_rate(self) -> float:
+        return 1.0 if self.is_development else 0.1
 
     @property
     def cors_origin_list(self) -> list[str]:

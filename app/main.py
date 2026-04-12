@@ -10,6 +10,7 @@ from slowapi.errors import RateLimitExceeded
 
 from app.config import settings
 from app.logging import setup_logging
+from app.observability.sentry import init_sentry
 from app.rate_limit import limiter
 from app.routers import (
     areas_router,
@@ -38,6 +39,7 @@ from app.routers import (
     workshops_router,
 )
 
+init_sentry()
 setup_logging()
 logger = structlog.get_logger("app.request")
 
@@ -54,7 +56,7 @@ app.add_middleware(
     allow_origin_regex=settings.cors_origin_regex,
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allow_headers=["Content-Type"],
+    allow_headers=["Content-Type", "sentry-trace", "baggage"],
 )
 
 app.state.limiter = limiter
