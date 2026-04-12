@@ -1,13 +1,1 @@
-# Require review for auth changes
-/app/auth/ @amrtgaber
-/app/config.py @amrtgaber
-
-# Require review for CI/CD changes
-/.github/ @amrtgaber
-
-# Require review for database migrations
-/alembic/ @amrtgaber
-
-# Require review for deployment config
-/Dockerfile @amrtgaber
-/start.sh @amrtgaber
+* @amrtgaber
