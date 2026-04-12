@@ -16,6 +16,7 @@ def init_sentry() -> None:
     sentry_sdk.init(
         dsn=settings.sentry_dsn,
         environment=settings.environment,
+        release=settings.sentry_release or None,
         # Kept false until a public privacy policy ships. Matches the
         # frontend's cookie-free posture so distributed traces aren't
         # leaking PII on one side while hiding it on the other.

@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     auth_token_issuer: str = ""
     database_require_ssl: bool = False
     sentry_dsn: str = ""
+    sentry_release: str = ""
 
     @property
     def is_development(self) -> bool:

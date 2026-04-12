@@ -24,4 +24,9 @@ EXPOSE 8000
 COPY start.sh ./
 RUN chmod +x start.sh
 
+# Sentry release version from CI. Positioned last so COMMIT_SHA changes
+# don't invalidate the layer cache for dependency install or code copies.
+ARG COMMIT_SHA=unknown
+ENV SENTRY_RELEASE=$COMMIT_SHA
+
 CMD ["./start.sh"]
