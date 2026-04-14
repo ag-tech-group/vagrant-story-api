@@ -190,9 +190,17 @@ def _get_enemy_class_key(enemy_class: str) -> str | None:
     return None
 
 
-def _get_bp_elemental(bp: EnemyBodyPart, elem: str) -> int:
-    """Get a body part's elemental defense, mapping 'wind' -> 'air' column."""
-    col = "air" if elem == "wind" else elem
+def _get_bp_affinity(bp: EnemyBodyPart, affinity: str) -> int:
+    """Read the body part's affinity defense for the attacker's active element.
+
+    ``affinity`` is the attacker's chosen affinity: "physical" for default
+    physical attacks, or one of the elements in ``ELEMENTAL_AFFINITIES``. The
+    enemy body part schema stores the elemental columns using "air" instead of
+    "wind", so this helper handles that translation as well.
+    """
+    if affinity == "physical":
+        return bp.physical
+    col = "air" if affinity == "wind" else affinity
     return getattr(bp, col, 0)
 
 
@@ -211,13 +219,28 @@ def score_offense(
 ) -> OffenseScore:
     """Score a weapon setup against an enemy using the real VS damage formula.
 
-    Uses the actual Vagrant Story combat mechanics:
-      Attack = (STR + WeapSTR + AccSTR) * (100 + Modifier) / 100
-      Modifier = (WeapClass + AccClass + WeapAffinity + AccAffinity
-                  + WeapType + AccType + PP% - DP%) // 4
-      Damage = Attack - Defense
+    Uses the game's actual attack/defense arithmetic:
 
-    Reference: Beamup's Combat Mechanics Guide (GameFAQs)
+        Attack    = (STR + WeapSTR + AccSTR) × (100 + AttackMod) / 100
+        AttackMod = (WeapClass + AccClass + WeapAff + AccAff
+                     + WeapType + AccType + PP% − DP%) / 4
+
+        BaseDef   = (DefSTR + DefAccSTR − 20) × (100 + DefMod) / 100
+        DefMod    = AccClass + Affinity + AccAffinity + Type + AccType
+
+        Damage    = Attack − Defense
+
+    The critical asymmetry: the defense modifier is NOT divided by 4, so
+    Class/Affinity/Type have four times the weight on Defense as on Attack.
+    That's what makes a damage-type weakness like Golem's −30 blunt on Body
+    dominate the score instead of being washed out by other modifiers.
+
+    For enemies the attacker-side modifiers are Ashley's; the defender-side
+    modifiers come from the body part's inherent ratings (``physical`` column
+    when the attack's effective affinity is Physical, an elemental column
+    otherwise, and ``blunt``/``edged``/``piercing`` for the damage type).
+    Enemies in the current data model don't wear accessories, so ``AccClass``
+    and friends on the defender are always 0.
     """
     if not enemy_body_parts:
         return OffenseScore(reasoning="Enemy has no body parts to target")
@@ -230,93 +253,94 @@ def score_offense(
     acc_str = accessory.str_stat if accessory else 0
     total_str = player_str + weap_str + acc_str
 
-    # ── Player's total AGI (base + weapon + accessory + armor) ──────
+    # ── Player's total AGI (base + weapon + accessory) ──────────────
     weap_agi = blade.agi_stat + grip.agi_stat + material.blade_agi
     weap_agi += sum(g.agi_stat for g in blade_gems)
     acc_agi = accessory.agi_stat if accessory else 0
     total_agi = player_agi + weap_agi + acc_agi
 
-    # ── Weapon Class affinity (vs enemy class) ──────────────────────
+    # ── Weapon Class (rating in the enemy's class) ──────────────────
     class_key = _get_enemy_class_key(enemy.enemy_class)
     weap_class = getattr(material, class_key, 0) if class_key else 0
     weap_class += sum(getattr(g, class_key, 0) for g in blade_gems)
     acc_class = getattr(accessory, class_key, 0) if accessory and class_key else 0
 
-    # ── Weapon Type (grip's stat matching blade's damage type) ──────
+    # ── Weapon Type (grip's rating in the blade's damage type) ──────
     damage_type_key = blade.damage_type.lower()
     weap_type = getattr(grip, damage_type_key, 0) if damage_type_key in DAMAGE_TYPES else 0
-    acc_type = 0  # accessories don't have damage type stats
+    acc_type = 0  # accessories don't carry damage-type ratings
+
+    # ── Weapon Affinity: Physical vs best element ───────────────────
+    # Physical is the default affinity. Only gems add Physical rating (the
+    # materials table has no physical column). An elemental rating (from
+    # material + gems) only overrides Physical if it beats the Physical total —
+    # matching the game's "highest affinity wins" rule.
+    physical_rating = sum(g.physical for g in blade_gems)
+    weap_affinity = physical_rating
+    best_element = "physical"
+    for elem in ELEMENTAL_AFFINITIES:
+        mat_elem = getattr(material, elem, 0)
+        gem_elem = sum(getattr(g, elem, 0) for g in blade_gems)
+        elem_total = mat_elem + gem_elem
+        if elem_total > weap_affinity:
+            weap_affinity = elem_total
+            best_element = elem
+    acc_affinity = 0  # accessories don't carry elemental ratings in the current schema
+
+    # Attack modifier is enemy-independent once the best element is chosen:
+    # weapon class depends on the enemy class (already resolved above), not on
+    # which body part we're hitting. Compute once.
+    attack_modifier = (
+        weap_class
+        + acc_class
+        + weap_affinity
+        + acc_affinity
+        + weap_type
+        + acc_type
+        + blade_pp_pct
+        - blade_dp_pct
+    ) // 4
+    attack = total_str * (100 + attack_modifier) // 100
 
     # ── Score each body part ────────────────────────────────────────
     bp_scores: list[BodyPartScore] = []
 
     for bp in enemy_body_parts:
-        # Weapon Affinity: best elemental match (material + gems vs body part weakness)
-        # In VS, the elemental affinity used is the weapon's elemental that the
-        # body part is weakest to (most negative defense = biggest bonus for attacker)
-        weap_affinity = 0
-        acc_affinity = 0
-        best_element = ""
-        for elem in ELEMENTAL_AFFINITIES:
-            mat_elem = getattr(material, elem, 0)
-            gem_elem = sum(getattr(g, elem, 0) for g in blade_gems)
-            weapon_elem_total = mat_elem + gem_elem
-            if weapon_elem_total > weap_affinity:
-                weap_affinity = weapon_elem_total
-                best_element = elem
-
-        # Attack modifier: (Class + Affinity + Type + PP% - DP%) / 4
-        attack_modifier = (
-            weap_class
-            + acc_class
-            + weap_affinity
-            + acc_affinity
-            + weap_type
-            + acc_type
-            + blade_pp_pct
-            - blade_dp_pct
-        ) // 4
-
-        # Attack value
-        attack = total_str * (100 + attack_modifier) // 100
-
-        # Enemy Defense for this body part
-        # Defense modifier comes from body part's type + physical + elemental resistances
+        # Defender's affinity rating against the attacker's active element.
+        bp_affinity = _get_bp_affinity(bp, best_element)
+        # Defender's rating against the attacker's damage type.
         bp_type = getattr(bp, damage_type_key, 0) if damage_type_key in DAMAGE_TYPES else 0
-        bp_physical = bp.physical
 
-        # Best elemental defense the enemy has (matching our weapon's affinity)
-        bp_affinity = _get_bp_elemental(bp, best_element) if best_element else 0
-
-        # Enemy class defense (enemies have inherent class — they don't have "class" stats
-        # in the same way, so we use the body part physical as the main defense base)
-        enemy_def_modifier = (bp_type + bp_physical + bp_affinity) // 4
-
-        # Enemy base defense: (EnemySTR - 20) * (100 + modifier) / 100
-        enemy_defense = max(0, (enemy.str_stat - 20) * (100 + enemy_def_modifier) // 100)
+        # Defense modifier: NOT divided by 4. Class/Affinity/Type have four
+        # times the weight on defense as on attack (see the module docstring
+        # for the full formula), and that extra weight is exactly what lets
+        # type weaknesses (e.g. Golem's −30 blunt on Body) dominate the score.
+        def_modifier = bp_affinity + bp_type
+        enemy_defense = max(0, (enemy.str_stat - 20) * (100 + def_modifier) // 100)
 
         # Estimated damage (regular attack, multiplier = 1.0)
         est_damage = max(0, attack - enemy_defense)
 
-        # Hit chance: Hit% = 100 + Acc - Dge (assume RISK = 0 for both sides)
-        acc = total_agi  # floor(AGL * (100-0) / 100) = AGL
-        dge = enemy.agi_stat + bp.evade  # floor((AGL + EVA) * (100-0) / 100)
+        # Hit chance: Hit% = 100 + Acc − Dge (assume RISK = 0 for both sides)
+        acc = total_agi
+        dge = enemy.agi_stat + bp.evade
         hit_pct = max(5, min(100, 100 + acc - dge))
 
         # Expected damage (hit-chance weighted)
         expected = est_damage * hit_pct / 100.0
 
-        # Build reasoning
         reasons = []
         if bp_type < 0:
             reasons.append(f"weak to {blade.damage_type} ({bp_type})")
         elif bp_type > 10:
             reasons.append(f"resists {blade.damage_type} (+{bp_type})")
-        if weap_affinity > 5 and best_element:
-            reasons.append(f"{best_element} affinity (+{weap_affinity})")
-        if class_key and weap_class > 5:
-            reasons.append(f"{class_key} affinity bonus (+{weap_class})")
-        if bp.evade > 10:
+        if bp_affinity < 0:
+            reasons.append(f"weak to {best_element} ({bp_affinity})")
+        elif bp_affinity > 30:
+            reasons.append(f"resists {best_element} (+{bp_affinity})")
+        if class_key and weap_class > 20:
+            reasons.append(f"{class_key} class bonus (+{weap_class})")
+        if bp.evade > 40:
             reasons.append(f"high evade ({bp.evade})")
         elif bp.evade == 0:
             reasons.append("low evade")
