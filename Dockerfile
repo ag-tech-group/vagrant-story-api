@@ -20,13 +20,9 @@ COPY data ./data
 # Expose port
 EXPOSE 8000
 
-# Start script: stamp alembic if first run, then apply pending migrations
-COPY start.sh ./
-RUN chmod +x start.sh
-
 # Sentry release version from CI. Positioned last so COMMIT_SHA changes
 # don't invalidate the layer cache for dependency install or code copies.
 ARG COMMIT_SHA=unknown
 ENV SENTRY_RELEASE=$COMMIT_SHA
 
-CMD ["./start.sh"]
+CMD [".venv/bin/uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
