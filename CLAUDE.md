@@ -48,9 +48,9 @@ Pydantic v2 with `serialization_alias` for short JSON keys. `model_config = {"fr
 
 ### Routes (`app/routers/`)
 
-Standard CRUD pattern. Register in `app/main.py`. Notable:
-- `GET /enemies/{id}` — eager loads body parts, drops, encounters
-- `GET /drops?item={name}` — cross-entity join query for item drop locations
+Standard CRUD pattern. **All public data routes are mounted under `/v1`** — add new routers to the `ROUTERS` tuple in `app/main.py` and they're automatically loop-mounted with the `/v1` prefix. App-level infrastructure routes (`/`, `/health`, `/docs`, `/.well-known/security.txt`) stay unversioned. Notable:
+- `GET /v1/enemies/{id}` — eager loads body parts, drops, encounters
+- `GET /v1/drops?item={name}` — cross-entity join query for item drop locations
 
 ### Data Files (`data/`)
 
@@ -86,7 +86,7 @@ Schema migrations use `op.create_table()`. Data migrations use `sa.text()` with 
 
 1. **Model**: Create `app/models/[type].py`, export from `__init__.py`
 2. **Schema**: Add `[Type]Read` to `app/schemas/game_data.py`
-3. **Router**: Create `app/routers/[type].py`, register in `app/main.py`
+3. **Router**: Create `app/routers/[type].py`, export the router from `app/routers/__init__.py`, and **add it to the `ROUTERS` tuple in `app/main.py`** — do not call `app.include_router` directly. The tuple gets a single loop-mount with `prefix="/v1"`, so anything added here is automatically published at `/v1/<your-route>` with the global `60/minute` rate limit applied.
 4. **Migration**: `uv run alembic revision --autogenerate -m "add [type] table"` — verify it has actual CREATE TABLE
 5. **Data**: Create `data/[type].json`, update `scripts/seed_database.py`
-6. **Test**: Add endpoint tests in `tests/test_api.py`
+6. **Test**: Add endpoint tests in `tests/test_api.py` using `/v1/[type]` paths
