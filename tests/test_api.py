@@ -27,19 +27,17 @@ class TestLaunchGuardrails:
         assert "Contact: mailto:security@criticalbit.gg" in body
         assert "Expires:" in body
 
-    async def test_v1_mount_matches_unversioned(self, client: AsyncClient):
-        # Dual-mount: every router is exposed at both /x and /v1/x during the
-        # frontend migration. Both must return identical payloads.
-        unversioned = await client.get("/blades")
-        v1 = await client.get("/v1/blades")
-        assert unversioned.status_code == 200
-        assert v1.status_code == 200
-        assert unversioned.json() == v1.json()
+    async def test_unversioned_routes_removed(self, client: AsyncClient):
+        # The transitional unversioned mount was removed once the
+        # vagrant-story-web frontend finished migrating to /v1.
+        # Old paths should now 404; /v1 is the only public data path.
+        assert (await client.get("/v1/blades")).status_code == 200
+        assert (await client.get("/blades")).status_code == 404
 
 
 class TestBlades:
     async def test_list_empty(self, client: AsyncClient):
-        resp = await client.get("/blades")
+        resp = await client.get("/v1/blades")
         assert resp.status_code == 200
         assert resp.json() == []
 
@@ -61,7 +59,7 @@ class TestBlades:
         session.add(blade)
         await session.commit()
 
-        resp = await client.get("/blades")
+        resp = await client.get("/v1/blades")
         assert resp.status_code == 200
         data = resp.json()
         assert len(data) == 1
@@ -82,12 +80,12 @@ class TestBlades:
         session.add(blade)
         await session.commit()
 
-        resp = await client.get(f"/blades/{blade.id}")
+        resp = await client.get(f"/v1/blades/{blade.id}")
         assert resp.status_code == 200
         assert resp.json()["name"] == "Katana"
 
     async def test_not_found(self, client: AsyncClient):
-        resp = await client.get("/blades/999")
+        resp = await client.get("/v1/blades/999")
         assert resp.status_code == 404
 
     async def test_search(self, client: AsyncClient, session: AsyncSession):
@@ -111,14 +109,14 @@ class TestBlades:
         )
         await session.commit()
 
-        resp = await client.get("/blades?q=clay")
+        resp = await client.get("/v1/blades?q=clay")
         assert len(resp.json()) == 1
         assert resp.json()[0]["name"] == "Claymore"
 
 
 class TestEnemies:
     async def test_list_empty(self, client: AsyncClient):
-        resp = await client.get("/enemies")
+        resp = await client.get("/v1/enemies")
         assert resp.status_code == 200
         assert resp.json() == []
 
@@ -135,7 +133,7 @@ class TestEnemies:
         session.add(enemy)
         await session.commit()
 
-        resp = await client.get("/enemies")
+        resp = await client.get("/v1/enemies")
         assert resp.status_code == 200
         data = resp.json()
         assert len(data) == 1
@@ -175,7 +173,7 @@ class TestEnemies:
         session.add(bp)
         await session.commit()
 
-        resp = await client.get(f"/enemies/{enemy.id}")
+        resp = await client.get(f"/v1/enemies/{enemy.id}")
         assert resp.status_code == 200
         data = resp.json()
         assert data["name"] == "Bat"
@@ -185,7 +183,7 @@ class TestEnemies:
         assert data["body_parts"][0]["air"] == 25
 
     async def test_not_found(self, client: AsyncClient):
-        resp = await client.get("/enemies/999")
+        resp = await client.get("/v1/enemies/999")
         assert resp.status_code == 404
 
     async def test_search(self, client: AsyncClient, session: AsyncSession):
@@ -207,7 +205,7 @@ class TestEnemies:
         )
         await session.commit()
 
-        resp = await client.get("/enemies?q=bat")
+        resp = await client.get("/v1/enemies?q=bat")
         assert len(resp.json()) == 1
         assert resp.json()[0]["name"] == "Bat"
 
@@ -217,7 +215,7 @@ class TestMaterials:
         session.add(Material(name="Iron", tier=4, str_modifier=1, int_modifier=1, agi_modifier=-2))
         await session.commit()
 
-        resp = await client.get("/materials")
+        resp = await client.get("/v1/materials")
         assert resp.status_code == 200
         assert len(resp.json()) == 1
         assert resp.json()[0]["name"] == "Iron"
