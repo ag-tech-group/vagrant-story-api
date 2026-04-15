@@ -116,9 +116,9 @@ async def request_logging_middleware(request: Request, call_next) -> Response:
     return response
 
 
-# Canonical public API lives under /v1. During the frontend migration we also
-# mount everything at the root so existing unversioned clients keep working.
-# The unversioned mount is scheduled for removal once vagrant-story-web is on /v1.
+# Public API lives under /v1. Non-versioned app-level routes (/, /health,
+# /docs, /.well-known/security.txt) stay at the root since they're
+# infrastructure, not part of the versioned data contract.
 ROUTERS = (
     blades_router,
     grips_router,
@@ -148,8 +148,6 @@ ROUTERS = (
 
 for router in ROUTERS:
     app.include_router(router, prefix="/v1")
-for router in ROUTERS:
-    app.include_router(router)
 
 
 @app.get("/docs", include_in_schema=False)
