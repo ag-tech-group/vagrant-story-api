@@ -4,9 +4,11 @@ import uuid
 import structlog
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import PlainTextResponse
 from scalar_fastapi import get_scalar_api_reference
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
 
 from app.config import settings
 from app.logging import setup_logging
@@ -61,6 +63,10 @@ app.add_middleware(
 
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+# SlowAPIMiddleware is what actually enforces the Limiter's default_limits
+# against every route. Without it, only routes with an explicit
+# @limiter.limit(...) decorator would be rate-limited.
+app.add_middleware(SlowAPIMiddleware)
 
 
 MAX_REQUEST_BODY_SIZE = 1_048_576  # 1 MB
@@ -110,30 +116,40 @@ async def request_logging_middleware(request: Request, call_next) -> Response:
     return response
 
 
-app.include_router(blades_router)
-app.include_router(grips_router)
-app.include_router(armor_router)
-app.include_router(gems_router)
-app.include_router(materials_router)
-app.include_router(consumables_router)
-app.include_router(break_arts_router)
-app.include_router(battle_abilities_router)
-app.include_router(sigils_router)
-app.include_router(spells_router)
-app.include_router(keys_router)
-app.include_router(grimoires_router)
-app.include_router(workshops_router)
-app.include_router(chests_router)
-app.include_router(crafting_router)
-app.include_router(characters_router)
-app.include_router(enemies_router)
-app.include_router(titles_router)
-app.include_router(rankings_router)
-app.include_router(areas_router)
-app.include_router(rooms_router)
-app.include_router(drops_router)
-app.include_router(loadout_router)
-app.include_router(user_router)
+# Canonical public API lives under /v1. During the frontend migration we also
+# mount everything at the root so existing unversioned clients keep working.
+# The unversioned mount is scheduled for removal once vagrant-story-web is on /v1.
+ROUTERS = (
+    blades_router,
+    grips_router,
+    armor_router,
+    gems_router,
+    materials_router,
+    consumables_router,
+    break_arts_router,
+    battle_abilities_router,
+    sigils_router,
+    spells_router,
+    keys_router,
+    grimoires_router,
+    workshops_router,
+    chests_router,
+    crafting_router,
+    characters_router,
+    enemies_router,
+    titles_router,
+    rankings_router,
+    areas_router,
+    rooms_router,
+    drops_router,
+    loadout_router,
+    user_router,
+)
+
+for router in ROUTERS:
+    app.include_router(router, prefix="/v1")
+for router in ROUTERS:
+    app.include_router(router)
 
 
 @app.get("/docs", include_in_schema=False)
@@ -145,10 +161,27 @@ async def scalar_docs():
 
 
 @app.get("/")
+@limiter.exempt
 async def root():
     return {"status": "ok", "service": "vagrant-story-api"}
 
 
 @app.get("/health")
+@limiter.exempt
 async def health_check():
     return {"status": "healthy"}
+
+
+# Per https://securitytxt.org/ — security researchers and automated scanners
+# look for this file to find an abuse contact. Bump Expires before 2027-04-15.
+SECURITY_TXT = """\
+Contact: mailto:security@criticalbit.gg
+Expires: 2027-04-15T00:00:00.000Z
+Preferred-Languages: en
+"""
+
+
+@app.get("/.well-known/security.txt", include_in_schema=False)
+@limiter.exempt
+async def security_txt() -> PlainTextResponse:
+    return PlainTextResponse(SECURITY_TXT)

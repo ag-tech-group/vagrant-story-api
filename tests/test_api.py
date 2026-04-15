@@ -18,6 +18,25 @@ class TestHealth:
         assert resp.json()["service"] == "vagrant-story-api"
 
 
+class TestLaunchGuardrails:
+    async def test_security_txt(self, client: AsyncClient):
+        resp = await client.get("/.well-known/security.txt")
+        assert resp.status_code == 200
+        assert resp.headers["content-type"].startswith("text/plain")
+        body = resp.text
+        assert "Contact: mailto:security@criticalbit.gg" in body
+        assert "Expires:" in body
+
+    async def test_v1_mount_matches_unversioned(self, client: AsyncClient):
+        # Dual-mount: every router is exposed at both /x and /v1/x during the
+        # frontend migration. Both must return identical payloads.
+        unversioned = await client.get("/blades")
+        v1 = await client.get("/v1/blades")
+        assert unversioned.status_code == 200
+        assert v1.status_code == 200
+        assert unversioned.json() == v1.json()
+
+
 class TestBlades:
     async def test_list_empty(self, client: AsyncClient):
         resp = await client.get("/blades")

@@ -25,4 +25,8 @@ EXPOSE 8000
 ARG COMMIT_SHA=unknown
 ENV SENTRY_RELEASE=$COMMIT_SHA
 
-CMD [".venv/bin/uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# --proxy-headers + --forwarded-allow-ips=* makes uvicorn trust X-Forwarded-For
+# from Cloud Run's frontend so request.client.host is the real client IP.
+# Safe because Cloud Run guarantees requests only arrive via Google's frontend;
+# external clients cannot bypass it to forge the header.
+CMD [".venv/bin/uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers", "--forwarded-allow-ips=*"]
