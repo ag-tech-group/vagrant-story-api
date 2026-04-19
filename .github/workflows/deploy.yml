@@ -71,6 +71,11 @@ jobs:
             --project "$GCP_PROJECT" \
             --wait
 
+      # --max-instances is managed here rather than in the Cloud Run
+      # console so the connection budget stays in sync with the pool
+      # config in app/database.py. Peak DB connections = max_instances
+      # × (pool_size + max_overflow); changing either without the other
+      # risks exhausting Cloud SQL max_connections.
       - name: Deploy to Cloud Run
         env:
           SERVICE_NAME: ${{ env.SERVICE_NAME }}
@@ -81,5 +86,6 @@ jobs:
         run: |
           gcloud run services update "$SERVICE_NAME" \
             --image "$IMAGE:$COMMIT_SHA" \
+            --max-instances 4 \
             --region "$GCP_REGION" \
             --project "$GCP_PROJECT"
