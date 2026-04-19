@@ -20,6 +20,12 @@ engine = create_async_engine(
     settings.database_url,
     echo=settings.is_development,
     connect_args=_connect_args,
+    # pool_pre_ping replaces connections killed server-side (Cloud SQL
+    # idle timeout, failover) before they surface as errors to the
+    # caller. pool_recycle proactively retires connections before those
+    # server-side timeouts fire.
+    pool_pre_ping=True,
+    pool_recycle=1800,
 )
 
 async_session_maker = async_sessionmaker(
