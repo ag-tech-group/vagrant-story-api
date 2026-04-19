@@ -20,6 +20,13 @@ engine = create_async_engine(
     settings.database_url,
     echo=settings.is_development,
     connect_args=_connect_args,
+    # Sized against Cloud SQL db-f1-micro's max_connections=25: at
+    # Cloud Run maxScale=4, peak = 4 instances × (3+2) = 20 connections,
+    # leaving ~5 for reserved roles / the migration job. Budget has to
+    # change in lockstep with .github/workflows/deploy.yml --max-instances
+    # and Cloud SQL's max_connections.
+    pool_size=3,
+    max_overflow=2,
     # pool_pre_ping replaces connections killed server-side (Cloud SQL
     # idle timeout, failover) before they surface as errors to the
     # caller. pool_recycle proactively retires connections before those
