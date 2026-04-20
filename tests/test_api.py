@@ -35,6 +35,30 @@ class TestLaunchGuardrails:
         assert (await client.get("/blades")).status_code == 404
 
 
+class TestCacheHeaders:
+    # Regression coverage for the /v1 migration that inadvertently made
+    # authenticated endpoints publicly cacheable for an hour because the
+    # middleware's path prefix check matched pre-v1 routes only.
+    async def test_public_endpoints_are_cacheable(self, client: AsyncClient):
+        resp = await client.get("/v1/blades")
+        assert resp.status_code == 200
+        assert resp.headers["cache-control"] == "public, max-age=3600"
+
+    async def test_auth_required_endpoints_are_no_store(self, client: AsyncClient):
+        # Unauthenticated — the dependency raises 401, but the auth-required
+        # flag is set before the raise so the response is still marked no-store.
+        resp = await client.get("/v1/user/inventories")
+        assert resp.status_code == 401
+        assert resp.headers["cache-control"] == "no-store"
+        assert "Cookie" in resp.headers["vary"]
+
+    async def test_loadout_endpoint_is_no_store(self, client: AsyncClient):
+        resp = await client.post("/v1/loadout", json={})
+        assert resp.status_code == 401
+        assert resp.headers["cache-control"] == "no-store"
+        assert "Cookie" in resp.headers["vary"]
+
+
 class TestBlades:
     async def test_list_empty(self, client: AsyncClient):
         resp = await client.get("/v1/blades")
