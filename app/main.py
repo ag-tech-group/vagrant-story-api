@@ -83,8 +83,18 @@ async def limit_request_size(request: Request, call_next) -> Response:
 @app.middleware("http")
 async def add_cache_headers(request: Request, call_next) -> Response:
     response = await call_next(request)
-    if request.url.path.startswith("/user/"):
+    # Auth-required responses must never be stored by browsers or shared
+    # caches — the flag is set by `get_current_user` so any endpoint that
+    # depends on it is covered automatically. `Vary: Cookie` is added as
+    # defense in depth against any cache that ignores `no-store`.
+    if getattr(request.state, "auth_required", False):
         response.headers["Cache-Control"] = "no-store"
+        existing_vary = [
+            v.strip() for v in response.headers.get("Vary", "").split(",") if v.strip()
+        ]
+        if "Cookie" not in existing_vary:
+            existing_vary.append("Cookie")
+        response.headers["Vary"] = ", ".join(existing_vary)
     elif request.method == "GET" and response.status_code == 200:
         response.headers["Cache-Control"] = "public, max-age=3600"
     return response
