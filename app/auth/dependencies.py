@@ -22,14 +22,14 @@ def _decode_kwargs() -> dict:
 
 
 async def get_current_user(request: Request) -> str:
-    """Extract and verify the JWT from the app_access cookie, returning the user_id."""
+    """Extract and verify the JWT from the criticalbit_access cookie, returning the user_id."""
     # Flag the request so the cache-header middleware emits `Cache-Control:
     # no-store` for any endpoint that depends on auth — including 401s, which
     # otherwise risk being stored by a heuristic cache. Set before any raise
     # so failures are tagged too.
     request.state.auth_required = True
 
-    token = request.cookies.get("app_access")
+    token = request.cookies.get("criticalbit_access")
     if not token:
         raise HTTPException(status_code=401, detail="Not authenticated")
 
