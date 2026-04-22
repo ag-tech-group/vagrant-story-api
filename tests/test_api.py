@@ -1,3 +1,8 @@
+import time
+from unittest.mock import patch
+
+import jwt as pyjwt
+from cryptography.hazmat.primitives.asymmetric import rsa
 from httpx import AsyncClient
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -244,3 +249,36 @@ class TestMaterials:
         assert len(resp.json()) == 1
         assert resp.json()[0]["name"] == "Iron"
         assert resp.json()[0]["str_modifier"] == 1
+
+
+class TestAuthCookie:
+    # Locks the cookie-name contract with criticalbit-auth-api: that service sets
+    # the access JWT under `criticalbit_access`, this service must read the same
+    # name. A silent rename 401s every authenticated request across the frontend.
+    async def test_valid_cookie_authenticates(self, client: AsyncClient):
+        private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+        public_key = private_key.public_key()
+        token = pyjwt.encode(
+            {
+                "sub": "user-abc",
+                "aud": "fastapi-users:auth",
+                "exp": int(time.time()) + 300,
+            },
+            private_key,
+            algorithm="RS256",
+        )
+
+        async def fake_get_public_key(force_refresh: bool = False):
+            return public_key
+
+        client.cookies.set("criticalbit_access", token)
+        with patch("app.auth.dependencies.get_public_key", fake_get_public_key):
+            resp = await client.get("/v1/user/inventories")
+
+        assert resp.status_code == 200
+        assert resp.json() == []
+
+    async def test_missing_cookie_returns_401(self, client: AsyncClient):
+        resp = await client.get("/v1/user/inventories")
+        assert resp.status_code == 401
+        assert resp.json()["detail"] == "Not authenticated"
