@@ -36,7 +36,7 @@ class Settings(BaseSettings):
         return r"https://([a-z0-9-]+\.)?criticalbit\.gg"
 
     @model_validator(mode="after")
-    def validate_production_settings(self) -> "Settings":
+    def validate_production_settings(self) -> Settings:
         if not self.is_development:
             if "postgres:postgres@" in self.database_url:
                 raise ValueError("Default database credentials must not be used in production")

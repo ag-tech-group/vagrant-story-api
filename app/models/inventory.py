@@ -24,7 +24,7 @@ class Inventory(Base):
     base_int: Mapped[int | None] = mapped_column(Integer, nullable=True)
     base_agi: Mapped[int | None] = mapped_column(Integer, nullable=True)
 
-    items: Mapped[list["InventoryItem"]] = relationship(
+    items: Mapped[list[InventoryItem]] = relationship(
         back_populates="inventory", cascade="all, delete-orphan", lazy="selectin"
     )
 
@@ -53,4 +53,4 @@ class InventoryItem(Base):
     pp_current: Mapped[int | None] = mapped_column(Integer, nullable=True)
     pp_max: Mapped[int | None] = mapped_column(Integer, nullable=True)
 
-    inventory: Mapped["Inventory"] = relationship(back_populates="items")
+    inventory: Mapped[Inventory] = relationship(back_populates="items")
