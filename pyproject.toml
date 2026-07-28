@@ -3,7 +3,7 @@ name = "vagrant-story-api"
 version = "0.3.0"
 description = "Public game data API for Vagrant Story"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.14"
 dependencies = [
     "fastapi>=0.135.0",
     "uvicorn[standard]>=0.41.0",
@@ -38,7 +38,7 @@ testpaths = ["tests"]
 asyncio_default_fixture_loop_scope = "function"
 
 [tool.ruff]
-target-version = "py312"
+target-version = "py314"
 line-length = 100
 
 [tool.ruff.lint]

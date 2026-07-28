@@ -426,7 +426,7 @@ class EnemyDetailRead(BaseModel):
     movement: int = 0
     is_boss: bool = False
     body_parts: list[EnemyBodyPartRead] = []
-    drops: list["EnemyDropRead"] = []
+    drops: list[EnemyDropRead] = []
     encounters: list[EnemyEncounterRead] = []
 
     model_config = {"from_attributes": True, "populate_by_name": True}
