@@ -14,6 +14,17 @@ async_session_maker = async_sessionmaker(engine, class_=AsyncSession, expire_on_
 
 
 @pytest.fixture(autouse=True)
+def reset_rate_limiter():
+    """Clear rate-limit buckets between tests so request counts don't leak
+    across tests (the limiter storage is process-global)."""
+    from app.rate_limit import limiter
+
+    limiter._storage.reset()
+    yield
+    limiter._storage.reset()
+
+
+@pytest.fixture(autouse=True)
 async def setup_database():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
